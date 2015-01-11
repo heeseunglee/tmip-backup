@@ -5,7 +5,8 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "4.2.*"
+		"laravel/framework": "4.2.*",
+	  	"bllim/datatables": "*"
 	},
 	"autoload": {
 		"classmap": [
@@ -16,6 +17,9 @@
 			"app/database/seeds",
 			"app/tests/TestCase.php"
 		]
+	},
+	"require-dev": {
+		"way/generators": "~2.0"
 	},
 	"scripts": {
 		"post-install-cmd": [
