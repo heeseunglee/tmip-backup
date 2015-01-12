@@ -114,7 +114,7 @@ class SqlServerGrammar extends Grammar {
 
 		$sql = $this->concatenate($components);
 
-		// We are now ready to build the final SQL query so we'll create a common table
+		// We are now ready to build the final SQL query so we'll create a Common table
 		// expression from the query and get the records with row numbers within our
 		// given limit and offset value that we just put on as a query constraint.
 		return $this->compileTableExpression($sql, $constraint);
@@ -152,7 +152,7 @@ class SqlServerGrammar extends Grammar {
 	}
 
 	/**
-	 * Compile a common table expression for a query.
+	 * Compile a Common table expression for a query.
 	 *
 	 * @param  string  $sql
 	 * @param  string  $constraint

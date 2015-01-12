@@ -18,7 +18,7 @@ use Predis\Command\CommandInterface;
 use Predis\Protocol\ProtocolException;
 
 /**
- * Base class with the common logic used by connection classes to communicate with Redis.
+ * Base class with the Common logic used by connection classes to communicate with Redis.
  *
  * @author Daniele Alessandri <suppakilla@gmail.com>
  */

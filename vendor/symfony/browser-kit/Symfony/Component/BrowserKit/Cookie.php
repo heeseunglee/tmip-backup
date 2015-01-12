@@ -22,7 +22,7 @@ class Cookie
 {
     /**
      * Handles dates as defined by RFC 2616 section 3.3.1, and also some other
-     * non-standard, but common formats.
+     * non-standard, but Common formats.
      *
      * @var array
      */

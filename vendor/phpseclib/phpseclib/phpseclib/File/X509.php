@@ -1051,7 +1051,7 @@ class File_X509
             )
         );
 
-        // mapping is from <http://www.mozilla.org/projects/security/pki/nss/tech-notes/tn3.html>
+        // mapping is from <http://www.mozilla.org/Projects/security/pki/nss/tech-notes/tn3.html>
         $this->netscape_cert_type = array(
             'type'    => FILE_ASN1_TYPE_BIT_STRING,
             'mapping' => array(
@@ -4569,8 +4569,8 @@ class File_X509
          *
          * Bag Attributes
          *     localKeyID: 01 00 00 00
-         * subject=/O=organization/OU=org unit/CN=common name
-         * issuer=/O=organization/CN=common name
+         * subject=/O=organization/OU=org unit/CN=Common name
+         * issuer=/O=organization/CN=Common name
          */
         $temp = preg_replace('#.*?^-+[^-]+-+#ms', '', $str, 1);
         // remove the -----BEGIN CERTIFICATE----- and -----END CERTIFICATE----- stuff

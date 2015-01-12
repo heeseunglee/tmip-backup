@@ -15,7 +15,7 @@ use Symfony\Component\Translation\MessageCatalogue;
 
 /**
  * DumperInterface is the interface implemented by all translation dumpers.
- * There is no common option.
+ * There is no Common option.
  *
  * @author Michel Salib <michelsalib@hotmail.com>
  */

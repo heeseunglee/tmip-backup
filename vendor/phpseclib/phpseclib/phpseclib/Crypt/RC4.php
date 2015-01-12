@@ -9,7 +9,7 @@
  *
  * Useful resources are as follows:
  *
- *  - {@link http://www.mozilla.org/projects/security/pki/nss/draft-kaukonen-cipher-arcfour-03.txt ARCFOUR Algorithm}
+ *  - {@link http://www.mozilla.org/Projects/security/pki/nss/draft-kaukonen-cipher-arcfour-03.txt ARCFOUR Algorithm}
  *  - {@link http://en.wikipedia.org/wiki/RC4 - Wikipedia: RC4}
  *
  * RC4 is also known as ARCFOUR or ARC4.  The reason is elaborated upon at Wikipedia.  This class is named RC4 and not

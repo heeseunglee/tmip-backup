@@ -336,21 +336,21 @@ class Filesystem
         $startPathArr = explode('/', trim($startPath, '/'));
         $endPathArr = explode('/', trim($endPath, '/'));
 
-        // Find for which directory the common path stops
+        // Find for which directory the Common path stops
         $index = 0;
         while (isset($startPathArr[$index]) && isset($endPathArr[$index]) && $startPathArr[$index] === $endPathArr[$index]) {
             $index++;
         }
 
-        // Determine how deep the start path is relative to the common path (ie, "web/bundles" = 2 levels)
+        // Determine how deep the start path is relative to the Common path (ie, "web/bundles" = 2 levels)
         $depth = count($startPathArr) - $index;
 
-        // Repeated "../" for each level need to reach the common path
+        // Repeated "../" for each level need to reach the Common path
         $traverser = str_repeat('../', $depth);
 
         $endPathRemainder = implode('/', array_slice($endPathArr, $index));
 
-        // Construct $endPath from traversing to the common path, then to the remaining $endPath
+        // Construct $endPath from traversing to the Common path, then to the remaining $endPath
         $relativePath = $traverser.(strlen($endPathRemainder) > 0 ? $endPathRemainder.'/' : '');
 
         return (strlen($relativePath) === 0) ? './' : $relativePath;

@@ -141,7 +141,7 @@ class PluralizationRules
 
             case 'be':
             case 'bs':
-            case 'hr':
+            case 'Hr':
             case 'ru':
             case 'sr':
             case 'uk':

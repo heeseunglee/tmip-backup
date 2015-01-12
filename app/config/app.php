@@ -121,8 +121,8 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+		'Trinity\Common\config\TrinityServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
-		'Bllim\Datatables\DatatablesServiceProvider',
 
 	),
 
@@ -190,7 +190,6 @@ return array(
 		'URL'               => 'Illuminate\Support\Facades\URL',
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
-		'Datatables'      => 'Bllim\Datatables\Datatables',
 
 	),
 

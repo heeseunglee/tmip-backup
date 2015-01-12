@@ -694,7 +694,7 @@ class Crypt_RSA
 
                 $temp = $primes[$i]->subtract($this->one);
 
-                // textbook RSA implementations use Euler's totient function instead of the least common multiple.
+                // textbook RSA implementations use Euler's totient function instead of the least Common multiple.
                 // see http://en.wikipedia.org/wiki/Euler%27s_totient_function
                 $lcm['top'] = $lcm['top']->multiply($temp);
                 $lcm['bottom'] = $lcm['bottom'] === false ? $temp : $lcm['bottom']->gcd($temp);
@@ -1070,7 +1070,7 @@ class Crypt_RSA
                    own implementation.  ie. the implementation *is* the standard and any bugs that may exist in that
                    implementation are part of the standard, as well.
 
-                   * OpenSSL is the de facto standard.  It's utilized by OpenSSH and other projects */
+                   * OpenSSL is the de facto standard.  It's utilized by OpenSSH and other Projects */
                 if (preg_match('#DEK-Info: (.+),(.+)#', $key, $matches)) {
                     $iv = pack('H*', trim($matches[2]));
                     $symkey = pack('H*', md5($this->password . substr($iv, 0, 8))); // symkey is short for symmetric key
@@ -2976,8 +2976,8 @@ class Crypt_RSA
          *
          * Bag Attributes
          *     localKeyID: 01 00 00 00
-         * subject=/O=organization/OU=org unit/CN=common name
-         * issuer=/O=organization/CN=common name
+         * subject=/O=organization/OU=org unit/CN=Common name
+         * issuer=/O=organization/CN=Common name
          */
         $temp = preg_replace('#.*?^-+[^-]+-+#ms', '', $str, 1);
         // remove the -----BEGIN CERTIFICATE----- and -----END CERTIFICATE----- stuff

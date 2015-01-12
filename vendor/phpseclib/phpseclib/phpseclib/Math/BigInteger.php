@@ -1368,9 +1368,9 @@ class Math_BigInteger
      * Divides two BigIntegers.
      *
      * Returns an array whose first element contains the quotient and whose second element contains the
-     * "common residue".  If the remainder would be positive, the "common residue" and the remainder are the
-     * same.  If the remainder would be negative, the "common residue" is equal to the sum of the remainder
-     * and the divisor (basically, the "common residue" is the first positive modulo).
+     * "Common residue".  If the remainder would be positive, the "Common residue" and the remainder are the
+     * same.  If the remainder would be negative, the "Common residue" is equal to the sum of the remainder
+     * and the divisor (basically, the "Common residue" is the first positive modulo).
      *
      * Here's an example:
      * <code>
@@ -1490,7 +1490,7 @@ class Math_BigInteger
         $temp_value = array_merge($this->_array_repeat(0, $x_max - $y_max), $y_value);
 
         while ( $x->compare($temp) >= 0 ) {
-            // calculate the "common residue"
+            // calculate the "Common residue"
             ++$quotient_value[$x_max - $y_max];
             $x = $x->subtract($temp);
             $x_max = count($x->value) - 1;
@@ -1555,7 +1555,7 @@ class Math_BigInteger
 
         $quotient->is_negative = $x_sign != $y_sign;
 
-        // calculate the "common residue", if appropriate
+        // calculate the "Common residue", if appropriate
         if ( $x_sign ) {
             $y->_rshift($shift);
             $x = $y->subtract($x);
@@ -2369,7 +2369,7 @@ class Math_BigInteger
      * instance, on some computers, var_dump((int) -4294967297) yields int(-1) and on others, it yields
      * int(-2147483648).  To avoid problems stemming from this, we use bitmasks to guarantee that ints aren't
      * auto-converted to floats.  The outermost bitmask is present because without it, there's no guarantee that
-     * the "residue" returned would be the so-called "common residue".  We use fmod, in the last step, because the
+     * the "residue" returned would be the so-called "Common residue".  We use fmod, in the last step, because the
      * maximum possible $x is 26 bits and the maximum $result is 16 bits.  Thus, we have to be able to handle up to
      * 40 bits, which only 64-bit floating points will support.
      *
@@ -2457,7 +2457,7 @@ class Math_BigInteger
     }
 
     /**
-     * Calculates the greatest common divisor and Bezout's identity.
+     * Calculates the greatest Common divisor and Bezout's identity.
      *
      * Say you have 693 and 609.  The GCD is 21.  Bezout's identity states that there exist integers x and y such that
      * 693*x + 609*y == 21.  In point of fact, there are actually an infinite number of x and y combinations and which
@@ -2595,7 +2595,7 @@ class Math_BigInteger
     }
 
     /**
-     * Calculates the greatest common divisor
+     * Calculates the greatest Common divisor
      *
      * Say you have 693 and 609.  The GCD is 21.
      *

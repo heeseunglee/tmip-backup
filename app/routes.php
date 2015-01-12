@@ -11,7 +11,5 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+
+require_once app_path().'/Projects/TMIP/Trinity/Common/routes/routes.php';

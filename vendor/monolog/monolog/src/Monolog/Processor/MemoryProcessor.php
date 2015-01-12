@@ -12,7 +12,7 @@
 namespace Monolog\Processor;
 
 /**
- * Some methods that are common for all memory processors
+ * Some methods that are Common for all memory processors
  *
  * @author Rob Jensen
  */

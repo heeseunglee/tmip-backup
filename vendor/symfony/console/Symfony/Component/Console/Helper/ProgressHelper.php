@@ -111,7 +111,7 @@ class ProgressHelper extends Helper
         array(59, 'secs', 1),
         array(60, '1 min'),
         array(3600, 'mins', 60),
-        array(5400, '1 hr'),
+        array(5400, '1 Hr'),
         array(86400, 'hrs', 3600),
         array(129600, '1 day'),
         array(604800, 'days', 86400),

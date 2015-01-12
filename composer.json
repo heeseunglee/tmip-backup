@@ -5,10 +5,12 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "4.2.*",
-	  	"bllim/datatables": "*"
+		"laravel/framework": "4.2.*"
 	},
 	"autoload": {
+	  	"psr-4": {
+		  	"Trinity\\": "app/Projects/TMIP/Trinity"
+		},
 		"classmap": [
 			"app/commands",
 			"app/controllers",

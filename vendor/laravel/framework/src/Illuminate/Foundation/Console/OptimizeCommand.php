@@ -62,7 +62,7 @@ class OptimizeCommand extends Command {
 
 		if ($this->option('force') || ! $this->laravel['config']['app.debug'])
 		{
-			$this->info('Compiling common classes');
+			$this->info('Compiling Common classes');
 
 			$this->compileClasses();
 
