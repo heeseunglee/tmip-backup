@@ -18,7 +18,7 @@ class CreateInstSpecializedOnCTypesTable extends Migration {
 			$table->increments('id');
 
 			$table->unsignedInteger('instructor_id');
-			$table->foreign('instructor_id')->references('id')->on('users');
+			$table->foreign('instructor_id')->references('id')->on('instructors');
 
 			$table->unsignedInteger('course_type_id');
 			$table->foreign('course_type_id')->references('id')->on('course_types');

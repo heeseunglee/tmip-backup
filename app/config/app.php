@@ -123,6 +123,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Trinity\Common\config\TrinityServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
+		'Laracasts\Flash\FlashServiceProvider',
 
 	),
 
@@ -190,6 +191,7 @@ return array(
 		'URL'               => 'Illuminate\Support\Facades\URL',
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
+		'Flash' 			=> 'Laracasts\Flash\Flash',
 
 	),
 

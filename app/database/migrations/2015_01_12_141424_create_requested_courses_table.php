@@ -20,26 +20,26 @@ class CreateRequestedCoursesTable extends Migration {
 			 * 클래스 요청자
 			 */
 			$table->unsignedInteger('hr_id');
-			$table->foreign('hr_id')->references('id')->on('users');
+			$table->foreign('hr_id')->references('id')->on('hrs');
 
 			/**
 			 * 담당 컨설턴트
 			 */
 			$table->unsignedInteger('consultant_id');
-			$table->foreign('consultant_id')->references('id')->on('users');
+			$table->foreign('consultant_id')->references('id')->on('consultants');
 
 			/**
 			 * 클래스 개설 요청 후 컨설턴트는 해당 담당자와 유선 연락 후 클래스 개설을 승인하여야 한다.
 			 */
 			$table->unsignedInteger('spoken_with')->nullable();
-			$table->foreign('spoken_with')->references('id')->on('users');
+			$table->foreign('spoken_with')->references('id')->on('consultants');
 
 			$table->datetime('contacted_datetime')->nullable();
 
 			$table->boolean('is_confirmed')->default(false);
 
 			$table->unsignedInteger('confirmed_by')->nullable();
-			$table->foreign('confirmed_by')->references('id')->on('users');
+			$table->foreign('confirmed_by')->references('id')->on('consultants');
 
 			$table->datetime('confirmed_datetime')->nullable();
 

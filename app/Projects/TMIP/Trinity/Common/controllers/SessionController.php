@@ -18,7 +18,11 @@ class SessionController extends \BaseController {
 	*/
 
 	public function attemptLogin() {
-		return \View::make('TrinityCommonView::pages.before_login.login');
+		if(\Auth::attempt(\Input::only('account_email', 'password'))) {
+			return \Redirect::route('Trinity.index');
+		}
+		\Flash::error('이메일 / 암호를 확인해 주세요');
+		return \Redirect::back()->withInput();
 	}
 
 }

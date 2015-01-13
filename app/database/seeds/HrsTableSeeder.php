@@ -9,7 +9,7 @@ class HrsTableSeeder extends Seeder {
 		for($count = 1; $count < 51; $count++) {
 			\Hr::create([
 				'company_id' => $count % $company_count + 1,
-				'consultant_id'=> \Consultant::find(mt_rand(1, $consultant_count))->user->id
+				'consultant_id'=> \Consultant::find(mt_rand(1, $consultant_count))->id
 			])->user()->create([
 				'account_email' => 'hr'.$count.'@hr.net',
 				'password' => \Hash::make('1234'),

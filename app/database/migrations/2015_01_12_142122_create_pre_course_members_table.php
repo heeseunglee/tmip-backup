@@ -17,7 +17,7 @@ class CreatePreCourseMembersTable extends Migration {
 			$table->increments('id');
 
 			$table->unsignedInteger('student_id');
-			$table->foreign('student_id')->references('id')->on('users');
+			$table->foreign('student_id')->references('id')->on('students');
 
 			$table->unsignedInteger('pre_course_id');
 			$table->foreign('pre_course_id')->references('id')->on('pre_courses');

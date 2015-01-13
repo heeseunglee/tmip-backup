@@ -19,7 +19,7 @@ class CreateCoursesTable extends Migration {
 			$table->string('name');
 
 			$table->unsignedInteger('instructor_id');
-			$table->foreign('instructor_id')->references('id')->on('users');
+			$table->foreign('instructor_id')->references('id')->on('instructors');
 
 			$table->unsignedInteger('company_id');
 			$table->foreign('company_id')->references('id')->on('companies');

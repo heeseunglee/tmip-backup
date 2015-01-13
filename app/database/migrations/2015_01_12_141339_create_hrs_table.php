@@ -23,7 +23,7 @@ class CreateHrsTable extends Migration {
 			 * 담당 컨설턴트
 			 */
 			$table->unsignedInteger('consultant_id');
-			$table->foreign('consultant_id')->references('id')->on('users');
+			$table->foreign('consultant_id')->references('id')->on('consultants');
 
 			$table->timestamps();
 		});

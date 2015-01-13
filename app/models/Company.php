@@ -11,4 +11,15 @@ class Company extends \Eloquent {
 
 	protected $table = 'companies';
 
+	public function hrs() {
+		return $this->hasMany('Hr', 'company_id');
+	}
+
+	public function courses() {
+		return $this->hasMany('Course', 'company_id');
+	}
+
+	public function students() {
+		return $this->hasMany('Student', 'company_id');
+	}
 }

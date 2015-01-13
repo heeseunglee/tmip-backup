@@ -13,3 +13,7 @@
 
 
 require_once app_path().'/Projects/TMIP/Trinity/Common/routes/routes.php';
+require_once app_path().'/Projects/TMIP/Trinity/Consultant/routes/routes.php';
+require_once app_path().'/Projects/TMIP/Trinity/Hr/routes/routes.php';
+require_once app_path().'/Projects/TMIP/Trinity/Instructor/routes/routes.php';
+require_once app_path().'/Projects/TMIP/Trinity/Student/routes/routes.php';

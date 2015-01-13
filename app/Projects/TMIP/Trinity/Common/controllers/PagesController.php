@@ -21,4 +21,14 @@ class PagesController extends \BaseController {
 		return \View::make('TrinityCommonView::pages.before_login.login');
 	}
 
+	/**
+	 * 인덱스 컨트롤러는 사용자가 로그인 한 후
+	 * 롤을 판단하여 롤에 해당하는 루팅 테이블로 안내함
+	 */
+	public function index() {
+		$current_user = \Auth::user();
+		$user_role = $current_user->userable_type;
+		return \Redirect::route('Trinity.'.$user_role.'.index');
+	}
+
 }

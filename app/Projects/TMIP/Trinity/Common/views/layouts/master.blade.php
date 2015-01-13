@@ -25,11 +25,11 @@
 	<body>
 
 		<header id="header">
-			@yield('header_content')
+			@include('TrinityCommonView::layouts.navbar')
 		</header>
 		<div id="base">
 			<div id="sidebar">
-				@yield('sidebar_content')
+				@include('TrinityCommonView::layouts.sidebar')
 			</div>
 			<div id="content">
 				@yield('main_content')
@@ -37,10 +37,10 @@
 		</div>
 
 		<!-- BEGIN JAVASCRIPT -->
-
-		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		{{ HTML::script('TMIP/Trinity/js/libs/jquery/jquery-1.11.0.min.js') }}
+		{{ HTML::script('TMIP/Trinity/js/libs/jquery/jquery-migrate-1.2.1.min.js') }}
+		{{ HTML::script('TMIP/Trinity/js/core/BootstrapFixed.js') }}
+		{{ HTML::script('TMIP/Trinity/js/libs/bootstrap/bootstrap.min.js') }}
 		<!-- Additional JS includes -->
 		@yield('additional_js_includes')
 

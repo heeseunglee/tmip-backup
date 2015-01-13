@@ -22,7 +22,7 @@
                                         <div class="row">
                                             <div class="form-group">
                                                 <div class="col-lg-12 col-sm-12">
-                                                    {{ Form::text('email', '', array('id' => 'email', 'class' => 'form-control', 'placeholder' => '이메일', 'required' => '', 'type' => 'email')) }}
+                                                    {{ Form::text('account_email', '', array('id' => 'account_email', 'class' => 'form-control', 'placeholder' => '이메일', 'required' => '', 'type' => 'email')) }}
                                                 </div>
                                             </div>
                                         </div>
@@ -44,6 +44,7 @@
 
                         </div>
                     </div>
+                    @include('flash::message')
                 </div>
             </div>
         </div>

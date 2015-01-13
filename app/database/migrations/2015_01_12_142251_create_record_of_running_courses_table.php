@@ -17,7 +17,7 @@ class CreateRecordOfRunningCoursesTable extends Migration {
 			$table->increments('id');
 
 			$table->unsignedInteger('student_id');
-			$table->foreign('student_id')->references('id')->on('users');
+			$table->foreign('student_id')->references('id')->on('students');
 
 			$table->unsignedInteger('running_course_id');
 			$table->foreign('running_course_id')->references('id')->on('running_courses');
