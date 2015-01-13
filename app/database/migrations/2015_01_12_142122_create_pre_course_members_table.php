@@ -15,7 +15,18 @@ class CreatePreCourseMembersTable extends Migration {
 		Schema::create('pre_course_members', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->timestamps();
+
+			$table->unsignedInteger('student_id');
+			$table->foreign('student_id')->references('id')->on('users');
+
+			$table->unsignedInteger('pre_course_id');
+			$table->foreign('pre_course_id')->references('id')->on('pre_courses');
+
+			$table->boolean('lvl_test_registered')->default(true);
+
+			$table->boolean('lvl_test_finished')->default(false);
+
+			$table->float('lvl_test_result')->nullable();
 		});
 	}
 

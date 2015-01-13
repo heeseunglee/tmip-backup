@@ -15,6 +15,16 @@ class CreateHrsTable extends Migration {
 		Schema::create('hrs', function(Blueprint $table)
 		{
 			$table->increments('id');
+
+			$table->unsignedInteger('company_id');
+			$table->foreign('company_id')->references('id')->on('companies');
+
+			/**
+			 * 담당 컨설턴트
+			 */
+			$table->unsignedInteger('consultant_id');
+			$table->foreign('consultant_id')->references('id')->on('users');
+
 			$table->timestamps();
 		});
 	}

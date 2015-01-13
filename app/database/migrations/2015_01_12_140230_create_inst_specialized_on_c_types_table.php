@@ -12,10 +12,16 @@ class CreateInstSpecializedOnCTypesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('c_types', function(Blueprint $table)
+		Schema::create('inst_specialized_on_c_types', function(Blueprint $table)
 		{
+			// this is the pivot table of instructors and course types
 			$table->increments('id');
-			$table->timestamps();
+
+			$table->unsignedInteger('instructor_id');
+			$table->foreign('instructor_id')->references('id')->on('users');
+
+			$table->unsignedInteger('course_type_id');
+			$table->foreign('course_type_id')->references('id')->on('course_types');
 		});
 	}
 
@@ -27,7 +33,7 @@ class CreateInstSpecializedOnCTypesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('c_types');
+		Schema::drop('inst_specialized_on_c_types');
 	}
 
 }

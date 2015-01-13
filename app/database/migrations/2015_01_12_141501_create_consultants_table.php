@@ -15,6 +15,9 @@ class CreateConsultantsTable extends Migration {
 		Schema::create('consultants', function(Blueprint $table)
 		{
 			$table->increments('id');
+
+			$table->boolean('is_admin')->default(false);
+
 			$table->timestamps();
 		});
 	}

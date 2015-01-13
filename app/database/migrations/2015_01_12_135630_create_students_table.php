@@ -15,6 +15,17 @@ class CreateStudentsTable extends Migration {
 		Schema::create('students', function(Blueprint $table)
 		{
 			$table->increments('id');
+
+			// foreign key to companies.id
+			// student must be an employee of some company
+			$table->unsignedInteger('company_id');
+			$table->foreign('company_id')->references('id')->on('companies')
+				->onDelete('cascade')->onUpdate('cascade');
+
+			$table->string('position')->nullable();
+
+			$table->string('deputy')->nullable();
+
 			$table->timestamps();
 		});
 	}

@@ -15,7 +15,11 @@ class CreatePreCoursesTable extends Migration {
 		Schema::create('pre_courses', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->timestamps();
+
+			$table->unsignedInteger('requested_course_id');
+			$table->foreign('requested_course_id')->references('id')->on('requested_courses');
+
+			$table->string('status');
 		});
 	}
 

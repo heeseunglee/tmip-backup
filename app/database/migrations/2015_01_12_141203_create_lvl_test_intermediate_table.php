@@ -15,7 +15,20 @@ class CreateLvlTestIntermediateTable extends Migration {
 		Schema::create('lvl_test_intermediate', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->timestamps();
+			$table->integer('session')->nullable();
+			$table->string('text', 2048)->nullable();
+			$table->string('question')->nullable();
+			$table->string('example1')->nullable();
+			$table->string('example2')->nullable();
+			$table->string('example3')->nullable();
+			$table->string('example4')->nullable();
+			$table->integer('answer')->nullable();
+			$table->string('question2')->nullable();
+			$table->string('example5')->nullable();
+			$table->string('example6')->nullable();
+			$table->string('example7')->nullable();
+			$table->string('example8')->nullable();
+			$table->integer('answer2')->nullable();
 		});
 	}
 

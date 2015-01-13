@@ -15,7 +15,14 @@ class CreateCClassedAsCTypesTable extends Migration {
 		Schema::create('c_classed_as_c_types', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->timestamps();
+
+			$table->unsignedInteger('course_id');
+			$table->foreign('course_id')->references('id')->on('courses')
+				->onUpdate('cascade');
+
+			$table->unsignedInteger('course_type_id');
+			$table->foreign('course_type_id')->references('id')->on('course_types')
+				->onUpdate('cascade');
 		});
 	}
 

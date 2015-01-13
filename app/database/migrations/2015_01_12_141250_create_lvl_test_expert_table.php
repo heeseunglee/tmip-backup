@@ -15,7 +15,14 @@ class CreateLvlTestExpertTable extends Migration {
 		Schema::create('lvl_test_expert', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->timestamps();
+			$table->integer('session')->nullable();
+			$table->string('text', 2048)->nullable();
+			$table->string('question', 2048)->nullable();
+			$table->string('example1')->nullable();
+			$table->string('example2')->nullable();
+			$table->string('example3')->nullable();
+			$table->string('example4')->nullable();
+			$table->integer('answer')->nullable();
 		});
 	}
 

@@ -15,7 +15,12 @@ class CreateLvlTestBeginnerTable extends Migration {
 		Schema::create('lvl_test_beginner', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->timestamps();
+			$table->integer('session')->nullable();
+			$table->string('question')->nullable();
+			$table->string('example1')->nullable();
+			$table->string('example2')->nullable();
+			$table->string('example3')->nullable();
+			$table->integer('answer')->nullable();
 		});
 	}
 

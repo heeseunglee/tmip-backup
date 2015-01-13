@@ -15,6 +15,37 @@ class CreateInstructorsTable extends Migration {
 		Schema::create('instructors', function(Blueprint $table)
 		{
 			$table->increments('id');
+
+			$table->string('name_chn')->nullable();
+
+			/**
+			 * 주민등록번호 저장될 때 자동으로 저장되게 설정함
+			 */
+			$table->string('date_of_birth', 32);
+
+			/**
+			 * 주민등록번호가 암호화되어 저장
+			 */
+			$table->string('residence_number', 1024);
+
+			$table->unsignedInteger('bank_id');
+			$table->foreign('bank_id')->references('id')->on('banks');
+
+			/**
+			 * 계좌번호가 암호화되어 저장
+			 */
+			$table->string('bank_account_number', 1024);
+
+			/**
+			 * 월급 지급일
+			 * 특별한 일이 없다면 25일로 셋팅
+			 */
+			$table->tinyInteger('payday')->default(25);
+
+			$table->char('gender', 1);
+
+			$table->tinyInteger('age');
+
 			$table->timestamps();
 		});
 	}
