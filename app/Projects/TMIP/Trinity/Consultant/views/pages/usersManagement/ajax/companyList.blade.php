@@ -8,7 +8,7 @@
     <ul class="dropdown-menu animation-zoom">
         @foreach($companies as $company)
             <li>
-                <a href="#" class="link_users_management_index_ajax_company">
+                <a href="#" class="link_users_management_index_ajax_company_list">
                     {{ Form::hidden('consultant_id', $consultant->id) }}
                     {{ Form::hidden('company_id', $company->id) }}
                     {{ $company->name_kor }}

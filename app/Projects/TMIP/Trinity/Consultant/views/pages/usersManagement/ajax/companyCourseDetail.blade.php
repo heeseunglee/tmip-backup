@@ -4,7 +4,7 @@
             <header><h4 class="text-light"><strong>{{ $consultant->user->name_kor }}</strong> 컨설턴트 : <strong>{{ $company->name_kor }}</strong></h4></header>
         </div>
         <div class="box-body">
-            <table class="table table_user_management_index_consultant_course_detail">
+            <table class="table table_user_management_index_consultant_company_detail">
                 <thead>
                 <tr>
                     <th>담당 고객사</th>
@@ -25,7 +25,9 @@
                         @endforeach
                     </td>
                     <td>
-                        <a href="#" class="link_users_management_index_ajax_consultant_company">
+                        <a href="#" class="link_users_management_index_ajax_company_course">
+                            {{ Form::hidden($consultant->id, 'consultant_id') }}
+                            {{ Form::hidden($company->id, 'company_id') }}
                             <i class="flaticon-magnifier10"></i>
                         </a>
                     </td>
@@ -40,7 +42,7 @@
             <header><h4 class="text-light"><strong>{{ $consultant->user->name_kor }}</strong> 컨설턴트</h4></header>
         </div>
         <div class="box-body">
-            <table class="table table_user_management_index_consultant_course_detail">
+            <table class="table table_user_management_index_consultant_company_detail">
                 <thead>
                 <tr>
                     <th>담당 고객사</th>
@@ -65,7 +67,9 @@
                             @endforeach
                         </td>
                         <td>
-                            <a href="#" class="link_users_management_index_ajax_consultant_company">
+                            <a href="#" class="link_users_management_index_ajax_company_course">
+                                {{ Form::hidden($consultant->id, 'consultant_id') }}
+                                {{ Form::hidden($company->id, 'company_id') }}
                                 <i class="flaticon-magnifier10"></i>
                             </a>
                         </td>

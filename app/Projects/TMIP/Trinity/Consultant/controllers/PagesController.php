@@ -28,8 +28,14 @@ class PagesController extends \BaseController {
 
 	public function usersManagementIndex() {
 		$consultants = \Consultant::all();
+		$hrs = \Hr::all();
+		$instructors = \Instructor::all();
+		$students = \Student::all();
 		return \View::make('TrinityConsultantView::pages.usersManagement.index')
-			->with('consultants', $consultants);
+			->with('consultants', $consultants)
+			->with('hrs', $hrs)
+			->with('instructors', $instructors)
+			->with('students', $students);
 	}
 
 }
