@@ -2,12 +2,714 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="027b7a28-f9bb-4d1b-bb84-2f7f06575764" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/database/migrations/2015_01_14_161018_add_is_first_login_to_students_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/PostController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/consultants.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/hrs.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/ajax/hrsListFromCompany.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/instructors.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/students.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/studentsRegistrationResult.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/usersRegistration.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/userManagement/usersRegistration.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow513.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow516.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow517.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow518.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow519.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow520.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow521.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow522.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow523.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow524.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow525.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow526.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow527.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow528.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow529.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow530.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow531.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow532.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow533.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow534.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow535.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow536.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow537.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow538.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow539.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow540.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow541.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow542.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow543.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow544.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow545.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow546.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow547.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow548.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrow549.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrows68.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/arrows69.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/black210.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/business56.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/business57.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/business59.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/business64.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/business65.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/businessman64.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/different.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/double50.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/double51.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/ecological1.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/ecological2.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder100.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder101.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder102.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder103.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder104.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder105.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder106.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder107.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder108.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder109.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder110.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder111.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder112.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder88.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder89.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder90.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder91.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder92.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder93.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder94.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder95.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder96.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder97.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder98.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/folder99.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/gear10.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/gear11.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/gear12.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/gear13.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/gear7.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/gear8.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/gear9.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/gears2.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/glass15.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/glass16.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/key53.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/key54.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/key55.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/key56.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/key58.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/key59.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/key60.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/key61.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/key62.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/key63.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/ley.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/light59.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/light60.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/light61.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/light62.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/light63.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/lightbulb10.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/lightbulb11.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/lightbulb12.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/lightbulb13.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/lightbulb14.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/lightbulb15.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/lightbulb8.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/lightbulb9.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/link17.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/link18.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/link21.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/link23.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/lock27.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/lock28.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/magnifier10.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/magnifier11.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/magnifier12.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/magnifier13.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/magnifier14.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/magnifier8.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/magnifier9.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/magnifying40.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/padlock23.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/padlock24.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/padlock25.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/padlock26.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/padlock27.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/padlock28.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/paper80.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/paper85.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/power31.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/power32.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/power33.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/power34.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/power35.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/power36.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/power37.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/power38.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/power39.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/power40.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/power41.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/power42.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/power43.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/power44.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/power45.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/power46.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/redo10.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/redo11.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/redo12.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/redo6.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/redo7.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/redo8.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/redo9.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/undo10.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/undo11.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/undo12.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/undo13.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/undo14.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/undo8.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/undo9.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/unlock5.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/unlocked12.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/user85.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/user88.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/user89.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/user90.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/user91.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/user92.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/eps/vintage50.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/flaticon.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/flaticon.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/flaticon.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/flaticon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/flaticon.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/flaticon.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow513.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow516.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow517.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow518.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow519.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow520.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow521.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow522.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow523.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow524.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow525.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow526.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow527.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow528.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow529.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow530.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow531.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow532.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow533.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow534.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow535.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow536.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow537.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow538.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow539.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow540.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow541.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow542.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow543.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow544.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow545.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow546.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow547.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow548.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrow549.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrows68.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/arrows69.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/black210.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/business56.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/business57.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/business59.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/business64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/business65.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/businessman64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/different.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/double50.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/double51.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/ecological1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/ecological2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder101.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder102.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder103.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder104.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder105.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder106.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder107.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder108.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder109.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder110.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder111.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder112.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder88.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder89.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder90.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder91.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder92.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder93.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder94.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder95.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder96.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder97.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder98.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/folder99.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/gear10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/gear11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/gear12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/gear13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/gear7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/gear8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/gear9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/gears2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/glass15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/glass16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/key53.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/key54.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/key55.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/key56.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/key58.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/key59.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/key60.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/key61.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/key62.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/key63.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/ley.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/light59.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/light60.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/light61.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/light62.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/light63.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/lightbulb10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/lightbulb11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/lightbulb12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/lightbulb13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/lightbulb14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/lightbulb15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/lightbulb8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/lightbulb9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/link17.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/link18.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/link21.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/link23.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/lock27.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/lock28.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/magnifier10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/magnifier11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/magnifier12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/magnifier13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/magnifier14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/magnifier8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/magnifier9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/magnifying40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/padlock23.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/padlock24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/padlock25.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/padlock26.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/padlock27.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/padlock28.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/paper80.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/paper85.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/power31.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/power32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/power33.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/power34.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/power35.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/power36.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/power37.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/power38.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/power39.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/power40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/power41.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/power42.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/power43.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/power44.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/power45.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/power46.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/redo10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/redo11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/redo12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/redo6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/redo7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/redo8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/redo9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/undo10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/undo11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/undo12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/undo13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/undo14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/undo8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/undo9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/unlock5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/unlocked12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/user85.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/user88.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/user89.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/user90.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/user91.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/user92.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/png/vintage50.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow513.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow516.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow517.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow518.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow519.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow520.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow521.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow522.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow523.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow524.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow525.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow526.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow527.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow528.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow529.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow530.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow531.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow532.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow533.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow534.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow535.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow536.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow537.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow538.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow539.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow540.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow541.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow542.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow543.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow544.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow545.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow546.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow547.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow548.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrow549.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrows68.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/arrows69.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/black210.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/business56.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/business57.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/business59.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/business64.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/business65.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/businessman64.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/different.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/double50.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/double51.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/ecological1.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/ecological2.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder100.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder101.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder102.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder103.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder104.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder105.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder106.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder107.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder108.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder109.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder110.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder111.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder112.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder88.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder89.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder90.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder91.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder92.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder93.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder94.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder95.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder96.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder97.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder98.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/folder99.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/gear10.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/gear11.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/gear12.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/gear13.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/gear7.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/gear8.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/gear9.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/gears2.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/glass15.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/glass16.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/key53.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/key54.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/key55.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/key56.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/key58.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/key59.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/key60.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/key61.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/key62.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/key63.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/ley.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/light59.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/light60.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/light61.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/light62.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/light63.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/lightbulb10.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/lightbulb11.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/lightbulb12.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/lightbulb13.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/lightbulb14.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/lightbulb15.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/lightbulb8.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/lightbulb9.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/link17.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/link18.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/link21.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/link23.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/lock27.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/lock28.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/magnifier10.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/magnifier11.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/magnifier12.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/magnifier13.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/magnifier14.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/magnifier8.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/magnifier9.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/magnifying40.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/padlock23.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/padlock24.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/padlock25.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/padlock26.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/padlock27.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/padlock28.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/paper80.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/paper85.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/power31.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/power32.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/power33.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/power34.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/power35.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/power36.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/power37.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/power38.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/power39.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/power40.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/power41.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/power42.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/power43.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/power44.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/power45.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/power46.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/redo10.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/redo11.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/redo12.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/redo6.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/redo7.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/redo8.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/redo9.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/undo10.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/undo11.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/undo12.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/undo13.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/undo14.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/undo8.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/undo9.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/unlock5.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/unlocked12.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/user85.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/user88.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/user89.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/user90.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/user91.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/user92.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/psd/vintage50.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow513.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow516.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow517.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow518.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow519.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow520.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow521.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow522.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow523.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow524.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow525.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow526.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow527.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow528.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow529.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow530.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow531.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow532.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow533.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow534.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow535.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow536.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow537.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow538.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow539.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow540.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow541.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow542.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow543.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow544.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow545.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow546.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow547.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow548.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrow549.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrows68.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/arrows69.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/black210.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/business56.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/business57.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/business59.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/business64.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/business65.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/businessman64.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/different.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/double50.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/double51.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/ecological1.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/ecological2.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder100.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder101.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder102.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder103.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder104.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder105.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder106.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder107.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder108.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder109.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder110.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder111.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder112.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder88.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder89.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder90.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder91.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder92.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder93.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder94.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder95.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder96.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder97.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder98.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/folder99.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/gear10.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/gear11.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/gear12.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/gear13.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/gear7.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/gear8.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/gear9.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/gears2.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/glass15.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/glass16.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/key53.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/key54.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/key55.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/key56.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/key58.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/key59.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/key60.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/key61.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/key62.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/key63.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/ley.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/light59.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/light60.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/light61.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/light62.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/light63.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/lightbulb10.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/lightbulb11.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/lightbulb12.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/lightbulb13.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/lightbulb14.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/lightbulb15.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/lightbulb8.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/lightbulb9.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/link17.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/link18.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/link21.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/link23.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/lock27.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/lock28.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/magnifier10.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/magnifier11.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/magnifier12.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/magnifier13.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/magnifier14.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/magnifier8.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/magnifier9.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/magnifying40.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/padlock23.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/padlock24.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/padlock25.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/padlock26.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/padlock27.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/padlock28.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/paper80.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/paper85.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/power31.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/power32.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/power33.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/power34.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/power35.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/power36.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/power37.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/power38.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/power39.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/power40.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/power41.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/power42.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/power43.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/power44.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/power45.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/power46.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/redo10.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/redo11.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/redo12.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/redo6.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/redo7.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/redo8.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/redo9.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/undo10.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/undo11.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/undo12.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/undo13.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/undo14.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/undo8.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/undo9.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/unlock5.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/unlocked12.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/user85.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/user88.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/user89.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/user90.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/user91.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/user92.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/simpleicon-interface/svg/vintage50.svg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/PagesController.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/PagesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Student.php" afterPath="$PROJECT_DIR$/app/models/Student.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/ajax/companyCourseDetail.blade.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/ajax/companyCourseDetail.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/ajax/companyList.blade.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/ajax/companyList.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/index.blade.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/userManagement/index.js" afterPath="$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/userManagement/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/routes/routes.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/routes/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/layouts/sidebar.blade.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/layouts/sidebar.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/layouts/sidebar.blade.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/layouts/sidebar.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tmip-dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +734,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/index.blade.php">
+      <file leaf-file-name="sidebar.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/layouts/sidebar.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6235662" vertical-offset="2442" max-vertical-offset="4883">
-              <caret line="160" column="60" selection-start-line="160" selection-start-column="60" selection-end-line="160" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.076117985" vertical-offset="0" max-vertical-offset="1051">
+              <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -50,16 +752,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/database/seeds/BanksTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/database/seeds/CourseTypesTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/models/Course_type.php" />
-        <option value="$PROJECT_DIR$/app/models/User.php" />
-        <option value="$PROJECT_DIR$/app/database/seeds/StudentsTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/app/models/Bank.php" />
-        <option value="$PROJECT_DIR$/app/database/seeds/InstructorsTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/routes/routes.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/controllers/SessionController.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/before_login/login.blade.php" />
@@ -75,9 +767,7 @@
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/CoursesController.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/resources/less/shared/variables.less" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/resources/less/shared/themes/theme-default.less" />
-        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/layouts/sidebar.blade.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/resources/less/boostbox/sidebar.less" />
-        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/layouts/sidebar.blade.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2015_01_12_140230_create_inst_specialized_on_c_types_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2015_01_12_140553_create_courses_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2015_01_12_141339_create_hrs_table.php" />
@@ -92,15 +782,27 @@
         <option value="$PROJECT_DIR$/app/models/Consultant.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/AjaxsController.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/ajax/companyClassDetail.blade.php" />
-        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/routes/routes.php" />
-        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/AjaxController.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/ajax/companyCourseDetail.blade.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/ajax/companyList.blade.php" />
-        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/PagesController.php" />
         <option value="$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/userManagement/index.js" />
         <option value="$PROJECT_DIR$/app/models/Student.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/instructors.blade.php" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/ajax/hrsListFromCompany.blade.php" />
+        <option value="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.css" />
+        <option value="$PROJECT_DIR$/app/database/migrations/2015_01_14_161721_create_hrs_manage_students_table.php" />
+        <option value="$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/userManagement/userRegistration.js" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/AjaxController.php" />
+        <option value="$PROJECT_DIR$/app/database/migrations/2015_01_14_161018_add_is_first_login_to_students_table.php" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/PagesController.php" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/routes/routes.php" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/layouts/sidebar.blade.php" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/userRegistration.blade.php" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/PostController.php" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/studentsRegistrationResult.blade.php" />
+        <option value="$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/userManagement/usersRegistration.js" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/layouts/sidebar.blade.php" />
       </list>
     </option>
   </component>
@@ -109,10 +811,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
-    <option name="width" value="1928" />
-    <option name="height" value="1036" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -391,6 +1091,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TMIP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trinity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theme-default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flaticons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmip-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmip-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -442,36 +1176,6 @@
               <option name="myItemId" value="Student" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -506,68 +1210,8 @@
               <option name="myItemId" value="Instructor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Instructor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hr" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -730,6 +1374,10 @@
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coursesManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -906,48 +1554,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="before_login" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1097,32 +1703,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1159,6 +1739,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmip-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmip-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1174,15 +1776,15 @@
     <property name="options.lastSelected" value="preferences.lookFeel" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="FullScreen" value="false" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement" />
+      <recent name="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers" />
       <recent name="C:\Users\Heeseung\Projects\tmip-dev\app\Projects\TMIP\Trinity\Consultant\controllers" />
       <recent name="C:\Users\Heeseung\Projects\tmip-dev\app\Projects\TMIP\Trinity\Consultant\views\layouts" />
       <recent name="C:\Users\Heeseung\Projects\tmip-dev\app\Projects\TMIP\Trinity\Consultant\views\pages\coursesManagement" />
-      <recent name="C:\Users\Heeseung\Projects\tmip-dev\app\Projects\TMIP\Trinity\Consultant\controllers\classManagement" />
-      <recent name="C:\Users\Heeseung\Projects\tmip-dev\app\Projects\TMIP\Trinity\Consultant\controllers\userManagement" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Heeseung\Projects\tmip-dev\public\TMIP\Trinity\img" />
@@ -1205,15 +1807,15 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -1232,17 +1834,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1928" height="1036" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.3299595" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="587" y="574" width="1056" height="326" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.3299595" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="637" y="562" width="1056" height="326" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1251,9 +1853,9 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1278,97 +1880,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Instructor/routes/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09906152" vertical-offset="0" max-vertical-offset="959">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Hr/routes/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09906152" vertical-offset="0" max-vertical-offset="959">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2015_01_12_135436_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61418146" vertical-offset="513" max-vertical-offset="1691">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2015_01_12_135519_create_companies_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63295096" vertical-offset="58" max-vertical-offset="1045">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2015_01_12_135630_create_students_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="987">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2015_01_12_135713_create_banks_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="987">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2015_01_12_135800_create_instructors_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1311">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2015_01_12_135848_create_course_types_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="987">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2015_01_12_140638_create_running_courses_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.29718456" vertical-offset="285" max-vertical-offset="1463">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2015_01_12_140835_create_c_classed_as_c_types_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="987">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2015_01_12_141042_create_lvl_test_beginner_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="987">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2015_01_12_141623_create_pre_courses_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="987">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2015_01_12_142041_create_course_members_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4160584" vertical-offset="0" max-vertical-offset="959">
-          <caret line="22" column="71" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2015_01_12_142122_create_pre_course_members_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35662147" vertical-offset="0" max-vertical-offset="959">
@@ -1527,7 +2038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3368092" vertical-offset="0" max-vertical-offset="959">
           <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1535,28 +2045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10165">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/routes/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88112617" vertical-offset="48" max-vertical-offset="1007">
-          <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/AjaxController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4358707" vertical-offset="0" max-vertical-offset="959">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/storage/views/f65be70f8d50e7843c7c82b4b2379365">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11550152" vertical-offset="0" max-vertical-offset="1425">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1575,42 +2063,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/layouts/sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3368092" vertical-offset="0" max-vertical-offset="969">
-          <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/ajax/companyList.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19812304" vertical-offset="0" max-vertical-offset="959">
           <caret line="10" column="80" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="80" />
-          <folding>
-            <marker date="1421216199283" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421216199283" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421216199283" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421216199283" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421216199283" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/PagesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61418146" vertical-offset="0" max-vertical-offset="959">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding>
-            <marker date="1421221462855" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421221462855" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421221462855" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421221462855" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421221462855" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421221462855" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421221462855" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421221462855" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421221462855" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1618,45 +2074,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5735141" vertical-offset="666" max-vertical-offset="1653">
           <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="66" selection-end-column="39" />
-          <folding>
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421215916843" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Consultant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5349322" vertical-offset="0" max-vertical-offset="959">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding>
-            <marker date="1421150686817" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421150686817" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421150686817" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421150686817" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421150686817" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421150686817" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1664,13 +2082,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4358707" vertical-offset="0" max-vertical-offset="959">
           <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-          <folding>
-            <marker date="1421149352130" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421149352130" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421149352130" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421149352130" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421149352130" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1678,12 +2090,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27737227" vertical-offset="0" max-vertical-offset="959">
           <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-          <folding>
-            <marker date="1421222533895" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421222533895" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421222533895" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421222533895" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1691,18 +2098,420 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07700101" vertical-offset="0" max-vertical-offset="987">
           <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-          <folding>
-            <marker date="1421221674012" expanded="false" signature="-1:-1" placeholder="//..." />
-            <marker date="1421221674012" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421221674012" expanded="true" signature="-1:-1" placeholder="{&quot;sPaginationType&quot;: &quot;full_numbers&quot;...}" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/hrs.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1051">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/students.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/consultants.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6235662" vertical-offset="2442" max-vertical-offset="4883">
-          <caret line="160" column="60" selection-start-line="160" selection-start-column="60" selection-end-line="160" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.0865842" vertical-offset="229" max-vertical-offset="3380">
+          <caret line="16" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="163" selection-end-column="11" />
+          <folding>
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421236845000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/ajax/hrsListFromCompany.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1051">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25925925" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <marker date="1421250235000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421250235000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421250235000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421250235000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421250235000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421250235000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/AjaxController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7421503" vertical-offset="0" max-vertical-offset="1051">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <marker date="1421252535000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421252535000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421252535000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421252535000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421252535000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421252535000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421252535000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421252535000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421252535000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421252535000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421252535000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421252535000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2015_01_14_161018_add_is_first_login_to_students_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28544244" vertical-offset="0" max-vertical-offset="1051">
+          <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
+          <folding>
+            <marker date="1421252661000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421252661000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421252661000" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
+            <marker date="1421252661000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421252661000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421252661000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421252661000" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
+            <marker date="1421252661000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421252661000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421252661000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7906755" vertical-offset="309" max-vertical-offset="1360">
+          <caret line="57" column="78" selection-start-line="57" selection-start-column="78" selection-end-line="57" selection-end-column="78" />
+          <folding>
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/routes/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6574691" vertical-offset="389" max-vertical-offset="1440">
+          <caret line="59" column="67" selection-start-line="59" selection-start-column="67" selection-end-line="59" selection-end-column="67" />
+          <folding>
+            <marker date="1421253871000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder=" 주소 프리픽싱 ..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder=" 클래스 관리 페이지 시작 ..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder=" ajax 처리를 위한 라우팅 추가 ..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/layouts/sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35299715" vertical-offset="69" max-vertical-offset="1120">
+          <caret line="22" column="146" selection-start-line="22" selection-start-column="146" selection-end-line="22" selection-end-column="146" />
+          <folding>
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/storage/views/3cefd8932f44efa65777240c33c31726">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7222222" vertical-offset="2100" max-vertical-offset="3180">
+          <caret line="12" column="76" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Consultant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30447194" vertical-offset="0" max-vertical-offset="1051">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <marker date="1421234477000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421234477000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421234477000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421234477000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421234477000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421234477000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/instructors.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/usersRegistration.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.076117985" vertical-offset="980" max-vertical-offset="2720">
+          <caret line="45" column="109" selection-start-line="45" selection-start-column="109" selection-end-line="45" selection-end-column="109" />
+          <folding>
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421253871000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5708849" vertical-offset="0" max-vertical-offset="1051">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="28" />
+          <folding>
+            <marker date="1421234478000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421234478000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421234478000" expanded="true" signature="-1:-1" placeholder=" The database table used by the model. ..." />
+            <marker date="1421234478000" expanded="true" signature="-1:-1" placeholder=" The attributes excluded from the model's JSON form. ..." />
+            <marker date="1421234478000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421234478000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7231208" vertical-offset="0" max-vertical-offset="1051">
+          <caret line="38" column="84" selection-start-line="38" selection-start-column="84" selection-end-line="38" selection-end-column="84" />
+          <folding>
+            <marker date="1421258063000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258063000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258063000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258063000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258063000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258063000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258063000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258063000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258063000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258063000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258063000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/studentsRegistrationResult.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13320647" vertical-offset="0" max-vertical-offset="1240">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/userManagement/usersRegistration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8333333" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
+          <folding>
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="/** Created by finallee on 15. 1. 14.. ...*/" />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421258308000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/layouts/sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.076117985" vertical-offset="0" max-vertical-offset="1051">
+          <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
           <folding />
         </state>
       </provider>

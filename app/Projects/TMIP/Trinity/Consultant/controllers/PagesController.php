@@ -38,4 +38,25 @@ class PagesController extends \BaseController {
 			->with('students', $students);
 	}
 
+	public function usersManagementHrs() {
+		return \View::make('TrinityConsultantView::pages.usersManagement.hrs');
+	}
+
+	public function usersManagementInstructors() {
+		return \View::make('TrinityConsultantView::pages.usersManagement.instructors');
+	}
+
+	public function usersManagementStudents() {
+		return \View::make('TrinityConsultantView::pages.usersManagement.students');
+	}
+
+	public function usersManagementConsultants() {
+		return \View::make('TrinityConsultantView::pages.usersManagement.consultants');
+	}
+
+	public function usersManagementUsersRegistration() {
+		return \View::make('TrinityConsultantView::pages.usersManagement.usersRegistration')
+			->with('companies', \Company::all());
+	}
+
 }

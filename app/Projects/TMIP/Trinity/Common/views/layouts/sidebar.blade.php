@@ -2,7 +2,7 @@
     <div class="sidebar-back"></div>
     <div class="sidebar-content">
         <div class="nav-brand">
-            <a class="main-brand" href="../../html/dashboards/dashboard.html">
+            <a class="main-brand" href="{{ URL::route('Trinity.index') }}">
                 {{ HTML::image('TMIP/Trinity/img/logos/logo_sidebar_top.png') }}
             </a>
         </div>

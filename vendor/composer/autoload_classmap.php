@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddIsFirstLoginToStudentsTable' => $baseDir . '/app/database/migrations/2015_01_14_161018_add_is_first_login_to_students_table.php',
     'AddPreCourseIdToCoursesTable' => $baseDir . '/app/database/migrations/2015_01_13_013956_add_pre_course_id_to_courses_table.php',
     'Admin' => $baseDir . '/app/models/Admin.php',
     'Bank' => $baseDir . '/app/models/Bank.php',
@@ -47,6 +48,7 @@ return array(
     'CreateCourseMembersTable' => $baseDir . '/app/database/migrations/2015_01_12_142041_create_course_members_table.php',
     'CreateCourseTypesTable' => $baseDir . '/app/database/migrations/2015_01_12_135848_create_course_types_table.php',
     'CreateCoursesTable' => $baseDir . '/app/database/migrations/2015_01_12_140553_create_courses_table.php',
+    'CreateHrsManageStudentsTable' => $baseDir . '/app/database/migrations/2015_01_14_161721_create_hrs_manage_students_table.php',
     'CreateHrsTable' => $baseDir . '/app/database/migrations/2015_01_12_141339_create_hrs_table.php',
     'CreateInstSpecializedOnCTypesTable' => $baseDir . '/app/database/migrations/2015_01_12_140230_create_inst_specialized_on_c_types_table.php',
     'CreateInstructorsTable' => $baseDir . '/app/database/migrations/2015_01_12_135800_create_instructors_table.php',
@@ -1623,8 +1625,9 @@ return array(
     'Trinity\\Common\\config\\TrinityServiceProvider' => $baseDir . '/app/Projects/TMIP/Trinity/Common/config/TrinityServiceProvider.php',
     'Trinity\\Common\\controllers\\PagesController' => $baseDir . '/app/Projects/TMIP/Trinity/Common/controllers/PagesController.php',
     'Trinity\\Common\\controllers\\SessionController' => $baseDir . '/app/Projects/TMIP/Trinity/Common/controllers/SessionController.php',
-    'Trinity\\Consultants\\controllers\\AjaxController' => $baseDir . '/app/Projects/TMIP/Trinity/Consultant/controllers/AjaxController.php',
-    'Trinity\\Consultants\\controllers\\PagesController' => $baseDir . '/app/Projects/TMIP/Trinity/Consultant/controllers/PagesController.php',
+    'Trinity\\Consultant\\controllers\\AjaxController' => $baseDir . '/app/Projects/TMIP/Trinity/Consultant/controllers/AjaxController.php',
+    'Trinity\\Consultant\\controllers\\PagesController' => $baseDir . '/app/Projects/TMIP/Trinity/Consultant/controllers/PagesController.php',
+    'Trinity\\Consultant\\controllers\\PostController' => $baseDir . '/app/Projects/TMIP/Trinity/Consultant/controllers/PostController.php',
     'User' => $baseDir . '/app/models/User.php',
     'Way\\Generators\\Commands\\ControllerGeneratorCommand' => $vendorDir . '/way/generators/src/Way/Generators/Commands/ControllerGeneratorCommand.php',
     'Way\\Generators\\Commands\\GeneratorCommand' => $vendorDir . '/way/generators/src/Way/Generators/Commands/GeneratorCommand.php',

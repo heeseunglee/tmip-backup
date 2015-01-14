@@ -41,6 +41,25 @@ namespace Trinity\Consultant\routes;
         \Route::get('/index', array('as' => 'Trinity.Consultant.usersManagement.index',
             'uses' => '\Trinity\Consultant\controllers\PagesController@usersManagementIndex'));
 
+        \Route::get('/hrs', array('as' => 'Trinity.Consultant.usersManagement.hrs',
+            'uses' => '\Trinity\Consultant\controllers\PagesController@usersManagementHrs'));
+
+        \Route::get('/consultants', array('as' => 'Trinity.Consultant.usersManagement.consultants',
+            'uses' => '\Trinity\Consultant\controllers\PagesController@usersManagementConsultants'));
+
+        \Route::get('/students', array('as' => 'Trinity.Consultant.usersManagement.students',
+            'uses' => '\Trinity\Consultant\controllers\PagesController@usersManagementStudents'));
+
+        \Route::get('/instructors', array('as' => 'Trinity.Consultant.usersManagement.instructors',
+            'uses' => '\Trinity\Consultant\controllers\PagesController@usersManagementInstructors'));
+
+        \Route::get('/usersRegistration', array('as' => 'Trinity.Consultant.usersManagement.usersRegistration',
+            'uses' => '\Trinity\Consultant\controllers\PagesController@usersManagementUsersRegistration'));
+
+        \Route::post('/usersRegistration/signUpStudentsManually',
+            array('as' => 'Trinity.Consultant.usersManagement.usersRegistration.signUpStudentsManually',
+            'uses' => '\Trinity\Consultant\controllers\PostController@signUpStudentsManually'));
+
         /**
          * ajax 처리를 위한 라우팅 추가
          */
