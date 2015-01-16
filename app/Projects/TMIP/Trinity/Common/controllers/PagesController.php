@@ -18,7 +18,7 @@ class PagesController extends \BaseController {
 	*/
 
 	public function showLogin() {
-		return \View::make('TrinityCommonView::pages.before_login.login');
+		return \View::make('TrinityCommonView::pages.beforeLogin.login');
 	}
 
 	/**
@@ -29,6 +29,11 @@ class PagesController extends \BaseController {
 		$current_user = \Auth::user();
 		$user_role = $current_user->userable_type;
 		return \Redirect::route('Trinity.'.$user_role.'.index');
+	}
+
+	public function jobPoolSignUp() {
+		return \View::make('TrinityCommonView::pages.jobPool.signUp')
+			->with('prefer_area_groups', \PreferAreaGroup::all());
 	}
 
 }

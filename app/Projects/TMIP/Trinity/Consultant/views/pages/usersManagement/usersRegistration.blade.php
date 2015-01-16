@@ -113,12 +113,49 @@
                                     {{ Form::close() }}
                                     </div>
                                     <div class="tab-pane" id="instructor_sign_up">
-                                        {{ Form::open() }}
-                                        {{ Form::close() }}
+                                    {{ Form::open(array('class' => 'form-horizontal form-validate',
+                                                        'role' => 'form')) }}
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <button id="add_instructor_row" type="button" class="btn btn-success"><i class="fa flaticon-plus24"></i></button>
+                                                <button id="remove_instructor_row" type="button" class="btn btn-danger"><i class="fa flaticon-minus17"></i></button>
+                                                <button type="submit" class="btn btn-support5"><i class="fa flaticon-send12"></i></button>
+                                            </div>
+                                        </div>
+                                        {{ Form::hidden('number_of_instructors', 1, array('id' => 'number_of_instructors')) }}
+                                        <br/>
+                                        <div id="instructor_row_1" class="row">
+                                            <div class="col-lg-12">
+                                                <div class="box">
+                                                    <div class="box-head box-head-xs style-support3">
+                                                        <header><h5 class="text-light">교수진 <strong>#1</strong></h5></header>
+                                                    </div>
+                                                    <div class="box-body">
+                                                        <div class="form-group">
+                                                            <div class="col-lg-3 col-sm-2">
+                                                                <label for="instructor_name_1" class="control-label">이름</label>
+                                                            </div>
+                                                            <div class="col-lg-9 col-sm-10">
+                                                                <input type="text" name="instructor_name_1" id="instructor_name_1" class="form-control" placeholder="이름" required="" data-rule-minlength="2">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-lg-3 col-sm-2">
+                                                                <label for="instructor_email_1" class="control-label">이메일</label>
+                                                            </div>
+                                                            <div class="col-lg-9 col-sm-10">
+                                                                <input type="email" name="instructor_email_1" id="instructor_email_1" class="form-control" placeholder="이메일" required="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {{ Form::close() }}
                                     </div>
                                     <div class="tab-pane" id="hr_sign_up">
-                                        {{ Form::open() }}
-                                        {{ Form::close() }}
+                                    {{ Form::open() }}
+                                    {{ Form::close() }}
                                     </div>
                                 </div>
                             </div>

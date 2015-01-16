@@ -1,6 +1,6 @@
 <?php
 
-class Course_type extends \Eloquent {
+class CourseType extends \Eloquent {
 	protected $fillable = [ 'name',
 		'has_sub_types',
 		'can_select_multiple',

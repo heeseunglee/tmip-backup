@@ -1,4 +1,4 @@
-@extends('TrinityCommonView::layouts.before_login.master')
+@extends('TrinityCommonView::layouts.beforeLogin.master')
 
 @section('additional_js_includes')
     {{ HTML::script('TMIP/Trinity/js/libs/jquery-validation/dist/jquery.validate.min.js') }}

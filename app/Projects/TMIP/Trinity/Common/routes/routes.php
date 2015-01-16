@@ -20,3 +20,6 @@ namespace Trinity\Common\routes;
 
 \Route::post('attemptLogout', array('as' => 'Trinity.session.attemptLogout',
     'uses' => '\Trinity\Common\controllers\SessionController@attemptLogout'));
+
+\Route::get('/jobPool/signUp', array('as' => 'Trinity.jobPool.signUp',
+    'uses' => '\Trinity\Common\controllers\PagesController@jobPoolSignUp'));
