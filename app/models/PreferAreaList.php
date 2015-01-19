@@ -11,4 +11,11 @@ class PreferAreaList extends \Eloquent {
 	public function group() {
 		return $this->belonsTo('PreferAreaGroup', 'prefer_area_group_id');
 	}
+
+	public function signUpForms() {
+		return $this->belongsToMany('JobPoolSignUpForm',
+									'jobpool_prefered_areas',
+									'prefer_area_list_id',
+									'jobpool_signup_form_id');
+	}
 }

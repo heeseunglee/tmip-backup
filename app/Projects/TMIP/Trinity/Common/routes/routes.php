@@ -23,3 +23,9 @@ namespace Trinity\Common\routes;
 
 \Route::get('/jobPool/signUp', array('as' => 'Trinity.jobPool.signUp',
     'uses' => '\Trinity\Common\controllers\PagesController@jobPoolSignUp'));
+
+\Route::post('/jobPool/signUp', array('as' => 'Trinity.jobPool.signUp.create',
+    'uses' => '\Trinity\Common\controllers\PagesController@jobPoolSignUpCreate'));
+
+\Route::get('/jobPool/signUpComplete/{jobpool_signup_form_id}', array('as' => 'Trinity.jobPool.signUpComplete',
+    'uses' => '\Trinity\Common\controllers\PagesController@jobPoolSignUpComplete'));

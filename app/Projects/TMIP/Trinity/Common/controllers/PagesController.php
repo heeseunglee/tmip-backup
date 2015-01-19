@@ -36,4 +36,90 @@ class PagesController extends \BaseController {
 			->with('prefer_area_groups', \PreferAreaGroup::all());
 	}
 
+	public function jobPoolSignUpCreate()
+	{
+		if (!\Input::hasFile('profile_image')) {
+			return \Redirect::back()->withInput();
+		}
+
+		$rules = array(
+			'profile_image' => 'required|max:2000|mimes:jpg,jpeg,png,gif,bmp',
+		);
+
+		$validator = \Validator::make(\Input::all(), $rules);
+
+		if ($validator->fails()) {
+			return \Redirect::back()->withInput()->withErrors($validator);
+		}
+
+		$new_jobpool_signup_form = \JobPoolSignUpForm::create([
+			'name_kor' => \Input::get('name_kor'),
+			'name_eng' => \Input::get('name_eng'),
+			'name_chn' => \Input::get('name_chn'),
+			'email' => \Input::get('email'),
+			'phone_number' => \Input::get('phone_number'),
+			'date_of_birth' => \Input::get('date_of_birth'),
+			'gender' => \Input::get('gender')[0],
+			'visa_type' => \Input::get('visa_type')[0],
+			'postcode_1' => \Input::get('postcode_1'),
+			'postcode_2' => \Input::get('postcode_2'),
+			'address_1' => \Input::get('address_1'),
+			'address_2' => \Input::get('address_2'),
+			'academic_background' => \Input::get('academic_background'),
+			'name_of_last_school' => \Input::get('name_of_last_school'),
+			'major' => \Input::get('major'),
+			'available_time_morning_start' => \Input::get('available_time_morning_start'),
+			'available_time_morning_end' => \Input::get('available_time_morning_end'),
+			'available_time_afternoon_start' => \Input::get('available_time_afternoon_start'),
+			'available_time_afternoon_end' => \Input::get('available_time_afternoon_end'),
+			'available_time_night_start' => \Input::get('available_time_night_start'),
+			'available_time_night_end' => \Input::get('available_time_night_end'),
+			'study_aboard_background' => \Input::get('study_aboard_background'),
+			'career_years' => \Input::get('career_years'),
+			'resume' => \Input::get('resume'),
+		]);
+
+		$new_jobpool_signup_form_id = $new_jobpool_signup_form->id;
+
+		foreach(\Input::get('prefer_area_lists') as $area_id) {
+			$new_jobpool_signup_form->preferedAreas()->attach($area_id);
+		}
+
+		for ($i = 1; $i < 11; $i++) {
+			if(\Input::get('career_detail_'.$i.'_company_name') != "" ||
+				\Input::get('career_detail_'.$i.'_type') != "" ||
+				\Input::get('career_detail_'.$i.'_description') != "" ||
+				\Input::get('career_detail_'.$i.'_period') != "") {
+				\JobPoolCareerDetail::create([
+					'jobpool_signup_form_id' => $new_jobpool_signup_form_id,
+					'career_detail_company_name' => \Input::get('career_detail_'.$i.'_company_name'),
+					'career_detail_type' => \Input::get('career_detail_'.$i.'_type'),
+					'career_detail_description' => \Input::get('career_detail_'.$i.'_description'),
+					'career_detail_period' => \Input::get('career_detail_'.$i.'_period'),
+				]);
+			}
+		}
+
+		$file = \Input::file('profile_image');
+		$profile_image_path = app_path().'/Projects/TMIP/Trinity/Common/resources/jobPool/profileImages/'.$new_jobpool_signup_form_id;
+
+		if(!\File::exists($profile_image_path)) {
+			\File::makeDirectory($profile_image_path, 0775, true);
+		}
+
+		$fileName = time().'.'.$file->getClientOriginalExtension();
+
+		$file->move($profile_image_path, $fileName);
+
+		$new_jobpool_signup_form->profile_image = $fileName;
+		$new_jobpool_signup_form->save();
+
+		return \Redirect::route('Trinity.jobPool.signUpComplete', array('jobpool_signup_form_id' => $new_jobpool_signup_form_id));
+	}
+
+	public function jobPoolSignUpComplete($jobpool_signup_form_id) {
+		$jobpool_signup_form = \JobPoolSignUpForm::find($jobpool_signup_form_id);
+		return \View::make('TrinityCommonView::pages.jobPool.signUpComplete')
+			->with('jobpool_signup_form', $jobpool_signup_form);
+	}
 }

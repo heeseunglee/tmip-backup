@@ -124,6 +124,7 @@ return array(
 		'Trinity\Common\config\TrinityServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
 		'Laracasts\Flash\FlashServiceProvider',
+		'Intervention\Image\ImageServiceProvider',
 
 	),
 
@@ -192,6 +193,7 @@ return array(
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
 		'Flash' 			=> 'Laracasts\Flash\Flash',
+		'Image' => 'Intervention\Image\Facades\Image',
 
 	),
 

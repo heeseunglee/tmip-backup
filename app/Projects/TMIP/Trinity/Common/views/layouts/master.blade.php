@@ -28,11 +28,9 @@
 			@include('TrinityCommonView::layouts.navbar')
 		</header>
 		<div id="base">
-			@if(!strpos(\Request::url(), 'jobPool/signUp'))
 			<div id="sidebar">
 				@include('TrinityCommonView::layouts.sidebar')
 			</div>
-			@endif
 			<div id="content">
 				@yield('main_content')
 			</div>

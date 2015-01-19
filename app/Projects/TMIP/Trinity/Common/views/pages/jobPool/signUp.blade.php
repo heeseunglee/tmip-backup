@@ -1,4 +1,4 @@
-@extends('TrinityCommonView::layouts.master')
+@extends('TrinityCommonView::layouts.jobPool.master')
 
 @section('additional_js_includes')
     {{ HTML::script('TMIP/Trinity/js/libs/jquery-validation/dist/jquery.validate.min.js') }}
@@ -10,6 +10,7 @@
     {{ HTML::script('TMIP/Trinity/js/libs/wysihtml5/wysihtml5-0.4.0pre.min.js') }}
     {{ HTML::script('TMIP/Trinity/js/core/jobPooling/signUp.js') }}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.4.13/jquery.timepicker.min.js"></script>
+    {{ HTML::script('TMIP/Trinity/js/libs/inputmask/jquery.inputmask.bundle.min.js') }}
 @endsection
 
 @section('additional_css_includes')
@@ -37,7 +38,8 @@
                         </div>
                         {{ Form::open(array('class' => 'form-horizontal form-bordered form-validate',
                         'id' => 'job_pooling_sign_up_form',
-                        'files' => true)) }}
+                        'files' => true,
+                        'action' => 'Trinity.jobPool.signUp.create')) }}
                         <div class="box-body text-center">
                             <div class="form-group">
                                 <div class="col-lg-4 col-sm-4">
@@ -84,7 +86,7 @@
                                     <label for="date_of_birth" class="control-label">생년월일</label>
                                 </div>
                                 <div class="col-lg-8 col-sm-8">
-                                    <input type="text" name="date_of_birth" id="date_of_birth" class="form-control" placeholder="생년월일" required="">
+                                    <input type="text" name="date_of_birth" id="date_of_birth" class="form-control" placeholder="생년월일 예) 1988-01-01" required="" data-inputmask="'mask': 'y-m-d'">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -134,10 +136,10 @@
                                     <label for="postcodify_postcode6" class="control-label">우편번호</label>
                                 </div>
                                 <div class="col-lg-1 col-sm-1">
-                                    <input disabled="disabled" type="text" name="postcode_1" id="postcode_1" class="postcodify_postcode6_1 form-control" value="" required="">
+                                    <input type="text" name="postcode_1" id="postcode_1" class="postcodify_postcode6_1 form-control" value="" required="">
                                 </div>
                                 <div class="col-lg-1 col-sm-1">
-                                    <input disabled="disabled" type="text" name="postcode_2" id="postcode_2" class="postcodify_postcode6_2 form-control" value="" required="">
+                                    <input type="text" name="postcode_2" id="postcode_2" class="postcodify_postcode6_2 form-control" value="" required="">
                                 </div>
                                 <div class="col-lg-1 col-sm-1">
                                     <button type="button" id="postcodify_search_button" class="btn btn-support3">검색</button>
@@ -149,7 +151,7 @@
                                     <label for="address_1" class="control-label">도로명 주소</label>
                                 </div>
                                 <div class="col-lg-8 col-sm-8">
-                                    <input disabled="disabled" type="text" name="address_1" id="address_1" class="postcodify_address form-control" value="" required=""/>
+                                    <input type="text" name="address_1" id="address_1" class="postcodify_address form-control" value="" required=""/>
                                 </div>
                             </div>
 
@@ -196,25 +198,6 @@
                                 </div>
                                 <div class="col-lg-8 col-sm-8">
                                     <input type="text" name="major" id="major" class="form-control" placeholder="상세히 기술해 주세요" value="" required=""/>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="col-lg-4 col-sm-4">
-                                    <label for="academic_background" class="control-label">학력</label>
-                                </div>
-                                <div class="col-lg-8 col-sm-8">
-                                    <select name="academic_background" id="academic_background" class="form-control" required="">
-                                        <option value="">선택하세요</option>
-                                        <option value="고졸">고졸</option>
-                                        <option value="전문대졸">전문대졸</option>
-                                        <option value="대학 재학">대학 재학</option>
-                                        <option value="대졸">대졸</option>
-                                        <option value="대학 재학">해외대학 재학</option>
-                                        <option value="대졸">해외대졸</option>
-                                        <option value="대학원 재학">대학원 재학</option>
-                                        <option value="대학원졸">대학원졸</option>
-                                    </select>
                                 </div>
                             </div>
 
@@ -396,10 +379,10 @@
                             <div class="form-group">
                                 {{ Form::hidden('number_of_career_details', 1) }}
                                 <div class="col-lg-4 col-sm-4">
-                                    <label for="prefer_area_lists" class="control-label">선호 지역</label>
+                                    <label for="prefer_area_lists[]" class="control-label">선호 지역</label>
                                 </div>
                                 <div class="col-lg-8 col-sm-8">
-                                    <select class="form-control select2-list" data-placeholder="선호지역 선택" name="prefer_area_lists" id="prefer_area_lists" multiple>
+                                    <select class="form-control select2-list" data-placeholder="선호지역 선택" name="prefer_area_lists[]" id="prefer_area_lists" multiple>
                                         @foreach($prefer_area_groups as $group)
                                             <optgroup label="{{ $group->name }}">
                                                 @foreach($group->lists as $item)
@@ -513,7 +496,18 @@
                                 </div>
                             </div>
 
-                            {{ Form::file('file','',array('id'=>'','class'=>'')) }}
+
+                            <div class="form-group">
+
+                                <div class="col-lg-4 col-sm-4">
+                                    <label for="profile_image" class="control-label">프로필 사진 <br/>(사이즈 354 x 472)<br/>사이즈가 다르면 잘릴 수 있습니다.</label>
+                                </div>
+                                <div class="col-lg-8 col-sm-8">
+                                    {{ Form::file('profile_image') }}
+                                </div>
+                            </div>
+
+
 
                             <div class="form-footer">
                                 <button type="submit" class="btn btn-success">더만다린 Job Pooling 시스템 등록하기</button>
