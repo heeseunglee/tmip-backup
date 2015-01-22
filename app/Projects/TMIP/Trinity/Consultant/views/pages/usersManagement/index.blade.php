@@ -2,7 +2,7 @@
 
 @section('additional_css_includes')
     {{ HTML::style('TMIP/Trinity/css/theme-default/libs/DataTables/jquery.dataTables.css') }}
-    {{ HTML::style('TMIP/Trinity/css/theme-default/simpleicon-interface/flaticon.css') }}
+    {{ HTML::style('TMIP/Trinity/css/theme-default/flaticons/flaticon.css') }}
     {{ HTML::style('TMIP/Trinity/css/theme-default/libs/tooltipster/tooltipster.css') }}
 @endsection
 

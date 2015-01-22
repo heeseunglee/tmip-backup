@@ -1,24 +1,12 @@
-@extends('TrinityCommonView::layouts.jobPool.master')
+@extends('TrinityCommonView::layouts.master')
 
 @section('additional_js_includes')
-    {{ HTML::script('TMIP/Trinity/js/libs/jquery-validation/dist/jquery.validate.min.js') }}
-    {{ HTML::script('TMIP/Trinity/js/libs/jquery-validation/dist/additional-methods.min.js') }}
-    <script src="//cdn.poesis.kr/post/search.min.js"></script>
-    <script src="//cdn.poesis.kr/post/popup.min.js"></script>
-    {{ HTML::script('TMIP/Trinity/js/libs/select2/select2.min.js') }}
     {{ HTML::script('TMIP/Trinity/js/libs/wysihtml5/advanced.js') }}
     {{ HTML::script('TMIP/Trinity/js/libs/wysihtml5/wysihtml5-0.4.0pre.min.js') }}
-    {{ HTML::script('TMIP/Trinity/js/core/jobPooling/signUp.js') }}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.4.13/jquery.timepicker.min.js"></script>
-    {{ HTML::script('TMIP/Trinity/js/libs/inputmask/jquery.inputmask.bundle.min.js') }}
 @endsection
 
 @section('additional_css_includes')
-    {{ HTML::style('TMIP/Trinity/css/theme-default/flaticons/flaticon.css') }}
-    {{ HTML::style('TMIP/Trinity/css/theme-default/libs/select2/select2.css') }}
-    {{ HTML::style('TMIP/Trinity/css/theme-default/libs/multi-select/multi-select.css') }}
     {{ HTML::style('TMIP/Trinity/css/theme-default/libs/wysihtml5/wysihtml5.css') }}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.4.13/jquery.timepicker.min.css"/>
 @endsection
 
 @section('main_content')
@@ -35,7 +23,8 @@
                     <div class="box-head">
                         <div class="tools">
                             <div class="btn-group">
-                                <a class="btn btn-primary" href="javascript:void(0);" onclick="javascript:window.print();"><i class="fa fa-print"></i> 출력</a>
+                                <a class="btn btn-primary" href="javascript:void(0);" onclick="javascript:window.print();">
+                                    <i class="fa fa-print"></i> 출력</a>
                             </div>
                         </div>
                     </div>
@@ -43,10 +32,11 @@
                         <!-- START INVOICE HEADER -->
                         <div class="row">
                             <div class="col-xs-8">
-                                <h1 class="text-light"><i class="fa fa-microphone fa-fw fa-2x text-support3"> </i><strong class="text-support3">더만다린 강사에 지원해 주셔서 감사드립니다.</strong></h1>
+                                <h1 class="text-light"><i class="fa fa-microphone fa-fw fa-2x text-support3"> </i>
+                                    <strong class="text-support3">지원자 : </strong> {{ $form->name_kor }}</h1>
                             </div>
                             <div class="col-xs-4 text-right">
-                                <h1 class="text-light text-gray-light">지원 성공</h1>
+                                <h1 class="text-light text-gray-light">{{ $form->name_kor }}</h1>
                             </div>
                         </div>
                         <!-- END INVOICE HEADER -->
@@ -55,26 +45,26 @@
                         <!-- START INVOICE DESCRIPTION -->
                         <div class="row">
                             <div class="col-xs-4">
-                                {{ HTML::image('jobPool/signUp/profileImages/'.$jobpool_signup_form->id,
+                                {{ HTML::image('jobPool/signUp/profileImages/'.$form->id,
                                 '', array('width' => '354px', 'height' => '472px')) }}
                             </div><!--end .col-md-2 -->
                             <div class="col-xs-4">
                                 <h4 class="text-light">지원자 정보</h4>
                                 <address>
-                                    <strong>{{ $jobpool_signup_form->name_kor }}</strong><br/>
-                                    {{ $jobpool_signup_form->email }} <br/>
-                                    <abbr title="Phone">P:</abbr> {{ $jobpool_signup_form->phone_number }}
+                                    <strong>{{ $form->name_kor }}</strong><br/>
+                                    {{ $form->email }} <br/>
+                                    <abbr title="Phone">P:</abbr> {{ $form->phone_number }}
                                 </address>
                             </div><!--end .col-md-4 -->
                             <div class="col-xs-4">
                                 <div class="well">
                                     <div class="clearfix">
                                         <div class="pull-left"> 지원 번호 : </div>
-                                        <div class="pull-right"> {{ $jobpool_signup_form->id }} </div>
+                                        <div class="pull-right"> {{ $form->id }} </div>
                                     </div>
                                     <div class="clearfix">
                                         <div class="pull-left"> 지원 날짜 : </div>
-                                        <div class="pull-right"> {{ strftime('%Y-%m-%d', strtotime($jobpool_signup_form->created_at)) }} </div>
+                                        <div class="pull-right"> {{ strftime('%Y-%m-%d', strtotime($form->created_at)) }} </div>
                                     </div>
                                 </div>
                             </div>
@@ -97,87 +87,87 @@
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>한글 이름</td>
-                                        <td class="text-right">{{ $jobpool_signup_form->name_kor }}</td>
+                                        <td class="text-right">{{ $form->name_kor }}</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>영문 이름</td>
-                                        <td class="text-right">{{ $jobpool_signup_form->name_eng }}</td>
+                                        <td class="text-right">{{ $form->name_eng }}</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>중국어 이름</td>
-                                        <td class="text-right">{{ $jobpool_signup_form->name_chn }}</td>
+                                        <td class="text-right">{{ $form->name_chn }}</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>이메일</td>
-                                        <td class="text-right">{{ $jobpool_signup_form->email }}</td>
+                                        <td class="text-right">{{ $form->email }}</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>연락처</td>
-                                        <td class="text-right">{{ $jobpool_signup_form->phone_number }}</td>
+                                        <td class="text-right">{{ $form->phone_number }}</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>생년 월일</td>
-                                        <td class="text-right">{{ $jobpool_signup_form->date_of_birth }}</td>
+                                        <td class="text-right">{{ $form->date_of_birth }}</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>성별</td>
-                                        <td class="text-right">@if($jobpool_signup_form->gender == 'M') 남성 @else 여성 @endif</td>
+                                        <td class="text-right">@if($form->gender == 'M') 남성 @else 여성 @endif</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>비자 정보</td>
-                                        <td class="text-right">{{ $jobpool_signup_form->visa_type }}</td>
+                                        <td class="text-right">{{ $form->visa_type }}</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>우편 번호</td>
-                                        <td class="text-right">{{ $jobpool_signup_form->postcode_1 }} - {{ $jobpool_signup_form->postcode_2 }}</td>
+                                        <td class="text-right">{{ $form->postcode_1 }} - {{ $form->postcode_2 }}</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>주소</td>
-                                        <td class="text-right">{{ $jobpool_signup_form->address_1 }}</td>
+                                        <td class="text-right">{{ $form->address_1 }}</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>상세 주소</td>
-                                        <td class="text-right">{{ $jobpool_signup_form->address_2 }}</td>
+                                        <td class="text-right">{{ $form->address_2 }}</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>최종 학력</td>
-                                        <td class="text-right">{{ $jobpool_signup_form->academic_background }}</td>
+                                        <td class="text-right">{{ $form->academic_background }}</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>대학 이름</td>
-                                        <td class="text-right">{{ $jobpool_signup_form->name_of_last_school }}</td>
+                                        <td class="text-right">{{ $form->name_of_last_school }}</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>전공</td>
-                                        <td class="text-right">{{ $jobpool_signup_form->major }}</td>
+                                        <td class="text-right">{{ $form->major }}</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>중국 체류 기간</td>
-                                        <td class="text-right">{{ $jobpool_signup_form->study_aboard_background }} 년</td>
+                                        <td class="text-right">{{ $form->study_aboard_background }} 년</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>강의 경력 년수</td>
-                                        <td class="text-right">{{ $jobpool_signup_form->career_years }} 년</td>
+                                        <td class="text-right">{{ $form->career_years }} 년</td>
                                     </tr>
                                     <?php
-                                        $i = 1;
+                                    $i = 1;
                                     ?>
-                                    @foreach($jobpool_signup_form->careerDetails as $career)
+                                    @foreach($form->careerDetails as $career)
                                         <tr>
                                             <td class="text-center"></td>
                                             <td>강의 경력#{{ $i }} 근무처</td>
@@ -203,7 +193,7 @@
                                         <td class="text-center"></td>
                                         <td>선호 지역</td>
                                         <td class="text-right">
-                                            @foreach($jobpool_signup_form->preferedAreas as $area)
+                                            @foreach($form->preferedAreas as $area)
                                                 {{ $area->name }}
                                             @endforeach
                                         </td>
@@ -211,20 +201,20 @@
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>오전 가능시간</td>
-                                        <td class="text-right">{{ $jobpool_signup_form->available_time_morning_start }}
-                                            ~ {{ $jobpool_signup_form->available_time_morning_end }}</td>
+                                        <td class="text-right">{{ $form->available_time_morning_start }}
+                                            ~ {{ $form->available_time_morning_end }}</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>오후 가능시간</td>
-                                        <td class="text-right">{{ $jobpool_signup_form->available_time_afternoon_start }}
-                                            ~ {{ $jobpool_signup_form->available_time_afternoon_end }}</td>
+                                        <td class="text-right">{{ $form->available_time_afternoon_start }}
+                                            ~ {{ $form->available_time_afternoon_end }}</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"></td>
                                         <td>심야 가능시간</td>
-                                        <td class="text-right">{{ $jobpool_signup_form->available_time_night_start }}
-                                            ~ {{ $jobpool_signup_form->available_time_night_end }}</td>
+                                        <td class="text-right">{{ $form->available_time_night_start }}
+                                            ~ {{ $form->available_time_night_end }}</td>
                                     </tr>
                                     <tr>
                                         <td class="text-center"></td>
@@ -234,7 +224,7 @@
                                     <tr>
                                         <td></td>
                                         <td colspan="2">
-                                            {{ $jobpool_signup_form->resume  }}
+                                            {{ $form->resume  }}
                                         </td>
                                     </tr>
                                     <tr>

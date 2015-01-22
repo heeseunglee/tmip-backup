@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="027b7a28-f9bb-4d1b-bb84-2f7f06575764" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/resources/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/jobPoolSignUpForm.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/userManagement/jobPoolSignUpForm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/jobPoolSignUpFormDetail.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/PagesController.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/PagesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/index.blade.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/routes/routes.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/routes/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/layouts/sidebar.blade.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/layouts/sidebar.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/jobPool/signUp.blade.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/jobPool/signUp.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/js/core/jobPooling/signUp.js" afterPath="$PROJECT_DIR$/public/TMIP/Trinity/js/core/jobPooling/signUp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/jobPool/signUpComplete.blade.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/jobPool/signUpComplete.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tmip-dev.iws" />
@@ -29,11 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="signUp.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/TMIP/Trinity/js/core/jobPooling/signUp.js">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/resources/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5833333" vertical-offset="846" max-vertical-offset="2538">
-              <caret line="82" column="37" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1055">
+              <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -47,20 +56,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/ajax/companyList.blade.php" />
-        <option value="$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/userManagement/index.js" />
-        <option value="$PROJECT_DIR$/app/models/Student.php" />
-        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/instructors.blade.php" />
-        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/ajax/hrsListFromCompany.blade.php" />
         <option value="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.css" />
         <option value="$PROJECT_DIR$/app/database/migrations/2015_01_14_161721_create_hrs_manage_students_table.php" />
         <option value="$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/userManagement/userRegistration.js" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/AjaxController.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2015_01_14_161018_add_is_first_login_to_students_table.php" />
-        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/PagesController.php" />
-        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/routes/routes.php" />
-        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/layouts/sidebar.blade.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/userRegistration.blade.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/PostController.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/studentsRegistrationResult.blade.php" />
@@ -90,14 +90,23 @@
         <option value="$PROJECT_DIR$/app/models/JobPoolCareerDetail.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/layouts/jobPool/master.blade.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/layouts/master.blade.php" />
-        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/routes/routes.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/controllers/PagesController.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/jobPool/signUpFail.blade.php" />
-        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/jobPool/signUpComplete.blade.php" />
         <option value="$PROJECT_DIR$/app/config/database.php" />
         <option value="$PROJECT_DIR$/.env.local.php" />
-        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/jobPool/signUp.blade.php" />
         <option value="$PROJECT_DIR$/public/TMIP/Trinity/js/core/jobPooling/signUp.js" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/routes/routes.php" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/layouts/sidebar.blade.php" />
+        <option value="$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/userManagement/jobPoolSignUpForm.js" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/routes/routes.php" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/PagesController.php" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/jobPool/signUp.blade.php" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/jobPool/signUpComplete.blade.php" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/jobPoolSignUpForm.blade.php" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/jobPoolSignUpFormDetail.blade.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/resources/.gitignore" />
       </list>
     </option>
   </component>
@@ -200,241 +209,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobPooling" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="theme-default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="theme-default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -461,242 +236,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobPool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobPool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beforeLogin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -760,61 +299,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -902,7 +387,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421909479788</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="지원 페이지 완료">
+      <created>1421910049155</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1421910049155</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -916,7 +407,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2578125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2578125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -948,90 +439,14 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="정리 완료&#10;컨설턴트 사용자 관리 페이지 작성중" />
-    <option name="LAST_COMMIT_MESSAGE" value="정리 완료&#10;컨설턴트 사용자 관리 페이지 작성중" />
+    <MESSAGE value="지원 페이지 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="지원 페이지 완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5708849" vertical-offset="0" max-vertical-offset="1051">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/PostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7231208" vertical-offset="0" max-vertical-offset="1051">
-          <caret line="38" column="84" selection-start-line="38" selection-start-column="84" selection-end-line="38" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/studentsRegistrationResult.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13320647" vertical-offset="0" max-vertical-offset="1240">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/userManagement/usersRegistration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8333333" vertical-offset="0" max-vertical-offset="1080">
-          <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/beforeLogin/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.038058992" vertical-offset="0" max-vertical-offset="1140">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/layouts/navbar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2015_01_12_135800_create_instructors_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/layouts/sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1051">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/CourseType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.038058992" vertical-offset="0" max-vertical-offset="1051">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/RunningCourse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.038058992" vertical-offset="0" max-vertical-offset="1051">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/RequestedCourse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.038058992" vertical-offset="0" max-vertical-offset="1051">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/seeds/CoursesTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26641294" vertical-offset="0" max-vertical-offset="1051">
@@ -1245,147 +660,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/JobPoolSignUpForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5982906" vertical-offset="0" max-vertical-offset="1053">
-          <caret line="35" column="33" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/routes/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47863248" vertical-offset="0" max-vertical-offset="1053">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-          <folding>
-            <marker date="1421907807000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1421907807000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421907807000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421907807000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421907807000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421907807000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421907807000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421907807000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421907807000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421907807000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421907807000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421907807000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421907807000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421907807000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421907807000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/controllers/PagesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.93162394" vertical-offset="27" max-vertical-offset="2340">
-          <caret line="56" column="95" selection-start-line="56" selection-start-column="95" selection-end-line="56" selection-end-column="95" />
-          <folding>
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder=" 인덱스 컨트롤러는 사용자가 로그인 한 후 ..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/jobPool/signUpFail.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8034188" vertical-offset="522" max-vertical-offset="1728">
           <caret line="76" column="81" selection-start-line="76" selection-start-column="81" selection-end-line="76" selection-end-column="81" />
           <folding>
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/jobPool/signUpComplete.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8803419" vertical-offset="3348" max-vertical-offset="4680">
-          <caret line="76" column="44" selection-start-line="76" selection-start-column="44" selection-end-line="76" selection-end-column="44" />
-          <folding>
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1421908831000" expanded="true" signature="-1:-1" placeholder="..." />
@@ -1459,183 +738,699 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/jobPool/signUp.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72649574" vertical-offset="8487" max-vertical-offset="9540">
-          <caret line="514" column="51" selection-start-line="514" selection-start-column="51" selection-end-line="514" selection-end-column="51" />
-          <folding>
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421909941000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/TMIP/Trinity/js/core/jobPooling/signUp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5833333" vertical-offset="846" max-vertical-offset="2538">
           <caret line="82" column="37" selection-start-line="82" selection-start-column="37" selection-end-line="82" selection-end-column="37" />
+          <folding>
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="/** Created by finallee on 15. 1. 15.. ...*/" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{&quot;timeFormat&quot;: &quot;H:i&quot;...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{&quot;timeFormat&quot;: &quot;H:i&quot;...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{&quot;timeFormat&quot;: &quot;H:i&quot;...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{&quot;timeFormat&quot;: &quot;H:i&quot;...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{&quot;timeFormat&quot;: &quot;H:i&quot;...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{&quot;timeFormat&quot;: &quot;H:i&quot;...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{&quot;allowClear&quot;: true...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421910003000" expanded="true" signature="-1:-1" placeholder="{&quot;toolbar&quot;: &quot;toolbar&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/routes/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4957265" vertical-offset="0" max-vertical-offset="1053">
+          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+          <folding>
+            <marker date="1421912061000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1421912061000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912061000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912061000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912061000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912061000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912061000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912061000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912061000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912061000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912061000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912061000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912061000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912061000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912061000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/layouts/sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51282054" vertical-offset="0" max-vertical-offset="1152">
+          <caret line="30" column="121" selection-start-line="30" selection-start-column="121" selection-end-line="30" selection-end-column="121" />
+          <folding>
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421912350000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/controllers/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8888889" vertical-offset="1260" max-vertical-offset="2340">
+          <caret line="122" column="5" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
+          <folding>
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder=" 인덱스 컨트롤러는 사용자가 로그인 한 후 ..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421908771000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/JobPoolSignUpForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5982906" vertical-offset="0" max-vertical-offset="1053">
+          <caret line="35" column="33" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="33" />
+          <folding>
+            <marker date="1421664859000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421664859000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421664859000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421664859000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421664859000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/userManagement/usersRegistration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
+          <folding>
+            <marker date="1421484509000" expanded="true" signature="-1:-1" placeholder="/** Created by finallee on 15. 1. 14.. ...*/" />
+            <marker date="1421484509000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421484509000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421484509000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421484509000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421484509000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421484509000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421484509000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421484509000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421484509000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421484509000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421484509000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421484509000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421484509000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421484509000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/userManagement/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06666667" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="43" column="41" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="41" />
+          <folding>
+            <marker date="1421484509000" expanded="false" signature="-1:-1" placeholder="//..." />
+            <marker date="1421484509000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421484509000" expanded="true" signature="-1:-1" placeholder="{&quot;sPaginationType&quot;: &quot;full_numbers&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.23931624" vertical-offset="324" max-vertical-offset="3042">
+          <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+          <folding>
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913468000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/userManagement/jobPoolSignUpForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.033333335" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <folding>
+            <marker date="1421913420000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421913420000" expanded="true" signature="-1:-1" placeholder="{&quot;sPaginationType&quot;: &quot;full_numbers&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/routes/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7094017" vertical-offset="387" max-vertical-offset="1458">
+          <caret line="68" column="49" selection-start-line="68" selection-start-column="49" selection-end-line="68" selection-end-column="49" />
+          <folding>
+            <marker date="1421913993000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder=" 주소 프리픽싱 ..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder=" 클래스 관리 페이지 시작 ..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder=" ajax 처리를 위한 라우팅 추가 ..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421913993000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/controllers/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7863248" vertical-offset="306" max-vertical-offset="1386">
+          <caret line="63" column="76" selection-start-line="63" selection-start-column="76" selection-end-line="63" selection-end-column="76" />
+          <folding>
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914371000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/jobPool/signUpComplete.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63247865" vertical-offset="2880" max-vertical-offset="4680">
+          <caret line="197" column="51" selection-start-line="197" selection-start-column="51" selection-end-line="197" selection-end-column="51" />
+          <folding>
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/jobPoolSignUpForm.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4957265" vertical-offset="216" max-vertical-offset="1404">
+          <caret line="41" column="46" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+          <folding>
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/jobPoolSignUpFormDetail.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7863248" vertical-offset="2538" max-vertical-offset="4500">
+          <caret line="187" column="51" selection-start-line="187" selection-start-column="51" selection-end-line="187" selection-end-column="51" />
+          <folding>
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/jobPool/signUp.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7094017" vertical-offset="3645" max-vertical-offset="9540">
+          <caret line="244" column="75" selection-start-line="244" selection-start-column="75" selection-end-line="244" selection-end-column="75" />
+          <folding>
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421914758000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1055">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/resources/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1055">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
           <folding />
         </state>
       </provider>

@@ -203,7 +203,7 @@
 
                             <div class="form-group">
                                 <div class="col-lg-4 col-sm-4">
-                                    <label for="study_aboard_background" class="control-label">어학 연수</label>
+                                    <label for="study_aboard_background" class="control-label">중국 체류 기간</label>
                                 </div>
                                 <div class="col-lg-8 col-sm-8">
                                     <select name="study_aboard_background" id="study_aboard_background" class="form-control" required="">
@@ -220,7 +220,7 @@
 
                             <div class="form-group">
                                 <div class="col-lg-4 col-sm-4">
-                                    <label for="career_years" class="control-label">경력 년수</label>
+                                    <label for="career_years" class="control-label">강의 경력 년수</label>
                                 </div>
                                 <div class="col-lg-8 col-sm-8">
                                     <select name="career_years" id="career_years" class="form-control" required="">
@@ -242,7 +242,7 @@
 
                             <div class="form-group">
                                 <div class="col-lg-12 col-sm-14">
-                                    <label for="" class="control-label">경력 사항 (옵션 : 없으면 입력하지 마세요)</label>
+                                    <label for="" class="control-label">강의 경력 사항 (옵션 : 없으면 입력하지 마세요)</label>
                                </div>
                             </div>
 

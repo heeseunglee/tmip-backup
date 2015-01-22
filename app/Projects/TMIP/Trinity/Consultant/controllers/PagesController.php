@@ -59,4 +59,13 @@ class PagesController extends \BaseController {
 			->with('companies', \Company::all());
 	}
 
+	public function jobPoolSignUpForm($form_id = null) {
+		if($form_id != null) {
+			return \View::make('TrinityConsultantView::pages.usersManagement.jobPoolSignUpFormDetail')
+				->with('form', \JobPoolSignUpForm::find($form_id));
+		}
+		return \View::make('TrinityConsultantView::pages.usersManagement.jobPoolSignUpForm')
+			->with('signup_forms', \JobPoolSignUpForm::all());
+	}
+
 }
