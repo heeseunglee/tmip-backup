@@ -78,6 +78,10 @@ $(document).ready(function() {
             $("#available_time_night_end").attr("disabled", "disabled").removeAttr("required");
         }
     });
+
+    $("#refresh").click(function(e) {
+        document.location.reload(true);
+    });
 });
 
 (function(namespace, $) {

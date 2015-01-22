@@ -512,7 +512,7 @@
 
                             <div class="form-footer">
                                 <button type="submit" class="btn btn-success">더만다린 Job Pooling 시스템 등록하기</button>
-                                <button type="button" class="btn btn-danger">이력서 새로 작성하기</button>
+                                <button id="refresh" type="button" class="btn btn-danger">이력서 새로 작성하기</button>
                             </div>
 
                         </div>
