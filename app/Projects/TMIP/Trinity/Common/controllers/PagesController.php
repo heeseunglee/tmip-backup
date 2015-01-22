@@ -52,6 +52,11 @@ class PagesController extends \BaseController {
 			return \Redirect::back()->withInput()->withErrors($validator);
 		}
 
+		if (\JobPoolSignUpForm::where('email', \Input::get('email'))->get()->count() > 0) {
+			return \View::make('TrinityCommonView::pages.jobPool.signUpFail')
+				->with('exist', \JobPoolSignUpForm::where('email', \Input::get('email'))->first());
+		}
+
 		$new_jobpool_signup_form = \JobPoolSignUpForm::create([
 			'name_kor' => \Input::get('name_kor'),
 			'name_eng' => \Input::get('name_eng'),
@@ -114,12 +119,6 @@ class PagesController extends \BaseController {
 		$new_jobpool_signup_form->profile_image = $fileName;
 		$new_jobpool_signup_form->save();
 
-		return \Redirect::route('Trinity.jobPool.signUpComplete', array('jobpool_signup_form_id' => $new_jobpool_signup_form_id));
-	}
-
-	public function jobPoolSignUpComplete($jobpool_signup_form_id) {
-		$jobpool_signup_form = \JobPoolSignUpForm::find($jobpool_signup_form_id);
-		return \View::make('TrinityCommonView::pages.jobPool.signUpComplete')
-			->with('jobpool_signup_form', $jobpool_signup_form);
+		return \View::make('TrinityCommonView::pages.jobPool.signUpComplete')->with('jobpool_signup_form', $new_jobpool_signup_form);
 	}
 }

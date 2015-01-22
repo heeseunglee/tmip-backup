@@ -500,7 +500,8 @@
                             <div class="form-group">
 
                                 <div class="col-lg-4 col-sm-4">
-                                    <label for="profile_image" class="control-label">프로필 사진 <br/>(사이즈 354 x 472)<br/>사이즈가 다르면 잘릴 수 있습니다.</label>
+                                    <label for="profile_image" class="control-label">프로필 사진 <br/>필수 입력사항입니다! <br/>
+                                    .jpg, .jpeg, .png, .gif, .bmp / 최대 2MB</label>
                                 </div>
                                 <div class="col-lg-8 col-sm-8">
                                     {{ Form::file('profile_image') }}

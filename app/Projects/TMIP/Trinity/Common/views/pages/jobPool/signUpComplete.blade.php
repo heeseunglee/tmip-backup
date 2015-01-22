@@ -46,7 +46,7 @@
                                 <h1 class="text-light"><i class="fa fa-microphone fa-fw fa-2x text-support3"> </i><strong class="text-support3">더만다린 강사에 지원해 주셔서 감사드립니다.</strong></h1>
                             </div>
                             <div class="col-xs-4 text-right">
-                                <h1 class="text-light text-gray-light">Invoice</h1>
+                                <h1 class="text-light text-gray-light">지원 성공</h1>
                             </div>
                         </div>
                         <!-- END INVOICE HEADER -->
@@ -55,32 +55,26 @@
                         <!-- START INVOICE DESCRIPTION -->
                         <div class="row">
                             <div class="col-xs-4">
-                                <h4 class="text-light">Prepared by</h4>
-                                <address>
-                                    <strong>Clear Speakers, Inc.</strong><br>
-                                    54 Clear Ave<br>
-                                    San Francisco, CA 87654<br>
-                                    <abbr title="Phone">P:</abbr> (987) 654-3210
-                                </address>
-                            </div><!--end .col-md-4 -->
+                                {{ HTML::image('jobPool/signUp/profileImages/'.$jobpool_signup_form->id,
+                                '', array('width' => '354px', 'height' => '472px')) }}
+                            </div><!--end .col-md-2 -->
                             <div class="col-xs-4">
-                                <h4 class="text-light">Prepared for</h4>
+                                <h4 class="text-light">지원자 정보</h4>
                                 <address>
-                                    <strong>Daniel Johnson, Inc.</strong><br>
-                                    621 Johnson Ave, Suite 600<br>
-                                    San Francisco, CA 54321<br>
-                                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                                    <strong>{{ $jobpool_signup_form->name_kor }}</strong><br/>
+                                    {{ $jobpool_signup_form->email }} <br/>
+                                    <abbr title="Phone">P:</abbr> {{ $jobpool_signup_form->phone_number }}
                                 </address>
                             </div><!--end .col-md-4 -->
                             <div class="col-xs-4">
                                 <div class="well">
                                     <div class="clearfix">
-                                        <div class="pull-left"> INVOICE NO : </div>
-                                        <div class="pull-right"> 98653624 </div>
+                                        <div class="pull-left"> 지원 번호 : </div>
+                                        <div class="pull-right"> {{ $jobpool_signup_form->id }} </div>
                                     </div>
                                     <div class="clearfix">
-                                        <div class="pull-left"> INVOICE DATE : </div>
-                                        <div class="pull-right"> 10/02/14 </div>
+                                        <div class="pull-left"> 지원 날짜 : </div>
+                                        <div class="pull-right"> {{ strftime('%Y-%m-%d', strtotime($jobpool_signup_form->created_at)) }} </div>
                                     </div>
                                 </div>
                             </div>
@@ -94,51 +88,158 @@
                                 <table class="table">
                                     <thead>
                                     <tr>
-                                        <th style="width:60px" class="text-center">QTY</th>
-                                        <th class="text-left">DESCRIPTION</th>
-                                        <th style="width:140px" class="text-right">UNIT PRICE</th>
-                                        <th style="width:90px" class="text-right">TOTAL</th>
+                                        <th style="width:60px" class="text-center"></th>
+                                        <th class="text-left">내용</th>
+                                        <th style="width:140px" class="text-right">입력</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td class="text-center">2</td>
-                                        <td>Nostrud exercitation 76 ullamco</td>
-                                        <td class="text-right">$385.00</td>
-                                        <td class="text-right">$770.00</td>
+                                        <td class="text-center"></td>
+                                        <td>한글 이름</td>
+                                        <td class="text-right">{{ $jobpool_signup_form->name_kor }}</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center">1</td>
-                                        <td>Elit 9.0 sed do eiusmod</td>
-                                        <td class="text-right">$215.00</td>
-                                        <td class="text-right">$215.00</td>
+                                        <td class="text-center"></td>
+                                        <td>영문 이름</td>
+                                        <td class="text-right">{{ $jobpool_signup_form->name_eng }}</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-center">4</td>
-                                        <td>commodo consequat &amp; Duis aute- irure dolor</td>
-                                        <td class="text-right">$405.25</td>
-                                        <td class="text-right">$1,621.00</td>
+                                        <td class="text-center"></td>
+                                        <td>중국어 이름</td>
+                                        <td class="text-right">{{ $jobpool_signup_form->name_chn }}</td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2" rowspan="4">
-                                            <h3 class="text-light opacity-50">Invoice notes</h3>
-                                            <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</small></p>
-                                            <p><strong><em>Excepteur sint occaecat est laborum.</em></strong></p>
+                                        <td class="text-center"></td>
+                                        <td>이메일</td>
+                                        <td class="text-right">{{ $jobpool_signup_form->email }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"></td>
+                                        <td>연락처</td>
+                                        <td class="text-right">{{ $jobpool_signup_form->phone_number }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"></td>
+                                        <td>생년 월일</td>
+                                        <td class="text-right">{{ $jobpool_signup_form->date_of_birth }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"></td>
+                                        <td>성별</td>
+                                        <td class="text-right">@if($jobpool_signup_form->gender == 'M') 남성 @else 여성 @endif</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"></td>
+                                        <td>비자 정보</td>
+                                        <td class="text-right">{{ $jobpool_signup_form->visa_type }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"></td>
+                                        <td>우편 번호</td>
+                                        <td class="text-right">{{ $jobpool_signup_form->postcode_1 }} - {{ $jobpool_signup_form->postcode_2 }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"></td>
+                                        <td>주소</td>
+                                        <td class="text-right">{{ $jobpool_signup_form->address_1 }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"></td>
+                                        <td>상세 주소</td>
+                                        <td class="text-right">{{ $jobpool_signup_form->address_2 }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"></td>
+                                        <td>최종 학력</td>
+                                        <td class="text-right">{{ $jobpool_signup_form->academic_background }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"></td>
+                                        <td>대학 이름</td>
+                                        <td class="text-right">{{ $jobpool_signup_form->name_of_last_school }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"></td>
+                                        <td>전공</td>
+                                        <td class="text-right">{{ $jobpool_signup_form->major }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"></td>
+                                        <td>유학 경험</td>
+                                        <td class="text-right">{{ $jobpool_signup_form->study_aboard_background }} 년</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"></td>
+                                        <td>경력</td>
+                                        <td class="text-right">{{ $jobpool_signup_form->career_years }} 년</td>
+                                    </tr>
+                                    <?php
+                                        $i = 1;
+                                    ?>
+                                    @foreach($jobpool_signup_form->careerDetails as $career)
+                                        <tr>
+                                            <td class="text-center"></td>
+                                            <td>경력#{{ $i }} 근무처</td>
+                                            <td class="text-right">{{ $career->career_detail_company_name }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"></td>
+                                            <td>경력#{{ $i }} 교육 형태</td>
+                                            <td class="text-right">{{ $career->career_detail_type }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"></td>
+                                            <td>경력#{{ $i }} 교육 내용</td>
+                                            <td class="text-right">{{ $career->career_detail_description }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center"></td>
+                                            <td>경력#{{ $i }} 교육 기간</td>
+                                            <td class="text-right">{{ $career->career_detail_period }}</td>
+                                        </tr>
+                                    @endforeach
+                                    <tr>
+                                        <td class="text-center"></td>
+                                        <td>선호 지역</td>
+                                        <td class="text-right">
+                                            @foreach($jobpool_signup_form->preferedAreas as $area)
+                                                {{ $area->name }}
+                                            @endforeach
                                         </td>
-                                        <td class="text-right"><strong>Subtotal</strong></td>
-                                        <td class="text-right">$2,606.00</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-right hidden-border"><strong>Shipping fee</strong></td>
-                                        <td class="text-right hidden-border">$0.00</td>
+                                        <td class="text-center"></td>
+                                        <td>오전 가능시간</td>
+                                        <td class="text-right">{{ $jobpool_signup_form->available_time_morning_start }}
+                                            ~ {{ $jobpool_signup_form->available_time_morning_end }}</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-right hidden-border"><strong>VAT</strong></td>
-                                        <td class="text-right hidden-border">$0.00</td>
+                                        <td class="text-center"></td>
+                                        <td>오후 가능시간</td>
+                                        <td class="text-right">{{ $jobpool_signup_form->available_time_afternoon_start }}
+                                            ~ {{ $jobpool_signup_form->available_time_afternoon_end }}</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-right"><strong class="text-lg text-support3">Total</strong></td>
-                                        <td class="text-right"><strong class="text-lg text-support3">$2,606.00</strong></td>
+                                        <td class="text-center"></td>
+                                        <td>심야 가능시간</td>
+                                        <td class="text-right">{{ $jobpool_signup_form->available_time_night_start }}
+                                            ~ {{ $jobpool_signup_form->available_time_night_end }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"></td>
+                                        <td class="text-right">자기소개서</td>
+                                        <td class="text-right"></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td colspan="2">
+                                            {{ $jobpool_signup_form->resume  }}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right"></td>
+                                        <td class="text-right"></td>
                                     </tr>
                                     </tbody>
                                 </table>

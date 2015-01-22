@@ -21,11 +21,15 @@ namespace Trinity\Common\routes;
 \Route::post('attemptLogout', array('as' => 'Trinity.session.attemptLogout',
     'uses' => '\Trinity\Common\controllers\SessionController@attemptLogout'));
 
-\Route::get('/jobPool/signUp', array('as' => 'Trinity.jobPool.signUp',
+\Route::get('jobPool/signUp', array('as' => 'Trinity.jobPool.signUp',
     'uses' => '\Trinity\Common\controllers\PagesController@jobPoolSignUp'));
 
-\Route::post('/jobPool/signUp', array('as' => 'Trinity.jobPool.signUp.create',
+\Route::post('jobPool/signUp', array('as' => 'Trinity.jobPool.signUp.create',
     'uses' => '\Trinity\Common\controllers\PagesController@jobPoolSignUpCreate'));
 
-\Route::get('/jobPool/signUpComplete/{jobpool_signup_form_id}', array('as' => 'Trinity.jobPool.signUpComplete',
-    'uses' => '\Trinity\Common\controllers\PagesController@jobPoolSignUpComplete'));
+\Route::get('jobPool/signUp/profileImages/{signup_form_id}', function($signup_form_id)
+{
+    $filepath = app_path().'/Projects/TMIP/Trinity/Common/resources/jobPool/profileImages/'
+        .$signup_form_id.'/'.\JobPoolSignUpForm::find($signup_form_id)->profile_image;
+    return \Response::download($filepath);
+});
