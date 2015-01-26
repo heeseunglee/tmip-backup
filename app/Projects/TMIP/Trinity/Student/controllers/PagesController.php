@@ -1,8 +1,8 @@
 <?php
 
-namespace Trinity\Common\controllers;
+namespace Trinity\Student\controllers;
 
-class SessionController extends \BaseController {
+class PagesController extends \BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -17,17 +17,12 @@ class SessionController extends \BaseController {
 	|
 	*/
 
-	public function attemptLogin() {
-		if(\Auth::attempt(\Input::only('account_email', 'password'))) {
-			return \Redirect::route('Trinity.index');
-		}
-		\Flash::error('이메일 / 암호를 확인해 주세요');
-		return \Redirect::back()->withInput();
+	function __construct() {
+		$current_user = \Auth::user();
+		\View::share('current_user', $current_user);
 	}
 
-	public function attemptLogout() {
-		\Auth::logout();
-		return \Redirect::route('Trinity.index');
+	public function coursesManagementIndex() {
+		return \View::make('TrinityStudentView::pages.coursesManagement.index');
 	}
-
 }

@@ -16,13 +16,15 @@ class CreateCompaniesTable extends Migration {
 		{
 			$table->increments('id');
 
-			$table->string('name_kor')->unique();
+			$table->string('name')->unique();
 
-			$table->string('name_eng')->nullable();
+			$table->smallInteger('postcode_1');
 
-			$table->string('address_kor')->nullable();
+			$table->smallInteger('postcode_2');
 
-			$table->string('address_eng')->nullable();
+			$table->string('address_1');
+
+			$table->string('address_2');
 
 			$table->string('contact_email')->nullable();
 
@@ -30,7 +32,7 @@ class CreateCompaniesTable extends Migration {
 
 			$table->string('contact_number_2')->nullable();
 
-			$table->string('file_location_of_logo_img')->default('no_image');
+			$table->string('logo_image')->default('no_image');
 
 			$table->timestamps();
 		});

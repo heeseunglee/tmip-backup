@@ -68,4 +68,8 @@ class PagesController extends \BaseController {
 			->with('signup_forms', \JobPoolSignUpForm::all());
 	}
 
+	public function clientsManagementClientRegistration() {
+		return \View::make('TrinityConsultantView::pages.clientsManagement.clientRegistration');
+	}
+
 }

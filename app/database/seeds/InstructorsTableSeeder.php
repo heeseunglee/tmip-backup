@@ -10,7 +10,7 @@ class InstructorsTableSeeder extends Seeder {
 		for($count = 1; $count < 201; $count++) {
 			\Instructor::create([
 				'name_chn' => '教授'.$count,
-				'date_of_birth' => '8580106',
+				'date_of_birth' => '850106',
 				'residence_number' => Crypt::encrypt('850106-1234567'),
 				'bank_id' => mt_rand(1, $bank_count),
 				'bank_account_number' => Crypt::encrypt('110322651638'),

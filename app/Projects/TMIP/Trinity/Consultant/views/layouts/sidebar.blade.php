@@ -35,6 +35,12 @@
         <a href="javascript:void(0);">
             <i class="fa fa-file fa-fw"></i><span class="title">고객사 관리</span> <span class="expand-sign">+</span>
         </a>
+        <ul>
+            <li><a href="{{ URL::route('Trinity.Consultant.clientsManagement.index') }}"
+                    @if(strpos($current_url, 'clientsManagement/index')) class = "active" @endif>전체 보기</a></li>
+            <li><a href="{{ URL::route('Trinity.Consultant.clientsManagement.clientRegistration') }}"
+                @if(strpos($current_url, 'clientsManagement/clientRegistration')) class = "active" @endif>고객사 추가</a></li>
+        </ul>
     </li>
     <li>
         <a href="javascript:void(0);">

@@ -16,19 +16,28 @@ class CreateInstructorsTable extends Migration {
 		{
 			$table->increments('id');
 
+			/**
+			 * 강사 등급을 결정하는 숫자로써 15 - 1 까지 존재
+			 */
+			$table->tinyInteger('rating')->default(6);
+
+			$table->tinyInteger('career_years')->default(0);
+
+			$table->date('end_of_contract_date');
+
 			$table->string('name_chn')->nullable();
 
 			/**
 			 * 주민등록번호 저장될 때 자동으로 저장되게 설정함
 			 */
-			$table->string('date_of_birth', 32);
+			$table->date('date_of_birth');
 
 			/**
 			 * 주민등록번호가 암호화되어 저장
 			 */
 			$table->string('residence_number', 1024);
 
-			$table->unsignedInteger('bank_id');
+			$table->unsignedInteger('bank_id')->nullable();
 			$table->foreign('bank_id')->references('id')->on('banks');
 
 			/**

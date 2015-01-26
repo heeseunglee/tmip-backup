@@ -24,6 +24,7 @@ class PagesController extends \BaseController {
 	/**
 	 * 인덱스 컨트롤러는 사용자가 로그인 한 후
 	 * 롤을 판단하여 롤에 해당하는 루팅 테이블로 안내함
+	 * 그리고 첫번째 로그인일 경우 인적사항 상세 등록 페이지로 안내함
 	 */
 	public function index() {
 		$current_user = \Auth::user();

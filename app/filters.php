@@ -88,3 +88,18 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
+/*
+ |--------------------------------------------------------------------------
+ | TMIP Custom Filters
+ |--------------------------------------------------------------------------
+ |
+ */
+
+Route::filter('is_first_login', function() {
+	$user = Auth::user();
+	$user_role = $user->userable_type;
+	if($user->is_first_login) {
+		return Redirect::route('Trinity.'.$user_role.'.firstLogin');
+	}
+});

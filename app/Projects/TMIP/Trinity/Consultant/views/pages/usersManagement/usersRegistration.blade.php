@@ -44,8 +44,7 @@
 
                                     <div class="tab-pane active" id="student_sign_up">
                                     {{ Form::open(array('action' => 'Trinity.Consultant.usersManagement.usersRegistration.signUpStudentsManually',
-                                    'class' => 'form-horizontal form-validate',
-                                                        'role' => 'form')) }}
+                                    'class' => 'form-horizontal form-validate','role' => 'form')) }}
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <div class="form-group">
@@ -113,8 +112,8 @@
                                     {{ Form::close() }}
                                     </div>
                                     <div class="tab-pane" id="instructor_sign_up">
-                                    {{ Form::open(array('class' => 'form-horizontal form-validate',
-                                                        'role' => 'form')) }}
+                                    {{ Form::open(array('action' => 'Trinity.Consultant.usersManagement.usersRegistration.signUpInstructorsManually',
+                                    'class' => 'form-horizontal form-validate','role' => 'form')) }}
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <button id="add_instructor_row" type="button" class="btn btn-success"><i class="fa flaticon-plus24"></i></button>

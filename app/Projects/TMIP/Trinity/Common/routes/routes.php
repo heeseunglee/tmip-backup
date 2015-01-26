@@ -15,6 +15,9 @@ namespace Trinity\Common\routes;
 \Route::get('login', array('as' => 'Trinity.login',
     'uses' => '\Trinity\Common\controllers\PagesController@showLogin'));
 
+\Route::get('logout', array('as' => 'Trinity.logout',
+    'uses' => '\Trinity\Common\controllers\SessionController@attemptLogout'));
+
 \Route::post('attemptLogin', array('as' => 'Trinity.session.attemptLogin',
     'uses' => '\Trinity\Common\controllers\SessionController@attemptLogin'));
 

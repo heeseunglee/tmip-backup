@@ -8,6 +8,12 @@
 
 namespace Trinity\Consultant\routes;
 
+
+
+\Route::get('Consultant/firstLogin', array('as' => 'Trinity.Consultant.firstLogin', function() {
+    return \View::make('TrinityConsultantView::pages.firstLogin.firstLogin');
+}));
+
 /**
  * 주소 프리픽싱
  * tmip.themandarin.co.kr/Consultant/...
@@ -40,42 +46,62 @@ namespace Trinity\Consultant\routes;
 
         \Route::get('/index',
             array('as' => 'Trinity.Consultant.usersManagement.index',
-            'uses' => '\Trinity\Consultant\controllers\PagesController@usersManagementIndex'));
+                'uses' => '\Trinity\Consultant\controllers\PagesController@usersManagementIndex'));
 
         \Route::get('/hrs',
             array('as' => 'Trinity.Consultant.usersManagement.hrs',
-            'uses' => '\Trinity\Consultant\controllers\PagesController@usersManagementHrs'));
+                'uses' => '\Trinity\Consultant\controllers\PagesController@usersManagementHrs'));
 
         \Route::get('/consultants',
             array('as' => 'Trinity.Consultant.usersManagement.consultants',
-            'uses' => '\Trinity\Consultant\controllers\PagesController@usersManagementConsultants'));
+                'uses' => '\Trinity\Consultant\controllers\PagesController@usersManagementConsultants'));
 
         \Route::get('/students',
             array('as' => 'Trinity.Consultant.usersManagement.students',
-            'uses' => '\Trinity\Consultant\controllers\PagesController@usersManagementStudents'));
+                'uses' => '\Trinity\Consultant\controllers\PagesController@usersManagementStudents'));
 
         \Route::get('/instructors',
             array('as' => 'Trinity.Consultant.usersManagement.instructors',
-            'uses' => '\Trinity\Consultant\controllers\PagesController@usersManagementInstructors'));
+                'uses' => '\Trinity\Consultant\controllers\PagesController@usersManagementInstructors'));
 
         \Route::get('/usersRegistration',
             array('as' => 'Trinity.Consultant.usersManagement.usersRegistration',
-            'uses' => '\Trinity\Consultant\controllers\PagesController@usersManagementUsersRegistration'));
+                'uses' => '\Trinity\Consultant\controllers\PagesController@usersManagementUsersRegistration'));
 
         \Route::post('/usersRegistration/signUpStudentsManually',
             array('as' => 'Trinity.Consultant.usersManagement.usersRegistration.signUpStudentsManually',
-            'uses' => '\Trinity\Consultant\controllers\PostController@signUpStudentsManually'));
+                'uses' => '\Trinity\Consultant\controllers\PostController@signUpStudentsManually'));
+
+        \Route::post('/usersRegistration/signUpInstructorsManually',
+            array('as' => 'Trinity.Consultant.usersManagement.usersRegistration.signUpInstructorsManually',
+                'uses' => '\Trinity\Consultant\controllers\PostController@signUpInstructorsManually'));
 
         \Route::get('/jobPoolSignUpForm/{form_id?}',
             array('as' => 'Trinity.Consultant.usersManagement.jobPoolSignUpForm',
-            'uses' => '\Trinity\Consultant\controllers\PagesController@jobPoolSignUpForm'));
+                'uses' => '\Trinity\Consultant\controllers\PagesController@jobPoolSignUpForm'));
         /**
          * ajax 처리를 위한 라우팅 추가
          */
         \Route::group(array('prefix' => 'ajax'), function() {
-            \Route::get('/companyCourseDetail/{consultant_id}/{company_id?}', array('uses' => '\Trinity\Consultant\controllers\AjaxController@companyCourseDetail'));
 
-            \Route::get('/companyList/{consultant_id}', array('uses' => '\Trinity\Consultant\controllers\AjaxController@companyList'));
+            \Route::get('/companyCourseDetail/{consultant_id}/{company_id?}',
+                array('uses' => '\Trinity\Consultant\controllers\AjaxController@companyCourseDetail'));
+
+            \Route::get('/companyList/{consultant_id}',
+                array('uses' => '\Trinity\Consultant\controllers\AjaxController@companyList'));
         });
+    });
+
+    \Route::group(array('prefix' => 'clientsManagement'), function(){
+
+        \Route::get('/', array('as' => 'Trinity.Consultant.clientsManagement', function() {
+            return \Redirect::route('Trinity.Consultant.clientsManagement.index');
+        }));
+
+        \Route::get('/index', array('as' => 'Trinity.Consultant.clientsManagement.index',
+            'uses' => '\Trinity\Consultant\controllers\PagesController@clientsManagementIndex'));
+
+        \Route::get('/clientRegistration', array('as' => 'Trinity.Consultant.clientsManagement.clientRegistration',
+            'uses' => '\Trinity\Consultant\controllers\PagesController@clientsManagementClientRegistration'));
     });
 });
