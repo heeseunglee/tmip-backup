@@ -122,4 +122,51 @@ class PagesController extends \BaseController {
 
 		return \View::make('TrinityCommonView::pages.jobPool.signUpComplete')->with('jobpool_signup_form', $new_jobpool_signup_form);
 	}
+
+	public function msFirmSignUp() {
+		return \View::make('TrinityCommonView::pages.msFirm.signUp');
+	}
+
+	public function msFirmSignUpCreate()
+	{
+		dd(\Input::all());
+
+		$number_of_students = \Input::get('number_of_students');
+
+		$rules = array( 'company_name'						=>	'required',
+						'postcode_1'						=>	'required',
+						'postcode_2'						=>	'required',
+						'address_1'							=>	'required',
+						'address_2'							=>	'required',
+						'applicant_name'					=>	'required',
+						'applicant_deputy'					=>	'required',
+						'applicant_position'				=>	'required',
+						'applicant_work_contact'			=>	'required',
+						'applicant_private_contact'			=>	'required',
+						'applicant_email'					=>	'required',
+						'heard_from'						=>	'required',
+						'reason'							=>	'required',
+						'additional_request'				=>	'required' );
+
+		for($i = 1; $i <= $number_of_students; $i++) {
+			$rules['student_name_'.$i] = 'required';
+			$rules['student_deputy_'.$i] = 'required';
+			$rules['student_position_'.$i] = 'required';
+			$rules['student_email_'.$i] = 'required';
+			$rules['student_phone_'.$i] = 'required';
+			$rules['student_gender_'.$i] = 'required';
+			$rules['student_age_'.$i] = 'required';
+			$rules['student_city_'.$i] = 'required';
+			$rules['student_level_'.$i] = 'required';
+		}
+
+		$validator = \Validator::make(\Input::all(), $rules);
+
+		if($validator->fails()) {
+			return \Redirect::back()->withInput()->withErrors($validator);
+		}
+
+
+	}
+
 }

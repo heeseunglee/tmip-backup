@@ -36,3 +36,9 @@ namespace Trinity\Common\routes;
         .$signup_form_id.'/'.\JobPoolSignUpForm::find($signup_form_id)->profile_image;
     return \Response::download($filepath);
 });
+
+\Route::get('msFirm/signUp', array('as' => 'Trinity.msFirm.signUp',
+    'uses' => '\Trinity\Common\controllers\PagesController@msFirmSignUp'));
+
+\Route::post('msFirm/signUp', array('as' => 'Trinity.msFirm.signUp.create',
+    'uses' => '\Trinity\Common\controllers\PagesController@msFirmSignUpCreate'));

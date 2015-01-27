@@ -135,13 +135,10 @@
                                 <div class="col-lg-4 col-sm-4">
                                     <label for="postcodify_postcode6" class="control-label">우편번호</label>
                                 </div>
-                                <div class="col-lg-1 col-sm-1">
+                                <div class="col-lg-8 col-sm-8">
                                     <input type="text" name="postcode_1" id="postcode_1" class="postcodify_postcode6_1 form-control" value="" required="">
-                                </div>
-                                <div class="col-lg-1 col-sm-1">
+                                    <span id="postcode_dash">-</span>
                                     <input type="text" name="postcode_2" id="postcode_2" class="postcodify_postcode6_2 form-control" value="" required="">
-                                </div>
-                                <div class="col-lg-1 col-sm-1">
                                     <button type="button" id="postcodify_search_button" class="btn btn-support3">검색</button>
                                 </div>
                             </div>

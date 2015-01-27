@@ -35,7 +35,7 @@
             <li class="active">고객사 추가</li>
         </ol>
         <div class="section-header">
-            <h3 class="text-standard"><i class="fa fa-fw fa-arrow-circle-right text-gray-light"></i> 고객사 관리 <small>고객사 추</small></h3>
+            <h3 class="text-standard"><i class="fa fa-fw fa-arrow-circle-right text-gray-light"></i> 고객사 관리 <small>고객사 추가</small></h3>
         </div>
         <div class="section-body">
             <!-- START VALIDATION WIZARD -->
@@ -77,16 +77,9 @@
                                                         <div class="col-lg-12">
                                                             <div class="box">
                                                                 <div class="box-head">
-                                                                    <header><h4 class="text-light"><i class="fa fa-font fa-fw"></i> Multiple <strong>file upload</strong></h4></header>
+                                                                    <header><h4 class="text-light"><strong>고객사 로고 이미지 업로드</strong></h4></header>
                                                                 </div>
                                                                 <div class="box-body">
-                                                                    <blockquote>
-                                                                        <p>
-                                                                            File Upload widget with multiple file selection, drag&amp;drop support, progress bars, validation and preview images, audio and video for jQuery.<br>
-                                                                            Supports cross-domain, chunked and resumable file uploads and client-side image resizing.<br>
-                                                                            Works with any server-side platform (PHP, Python, Ruby on Rails, Java, Node.js, Go etc.) that supports standard HTML form file uploads.
-                                                                        </p>
-                                                                    </blockquote>
                                                                     <form id="fileupload" action="//jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
                                                                         <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
                                                                         <div class="row fileupload-buttonbar">
@@ -128,21 +121,6 @@
                                                                         <!-- The table listing the files available for upload/download -->
                                                                         <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
                                                                     </form>
-                                                                    <div class="panel panel-default">
-                                                                        <div class="panel-heading">
-                                                                            <h3 class="panel-title">Demo Notes</h3>
-                                                                        </div>
-                                                                        <div class="panel-body">
-                                                                            <ul>
-                                                                                <li>The maximum file size for uploads in this demo is <strong>5 MB</strong> (default file size is unlimited).</li>
-                                                                                <li>Only image files (<strong>JPG, GIF, PNG</strong>) are allowed in this demo (by default there is no file type restriction).</li>
-                                                                                <li>Uploaded files will be deleted automatically after <strong>5 minutes</strong> (demo setting).</li>
-                                                                                <li>You can <strong>drag &amp; drop</strong> files from your desktop on this webpage (see <a href="https://github.com/blueimp/jQuery-File-Upload/wiki/Browser-support">Browser support</a>).</li>
-                                                                                <li>Please refer to the <a href="https://github.com/blueimp/jQuery-File-Upload">project website</a> and <a href="https://github.com/blueimp/jQuery-File-Upload/wiki">documentation</a> for more information.</li>
-                                                                                <li>Built with Twitter's <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> CSS framework and Icons from <a href="http://glyphicons.com/">Glyphicons</a>.</li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
                                                                 </div><!--end .box-body -->
                                                             </div><!--end .box -->
                                                         </div><!--end .col-lg-12 -->
