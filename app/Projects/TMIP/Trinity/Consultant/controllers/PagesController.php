@@ -68,6 +68,17 @@ class PagesController extends \BaseController {
 			->with('signup_forms', \JobPoolSignUpForm::all());
 	}
 
+	public function msFirmSignUpForm($form_id = null) {
+		if($form_id != null) {
+			$company = \MsFirmCompany::find($form_id);
+			return \View::make('TrinityConsultantView::pages.usersManagement.msFirmSignUpFormDetail')
+				->with('company', $company);
+		}
+		$companies = \MsFirmCompany::all();
+			return \View::make('TrinityConsultantView::pages.usersManagement.msFirmSignUpForm')
+				->with('companies', $companies);
+	}
+
 	public function clientsManagementClientRegistration() {
 		return \View::make('TrinityConsultantView::pages.clientsManagement.clientRegistration');
 	}

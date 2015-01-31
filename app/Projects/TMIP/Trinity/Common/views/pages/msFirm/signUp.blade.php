@@ -11,6 +11,7 @@
     {{ HTML::script('TMIP/Trinity/js/libs/wizard/jquery.bootstrap.wizard.min.js') }}
     <script src="//cdn.poesis.kr/post/search.min.js"></script>
     <script src="//cdn.poesis.kr/post/popup.min.js"></script>
+    {{ HTML::script('TMIP/Trinity/js/libs/inputmask/jquery.inputmask.bundle.min.js') }}
     {{ HTML::script('TMIP/Trinity/js/core/msFirm/signUp.js') }}
 @endsection
 
@@ -22,6 +23,7 @@
         <div class="section-header">
             <h3 class="text-standard"><i class="fa fa-fw fa-arrow-circle-right text-gray-light"></i> 더만다린 중소기업<small> 특화교육 신청</small></h3>
         </div>
+        @include('flash::message')
         <div class="section-body">
             <div class="row">
                 <div class="col-lg-12">
@@ -126,7 +128,7 @@
                                                     <label for="applicant_work_contact" class="control-label">담당자 연락처 (회사)</label>
                                                 </div>
                                                 <div class="col-sm-8">
-                                                    <input type="text" name="applicant_work_contact" id="applicant_work_contact" class="form-control" placeholder="담당자 연락처 (회사)" required="">
+                                                    <input type="text" name="applicant_work_contact" id="applicant_work_contact" class="form-control" data-inputmask="'mask': '99999999999'" placeholder="담당자 연락처 (회사)" required="">
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -134,11 +136,11 @@
                                                     <label for="applicant_private_contact" class="control-label">담당자 연락처 (개인)</label>
                                                 </div>
                                                 <div class="col-sm-8">
-                                                    <input type="text" name="applicant_private_contact" id="applicant_private_contact" class="form-control" placeholder="담당자 연락처 (개인)" required="">
+                                                    <input type="text" name="applicant_private_contact" id="applicant_private_contact" class="form-control" data-inputmask="'mask': '99999999999'" placeholder="담당자 연락처 (개인)" required="">
                                                 </div>
                                             </div>
-                                            <div class="form-group text-center">
-                                                <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <div class="col-sm-4 text-center">
                                                     <label for="applicant_email" class="control-label">담당자 이메일</label>
                                                 </div>
                                                 <div class="col-sm-8">
@@ -155,7 +157,7 @@
                                                 </div>
                                             </div>
                                             <br/><br/>
-                                            {{ Form::hidden('number_of_students', 1, array('id' => 'number_of_stud')) }}
+                                            {{ Form::hidden('number_of_students', 1, array('id' => 'number_of_students')) }}
                                             <div id="student_row_1" class="row">
                                                 <div class="col-lg-12">
                                                     <div class="box">
@@ -200,7 +202,7 @@
                                                                     <label for="student_phone_1" class="control-label">전화번호</label>
                                                                 </div>
                                                                 <div class="col-sm-9">
-                                                                    <input type="text" name="student_phone_1" id="student_phone_1" class="form-control" placeholder="전화번호" required="">
+                                                                    <input type="text" name="student_phone_1" id="student_phone_1" class="form-control" data-inputmask="'mask': '99999999999'" placeholder="전화번호" required="">
                                                                 </div>
                                                             </div>
                                                             <div class="form-group">
@@ -221,7 +223,7 @@
                                                                     <label for="student_age_1" class="control-label">나이</label>
                                                                 </div>
                                                                 <div class="col-sm-9">
-                                                                    <input type="text" name="student_age_1" id="student_age_1" class="form-control" placeholder="나이" required="">
+                                                                    <input type="text" name="student_age_1" id="student_age_1" data-inputmask="'mask': '99'" class="form-control" placeholder="나이" required="">
                                                                 </div>
                                                             </div>
                                                             <div class="form-group">

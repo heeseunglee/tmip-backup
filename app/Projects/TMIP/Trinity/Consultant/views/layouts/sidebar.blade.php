@@ -29,6 +29,8 @@
                 @if(strpos($current_url, 'usersManagement/usersRegistration')) class = "active" @endif>사용자 추가</a></li>
             <li><a href="{{ URL::route('Trinity.Consultant.usersManagement.jobPoolSignUpForm') }}"
                 @if(strpos($current_url, 'usersManagement/jobPoolSignUpForm')) class = "active" @endif>잡풀 지원서 관리</a></li>
+            <li><a href="{{ URL::route('Trinity.Consultant.usersManagement.msFirmSignUpForm') }}"
+                @if(strpos($current_url, 'usersManagement/msFirmSignUpForm')) class = "active" @endif>중소기업 신청서 관리</a></li>
         </ul>
     </li>
     <li>

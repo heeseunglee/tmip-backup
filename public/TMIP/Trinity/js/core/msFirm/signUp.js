@@ -135,7 +135,7 @@ $(document).ready(function() {
         <label for='student_age_" + next_number_of_students + "' class='control-label'>나이</label>\
         </div>\
         <div class='col-sm-9'>\
-        <input type='text' name='student_age_" + next_number_of_students + "' id='student_age_" + next_number_of_students + "' class='form-control' placeholder='나이' required=''>\
+        <input type='text' name='student_age_" + next_number_of_students + "' id='student_age_" + next_number_of_students + "' class='form-control' placeholder='나이' required='' data-inputmask=\'\'mask\': \'99\'\'>\
         </div>\
         </div>\
         <div class='form-group'>\
@@ -171,6 +171,7 @@ $(document).ready(function() {
         </div>");
 
         $("#number_of_students").val(next_number_of_students);
+        $(":input").inputmask();
     });
 
     $("#remove_student_row").click(function(e) {
@@ -180,4 +181,6 @@ $(document).ready(function() {
             $("#number_of_students").val(parseInt(number_of_students - 1));
         }
     });
+
+    $(":input").inputmask();
 });

@@ -129,8 +129,6 @@ class PagesController extends \BaseController {
 
 	public function msFirmSignUpCreate()
 	{
-		dd(\Input::all());
-
 		$number_of_students = \Input::get('number_of_students');
 
 		$rules = array( 'company_name'						=>	'required',
@@ -141,8 +139,8 @@ class PagesController extends \BaseController {
 						'applicant_name'					=>	'required',
 						'applicant_deputy'					=>	'required',
 						'applicant_position'				=>	'required',
-						'applicant_work_contact'			=>	'required',
-						'applicant_private_contact'			=>	'required',
+						'applicant_work_contact'			=>	'required|digits_between:9,11',
+						'applicant_private_contact'			=>	'required|digits_between:9,11',
 						'applicant_email'					=>	'required',
 						'heard_from'						=>	'required',
 						'reason'							=>	'required',
@@ -153,7 +151,7 @@ class PagesController extends \BaseController {
 			$rules['student_deputy_'.$i] = 'required';
 			$rules['student_position_'.$i] = 'required';
 			$rules['student_email_'.$i] = 'required';
-			$rules['student_phone_'.$i] = 'required';
+			$rules['student_phone_'.$i] = 'required|digits_between:9,11';
 			$rules['student_gender_'.$i] = 'required';
 			$rules['student_age_'.$i] = 'required';
 			$rules['student_city_'.$i] = 'required';
@@ -163,10 +161,69 @@ class PagesController extends \BaseController {
 		$validator = \Validator::make(\Input::all(), $rules);
 
 		if($validator->fails()) {
-			return \Redirect::back()->withInput()->withErrors($validator);
+			\Flash::error('필수 항목을 확인해 주세요');
+			return \Redirect::back()->withInput();
 		}
 
+		$company = \MsFirmCompany::where('name', \Input::get('company_name'))->get();
 
+		if($company->count() == 0) {
+			$company_id = \MsFirmCompany::create([
+				'name' => \Input::get('company_name'),
+				'postcode_1' => \Input::get('postcode_1'),
+				'postcode_2' => \Input::get('postcode_2'),
+				'address_1' => \Input::get('address_1'),
+				'address_2' => \Input::get('address_2'),
+				'applicant_name' => \Input::get('applicant_name'),
+				'applicant_deputy' => \Input::get('applicant_deputy'),
+				'applicant_position' => \Input::get('applicant_position'),
+				'applicant_work_contact' => preg_replace('/(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/',
+													'$1-$2-$3',
+													str_replace('_', '', \Input::get('applicant_work_contact'))),
+				'applicant_private_contact' => preg_replace('/(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/',
+														'$1-$2-$3',
+														str_replace('_', '', \Input::get('applicant_private_contact'))),
+				'applicant_email' => \Input::get('applicant_email'),
+				'heard_from' => \Input::get('heard_from'),
+				'reason' => \Input::get('reason'),
+				'additional_request' => \Input::get('additional_request')
+			])->id;
+		}
+		else {
+			$company_id = $company[0]->id;
+		}
+
+		$students_added = null;
+
+		for($i = 1; $i <= $number_of_students; $i++) {
+			$existing_students = \MsFirmStudent::where('email', \Input::get('student_email_'.$i))->get();
+			if($existing_students->count() == 0) {
+				$students_added[] = \MsFirmStudent::create([
+					'msFirm_company_id' => $company_id,
+					'name' => \Input::get('student_name_'.$i),
+					'deputy' => \Input::get('student_deputy_'.$i),
+					'position' => \Input::get('student_position_'.$i),
+					'email' => \Input::get('student_email_'.$i),
+					'phone_number' => preg_replace('/(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/',
+													'$1-$2-$3',
+													str_replace('_', '', \Input::get('student_phone_'.$i))),
+					'gender' => \Input::get('student_gender_'.$i),
+					'age' => \Input::get('student_age_'.$i),
+					'city' => \Input::get('student_city_'.$i),
+					'level' => \Input::get('student_level_'.$i)
+				])->id;
+			}
+		}
+
+		if ($students_added != null) {
+			return \View::make('TrinityCommonView::pages.msFirm.signUpCompleted')
+				->with('company', \MsFirmCompany::find($company_id))
+				->with('students_added', $students_added);
+		}
+
+		return \View::make('TrinityCommonView::pages.msFirm.signUpCompleted')
+			->with('company', \MsFirmCompany::find($company_id))
+			->with('students_added', null);
 	}
 
 }

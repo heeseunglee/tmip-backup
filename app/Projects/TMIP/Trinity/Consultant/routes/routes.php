@@ -79,6 +79,11 @@ namespace Trinity\Consultant\routes;
         \Route::get('/jobPoolSignUpForm/{form_id?}',
             array('as' => 'Trinity.Consultant.usersManagement.jobPoolSignUpForm',
                 'uses' => '\Trinity\Consultant\controllers\PagesController@jobPoolSignUpForm'));
+
+        \Route::get('/msFirmSignUpForm/{form_id?}',
+            array('as' => 'Trinity.Consultant.usersManagement.msFirmSignUpForm',
+                'uses' => '\Trinity\Consultant\controllers\PagesController@msFirmSignUpForm'));
+
         /**
          * ajax 처리를 위한 라우팅 추가
          */
