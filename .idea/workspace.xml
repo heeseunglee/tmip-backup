@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="027b7a28-f9bb-4d1b-bb84-2f7f06575764" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/mails/msFirm/mail.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2015_01_28_062120_create_msFirm_students_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2015_01_28_062120_create_msFirm_students_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/controllers/PagesController.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/controllers/PagesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/msFirmSignUpForm.blade.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/msFirmSignUpForm.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/msFirmSignUpFormDetail.blade.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/usersManagement/msFirmSignUpFormDetail.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/js/core/msFirm/signUp.js" afterPath="$PROJECT_DIR$/public/TMIP/Trinity/js/core/msFirm/signUp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/msFirm/signUpCompleted.blade.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/msFirm/signUpCompleted.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tmip-dev.iws" />
@@ -34,14 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="laravel.log" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/storage/logs/laravel.log">
-          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
+      <file leaf-file-name="PagesController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/controllers/PagesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.164097" vertical-offset="18744" max-vertical-offset="19652">
-              <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.6370614" vertical-offset="3227" max-vertical-offset="4148">
+              <caret line="224" column="11" selection-start-line="224" selection-start-column="11" selection-end-line="224" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -104,8 +95,8 @@
         <option value="$PROJECT_DIR$/app/database/migrations/2015_01_28_062120_create_msFirm_students_table.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/msFirm/signUpCompleted.blade.php" />
         <option value="$PROJECT_DIR$/public/TMIP/Trinity/js/core/msFirm/signUp.js" />
-        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/controllers/PagesController.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/mails/msFirm/mail.blade.php" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/controllers/PagesController.php" />
       </list>
     </option>
   </component>
@@ -1585,13 +1576,20 @@
       <option name="project" value="LOCAL" />
       <updated>1422349489855</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="중소기업 공동구매 신청 페이지 완료&#10;">
+      <created>1422735014106</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1422735014106</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="960" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1607,7 +1605,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.3299595" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="705" y="248" width="1056" height="384" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1633,20 +1630,14 @@
     <MESSAGE value="정리 완료&#10;컨설턴트 사용자 관리 페이지 작성중" />
     <MESSAGE value="지원 페이지 완료" />
     <MESSAGE value="공동구매 지원 페이지 구성중" />
-    <option name="LAST_COMMIT_MESSAGE" value="공동구매 지원 페이지 구성중" />
+    <MESSAGE value="중소기업 공동구매 신청 페이지 완료&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="중소기업 공동구매 신청 페이지 완료&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/filters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8913282" vertical-offset="862" max-vertical-offset="1818">
-          <caret line="102" column="52" selection-start-line="102" selection-start-column="52" selection-end-line="102" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/TMIP/Trinity/js/core/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8528786" vertical-offset="5490" max-vertical-offset="9630">
@@ -2535,70 +2526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env.local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16776316" vertical-offset="0" max-vertical-offset="912">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <marker date="1422291716000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/controllers/PagesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6370614" vertical-offset="3227" max-vertical-offset="4165">
-          <caret line="224" column="17" selection-start-line="224" selection-start-column="17" selection-end-line="224" selection-end-column="17" />
-          <folding>
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder=" 인덱스 컨트롤러는 사용자가 로그인 한 후 ..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1422734277000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/mails/usersManagement/successfullyRegistered.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48464912" vertical-offset="0" max-vertical-offset="912">
@@ -2622,6 +2549,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.164097" vertical-offset="18744" max-vertical-offset="19652">
           <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24232456" vertical-offset="0" max-vertical-offset="912">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+          <folding>
+            <marker date="1422291716000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8881579" vertical-offset="1298" max-vertical-offset="2210">
+          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding>
+            <marker date="1421921529000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421921529000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421921529000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421921529000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421921529000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421921529000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421921529000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421921529000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421921529000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1421921529000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/controllers/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6370614" vertical-offset="3227" max-vertical-offset="4148">
+          <caret line="224" column="11" selection-start-line="224" selection-start-column="11" selection-end-line="224" selection-end-column="11" />
           <folding />
         </state>
       </provider>

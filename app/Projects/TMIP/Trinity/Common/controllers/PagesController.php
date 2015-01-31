@@ -220,7 +220,6 @@ class PagesController extends \BaseController {
 		\Mail::queue('TrinityCommonView::mails.msFirm.mail',
 			array('company' => $company),
 			function($message) use ($company) {
-				$message->from(getenv('EMAIL_ADMIN_ADDRESS'), getenv('EMAIL_ADMIN_NAME'));
 				$message->to($company->applicant_email, $company->applicant_name)
 				->cc('help@themandarin.co.kr');
 		});
