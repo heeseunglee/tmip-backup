@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="027b7a28-f9bb-4d1b-bb84-2f7f06575764" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/controllers/PagesController.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/controllers/PagesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/mails/msFirm/mail.blade.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/mails/msFirm/mail.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tmip-dev.iws" />
@@ -28,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PagesController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/controllers/PagesController.php">
+      <file leaf-file-name="mail.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/mails/msFirm/mail.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6370614" vertical-offset="3227" max-vertical-offset="4148">
-              <caret line="224" column="11" selection-start-line="224" selection-start-column="11" selection-end-line="224" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.16776316" vertical-offset="0" max-vertical-offset="912">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -95,8 +95,8 @@
         <option value="$PROJECT_DIR$/app/database/migrations/2015_01_28_062120_create_msFirm_students_table.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/pages/msFirm/signUpCompleted.blade.php" />
         <option value="$PROJECT_DIR$/public/TMIP/Trinity/js/core/msFirm/signUp.js" />
-        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/mails/msFirm/mail.blade.php" />
         <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/controllers/PagesController.php" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/mails/msFirm/mail.blade.php" />
       </list>
     </option>
   </component>
@@ -1582,7 +1582,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422735014106</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="중소기업 공동구매 신청 페이지 완료&#10;">
+      <created>1422735782606</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1422735782606</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2534,14 +2540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/mails/msFirm/mail.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="912">
-          <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/storage/logs/laravel.log">
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -2586,6 +2584,60 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6370614" vertical-offset="3227" max-vertical-offset="4148">
           <caret line="224" column="11" selection-start-line="224" selection-start-column="11" selection-end-line="224" selection-end-column="11" />
+          <folding>
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder=" 인덱스 컨트롤러는 사용자가 로그인 한 후 ..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1422735769000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Common/views/mails/msFirm/mail.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16776316" vertical-offset="0" max-vertical-offset="912">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding />
         </state>
       </provider>
