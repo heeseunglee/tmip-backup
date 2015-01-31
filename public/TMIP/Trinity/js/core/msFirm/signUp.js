@@ -114,7 +114,7 @@ $(document).ready(function() {
         <label for='student_phone_" + next_number_of_students + "' class='control-label'>전화번호</label>\
         </div>\
         <div class='col-sm-9'>\
-        <input type='text' name='student_phone_" + next_number_of_students + "' id='student_phone_" + next_number_of_students + "' class='form-control' placeholder='전화번호' required=''>\
+        <input type='text' name='student_phone_" + next_number_of_students + "' id='student_phone_" + next_number_of_students + "' class='form-control' placeholder='전화번호' required='' data-inputmask=\"\'mask\': \'99999999999\'\">\
         </div>\
         </div>\
         <div class='form-group'>\
@@ -135,7 +135,7 @@ $(document).ready(function() {
         <label for='student_age_" + next_number_of_students + "' class='control-label'>나이</label>\
         </div>\
         <div class='col-sm-9'>\
-        <input type='text' name='student_age_" + next_number_of_students + "' id='student_age_" + next_number_of_students + "' class='form-control' placeholder='나이' required='' data-inputmask=\'\'mask\': \'99\'\'>\
+        <input type='text' name='student_age_" + next_number_of_students + "' id='student_age_" + next_number_of_students + "' class='form-control' placeholder='나이' required='' data-inputmask=\"\'mask\': \'99\'\">\
         </div>\
         </div>\
         <div class='form-group'>\

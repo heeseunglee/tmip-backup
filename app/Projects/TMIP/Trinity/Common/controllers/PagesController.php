@@ -139,8 +139,8 @@ class PagesController extends \BaseController {
 						'applicant_name'					=>	'required',
 						'applicant_deputy'					=>	'required',
 						'applicant_position'				=>	'required',
-						'applicant_work_contact'			=>	'required|digits_between:9,11',
-						'applicant_private_contact'			=>	'required|digits_between:9,11',
+						'applicant_work_contact'			=>	'required',
+						'applicant_private_contact'			=>	'required',
 						'applicant_email'					=>	'required',
 						'heard_from'						=>	'required',
 						'reason'							=>	'required',
@@ -151,7 +151,7 @@ class PagesController extends \BaseController {
 			$rules['student_deputy_'.$i] = 'required';
 			$rules['student_position_'.$i] = 'required';
 			$rules['student_email_'.$i] = 'required';
-			$rules['student_phone_'.$i] = 'required|digits_between:9,11';
+			$rules['student_phone_'.$i] = 'required';
 			$rules['student_gender_'.$i] = 'required';
 			$rules['student_age_'.$i] = 'required';
 			$rules['student_city_'.$i] = 'required';
@@ -214,6 +214,16 @@ class PagesController extends \BaseController {
 				])->id;
 			}
 		}
+
+		$company = \MsFirmCompany::find($company_id);
+
+		\Mail::queue('TrinityCommonView::mails.msFirm.mail',
+			array('company' => $company),
+			function($message) use ($company) {
+				$message->from(getenv('EMAIL_ADMIN_ADDRESS'), getenv('EMAIL_ADMIN_NAME'));
+				$message->to($company->applicant_email, $company->applicant_name)
+				->cc('help@themandarin.co.kr');
+		});
 
 		if ($students_added != null) {
 			return \View::make('TrinityCommonView::pages.msFirm.signUpCompleted')

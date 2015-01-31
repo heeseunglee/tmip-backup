@@ -43,7 +43,8 @@
                                 <tbody>
                                 @foreach($companies as $company)
                                     <tr>
-                                        <td>{{ $company->name }}</td>
+                                        <td><a href="{{ URL::route('Trinity.Consultant.usersManagement.msFirmSignUpForm',
+                                         array('form_id' => $company->id)) }}">{{ $company->name }}</a></td>
                                         <td>{{ $company->applicant_name }}</td>
                                         <td>{{ $company->applicant_work_contact }}</td>
                                         <td>{{ $company->applicant_private_contact }}</td>

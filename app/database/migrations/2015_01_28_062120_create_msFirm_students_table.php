@@ -33,7 +33,7 @@ class CreateMsFirmStudentsTable extends Migration {
 
 			$table->tinyInteger('age');
 
-			$table->tinyInteger('city');
+			$table->string('city');
 
 			$table->tinyInteger('level');
 

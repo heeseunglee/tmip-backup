@@ -114,7 +114,30 @@
                                                 </tr>
                                             @endforeach
                                         @endif
+                                        </tbody>
+                                    </table>
+                                </div><!--end .col-md-12 -->
+                            </div><!--end .row -->
+                            <!-- END INVOICE PRODUCTS -->
 
+                            <!-- START INVOICE PRODUCTS -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th class="text-center">이름</th>
+                                            <th class="text-center">부서</th>
+                                            <th class="text-center">직급</th>
+                                            <th class="text-center">이메일</th>
+                                            <th class="text-center">전화번호</th>
+                                            <th class="text-center">성별</th>
+                                            <th class="text-center">나이</th>
+                                            <th class="text-center">파견도시</th>
+                                            <th class="text-center">어학레벨</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
                                         @foreach($company->students as $student)
                                             <tr class="style-gray">
                                                 <td class="text-center">{{ $student->name }}</td>
@@ -126,10 +149,9 @@
                                                 <td class="text-center">{{ $student->age }}</td>
                                                 <td class="text-center">{{ $student->city }}</td>
                                                 <?php
-                                                    $level_array = [1 => '입문', 2 => '초급', 3 => '중급', 4 => '고급'];
+                                                $level_array = [1 => '입문', 2 => '초급', 3 => '중급', 4 => '고급'];
                                                 ?>
                                                 <td class="text-center">{{ $level_array[$student->level] }}</td>
-                                                <td class="text-center">기존 신청자</td>
                                             </tr>
                                         @endforeach
                                         </tbody>
@@ -137,6 +159,7 @@
                                 </div><!--end .col-md-12 -->
                             </div><!--end .row -->
                             <!-- END INVOICE PRODUCTS -->
+
 
                         </div><!--end .box-body -->
                     </div><!--end .box -->
