@@ -677,6 +677,8 @@ return array(
     'Monolog\\Processor\\UidProcessor' => $vendorDir . '/monolog/monolog/src/Monolog/Processor/UidProcessor.php',
     'Monolog\\Processor\\WebProcessor' => $vendorDir . '/monolog/monolog/src/Monolog/Processor/WebProcessor.php',
     'Monolog\\Registry' => $vendorDir . '/monolog/monolog/src/Monolog/Registry.php',
+    'MsFirmCompany' => $baseDir . '/app/models/MsFirmCompany.php',
+    'MsFirmStudent' => $baseDir . '/app/models/MsFirmStudent.php',
     'Net_SCP' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Net/SCP.php',
     'Net_SFTP' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Net/SFTP.php',
     'Net_SFTP_Stream' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Net/SFTP/Stream.php',
