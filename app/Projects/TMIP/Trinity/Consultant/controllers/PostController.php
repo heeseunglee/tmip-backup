@@ -31,7 +31,7 @@ class PostController extends \BaseController {
 				$new_student->user()->create([
 					'account_email' => $student_email,
 					'name_kor' => \Input::get('student_name_'.$i),
-					'password' => \Hash::make('1234')
+					'password' => \Hash::make($random_password)
 				]);
 
 				\Mail::queue('TrinityConsultantView::mails.usersManagement.successfullyRegistered',
@@ -49,8 +49,9 @@ class PostController extends \BaseController {
 				$result_array[] = array(\User::find($user_id)->userable->id, '기등록 학생');
 			}
 		}
-		return \View::make('TrinityConsultantView::pages.usersManagement.studentsRegistrationResult')
-			->with('result_array', $result_array);
+		return \View::make('TrinityConsultantView::pages.usersManagement.registrationResult')
+			->with('result_array', $result_array)
+			->with('role', 'Student');
 	}
 
 	public function signUpInstructorsManually() {
@@ -82,11 +83,44 @@ class PostController extends \BaseController {
 				$result_array[] = array(\User::find($user_id)->userable->id, '기등록 교수진');
 			}
 		}
-		return 'TODO';
+		return \View::make('TrinityConsultantView::pages.usersManagement.registrationResult')
+			->with('result_array', $result_array)
+			->with('role', 'Instructor');
+	}
+
+	public function signUpHrsManually() {
+		$hr_email = \Input::get('hr_email');
+		$company_id = \Input::get('company_select');
+		$user = \User::where('account_email', $hr_email)->get();
+		$random_password = $this->GenerateString(10);
+		if(!$user->isEmpty()) {
+			\Flash::error('해당 담당자는 이미 존재합니다. 확인이 필요합니다.');
+			return \Redirect::back()->withInput();
+		}
+		$new_hr = \Hr::create([
+			'company_id' => $company_id,
+			'consultant_id' => \Input::get('consultant_select')
+		]);
+		$new_hr->user()->create([
+			'account_email' => $hr_email,
+			'name_kor' => \Input::get('hr_name'),
+			'password' => \Hash::make($random_password)
+		]);
+
+		\Mail::queue('TrinityConsultantView::mails.usersManagement.successfullyRegistered',
+			array('user' => $new_hr->user,
+				'random_password' => $random_password),
+			function($message) use ($new_hr) {
+				$message->to($new_hr->user->account_email,
+					$new_hr->user->name_kor);
+		});
+
+		\Flash::success($new_hr->user->name_kor.' 님이 성공적으로 추가되었습니다.');
+		return \Redirect::back();
 	}
 
 	public function clientsManagementSignUpClient() {
-		$rules_logo_image = array('logo_image' => 'image|image_size:500,500');
+		$rules_logo_image = array('logo_image' => 'required|image|image_size:500,500');
 		$logo_image = array('logo_image' => \Input::file('logo_image'));
 		$validator = \Validator::make($logo_image, $rules_logo_image);
 

@@ -84,4 +84,6 @@ $(document).ready(function() {
             $("#number_of_instructors").val(parseInt(number_of_instructors - 1));
         }
     });
+
+
 });

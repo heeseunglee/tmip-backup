@@ -3,6 +3,7 @@
 @section('additional_css_includes')
     {{ HTML::style('TMIP/Trinity/css/theme-default/libs/wizard/wizard.css') }}
     {{ HTML::style('TMIP/Trinity/css/theme-default/libs/blueimp-file-upload/jquery.fileupload.css') }}
+    {{ HTML::style('TMIP/Trinity/css/theme-default/libs/DataTables/jquery.dataTables.css') }}
 @stop
 
 @section('additional_js_includes')
@@ -11,7 +12,8 @@
     {{ HTML::script('TMIP/Trinity/js/libs/wizard/jquery.bootstrap.wizard.min.js') }}
     <script src="//cdn.poesis.kr/post/search.min.js"></script>
     <script src="//cdn.poesis.kr/post/popup.min.js"></script>
-    {{ HTML::script('TMIP/Trinity/js/core/Consultant/clientsManagement/clientRegistration.js') }}
+    {{ HTML::script('TMIP/Trinity/js/libs/DataTables/jquery.dataTables.min.js') }}
+    {{ HTML::script('TMIP/Trinity/js/core/Consultant/clientsManagement/index.js') }}
 @stop
 
 @section('main_content')
@@ -37,19 +39,20 @@
                             <table class="table table-dataTable" id="all_list_of_clients">
                                 <thead>
                                 <tr>
-                                    <td>로고</td>
-                                    <td>고객사 명</td>
-                                    <td>대표 이메일</td>
-                                    <td>대표 번호</td>
-                                    <td>진행 클래스 수</td>
-                                    <td>담당자 수</td>
-                                    <td>학생 수</td>
+                                    <th>로고</th>
+                                    <th>고객사 명</th>
+                                    <th>대표 이메일</th>
+                                    <th>대표 번호</th>
+                                    <th>진행 클래스 수</th>
+                                    <th>담당자 수</th>
+                                    <th>학생 수</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($companies as $company)
                                     <tr>
-                                        <td></td>
+                                        <td class="text-center">{{ HTML::image('company/logoImages/'.$company->id, '',
+                                                array('class' => 'logo_image')) }}</td>
                                         <td>{{ $company->name }}</td>
                                         <td><a href="mailto:{{ $company->contact_email }}">{{ $company->contact_email }}</a></td>
                                         <td>{{ $company->contact_number_1 }}</td>

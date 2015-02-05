@@ -32,9 +32,16 @@ namespace Trinity\Common\routes;
 
 \Route::get('jobPool/signUp/profileImages/{signup_form_id}', function($signup_form_id)
 {
-    $filepath = app_path().'/Projects/TMIP/Trinity/Common/resources/jobPool/profileImages/'
+    $file_path = app_path().'/Projects/TMIP/Trinity/Common/resources/jobPool/profileImages/'
         .$signup_form_id.'/'.\JobPoolSignUpForm::find($signup_form_id)->profile_image;
-    return \Response::download($filepath);
+    return \Response::download($file_path);
+});
+
+\Route::get('company/logoImages/{company_id}', function($company_id) {
+    $company = \Company::find($company_id);
+    $file_path = app_path().'/Projects/TMIP/Trinity/Common/resources/images/clients/logo/'.$company->id
+        .'/'.$company->logo_image;
+    return \Response::download($file_path);
 });
 
 \Route::get('msFirm/signUp', array('as' => 'Trinity.msFirm.signUp',

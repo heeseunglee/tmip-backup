@@ -56,7 +56,8 @@ class PagesController extends \BaseController {
 
 	public function usersManagementUsersRegistration() {
 		return \View::make('TrinityConsultantView::pages.usersManagement.usersRegistration')
-			->with('companies', \Company::all());
+			->with('companies', \Company::all())
+			->with('consultants', \Consultant::all());
 	}
 
 	public function jobPoolSignUpForm($form_id = null) {

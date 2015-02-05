@@ -76,6 +76,10 @@ namespace Trinity\Consultant\routes;
             array('as' => 'Trinity.Consultant.usersManagement.usersRegistration.signUpInstructorsManually',
                 'uses' => '\Trinity\Consultant\controllers\PostController@signUpInstructorsManually'));
 
+        \Route::post('/usersRegistration/signUpHrsManually',
+            array('as' => 'Trinity.Consultant.usersManagement.usersRegistration.signUpHrsManually',
+                'uses' => '\Trinity\Consultant\controllers\PostController@signUpHrsManually'));
+
         \Route::get('/jobPoolSignUpForm/{form_id?}',
             array('as' => 'Trinity.Consultant.usersManagement.jobPoolSignUpForm',
                 'uses' => '\Trinity\Consultant\controllers\PagesController@jobPoolSignUpForm'));

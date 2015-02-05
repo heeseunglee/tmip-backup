@@ -89,6 +89,17 @@ span[for=postcode_1] {
 span[for=postcode_2] {
   float: left;
 }
+#all_list_of_clients img.logo_image {
+  width: 93px;
+  height: 93px;
+}
+#all_list_of_clients td.text-center {
+  text-align: center !important;
+}
+#all_list_of_clients td {
+  text-align: left;
+  vertical-align: middle;
+}
 @-webkit-keyframes lock-collapse {
   from {
     height: 1200px;
