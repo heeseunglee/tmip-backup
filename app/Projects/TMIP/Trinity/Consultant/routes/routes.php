@@ -108,5 +108,8 @@ namespace Trinity\Consultant\routes;
 
         \Route::get('/clientRegistration', array('as' => 'Trinity.Consultant.clientsManagement.clientRegistration',
             'uses' => '\Trinity\Consultant\controllers\PagesController@clientsManagementClientRegistration'));
+
+        \Route::post('/clientRegistration', array('as' => 'Trinity.Consultant.clientsManagement.signUpClient',
+            'uses' => '\Trinity\Consultant\controllers\PostController@clientsManagementSignUpClient'));
     });
 });

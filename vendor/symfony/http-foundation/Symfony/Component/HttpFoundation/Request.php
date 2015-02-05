@@ -469,7 +469,7 @@ class Request
         }
 
         if (!$dup->getRequestFormat(null)) {
-            $dup->setRequestFormat($format = $this->getRequestFormat(null));
+            $dup->setRequestFormat($this->getRequestFormat(null));
         }
 
         return $dup;
@@ -1646,7 +1646,7 @@ class Request
      * Returns true if the request is a XMLHttpRequest.
      *
      * It works if your JavaScript library sets an X-Requested-With HTTP header.
-     * It is known to work with Common JavaScript frameworks:
+     * It is known to work with common JavaScript frameworks:
      *
      * @link http://en.wikipedia.org/wiki/List_of_Ajax_frameworks#JavaScript
      *
@@ -1741,7 +1741,7 @@ class Request
             } while ($last > $index && (false !== $pos = strpos($path, $baseUrl)) && 0 != $pos);
         }
 
-        // Does the baseUrl have anything in Common with the request_uri?
+        // Does the baseUrl have anything in common with the request_uri?
         $requestUri = $this->getRequestUri();
 
         if ($baseUrl && false !== $prefix = $this->getUrlencodedPrefix($requestUri, $baseUrl)) {
@@ -1749,7 +1749,7 @@ class Request
             return $prefix;
         }
 
-        if ($baseUrl && false !== $prefix = $this->getUrlencodedPrefix($requestUri, dirname($baseUrl))) {
+        if ($baseUrl && false !== $prefix = $this->getUrlencodedPrefix($requestUri, dirname($baseUrl).'/')) {
             // directory portion of $baseUrl matches
             return rtrim($prefix, '/');
         }

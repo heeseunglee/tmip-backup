@@ -65,7 +65,7 @@ return array(
 	|
 	*/
 
-	'fallback_locale' => 'kr',
+	'fallback_locale' => 'en',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -125,6 +125,7 @@ return array(
 		'Way\Generators\GeneratorsServiceProvider',
 		'Laracasts\Flash\FlashServiceProvider',
 		'Intervention\Image\ImageServiceProvider',
+		'Cviebrock\ImageValidator\ImageValidatorServiceProvider',
 
 	),
 

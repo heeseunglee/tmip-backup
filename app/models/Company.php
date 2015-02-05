@@ -1,13 +1,15 @@
 <?php
 
 class Company extends \Eloquent {
-	protected $fillable = [ 'name_kor',
-							'name_eng',
-							'address_kor',
-							'address_eng',
+	protected $fillable = [ 'name',
+							'postcode_1',
+							'postcode_2',
+							'address_1',
+							'address_2',
 							'contact_email',
 							'contact_number_1',
-							'contact_number_2' ];
+							'contact_number_2',
+							'logo_image'];
 
 	protected $table = 'companies';
 

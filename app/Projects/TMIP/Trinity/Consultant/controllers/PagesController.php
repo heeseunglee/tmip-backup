@@ -79,6 +79,11 @@ class PagesController extends \BaseController {
 				->with('companies', $companies);
 	}
 
+	public function clientsManagementIndex() {
+		return \View::make('TrinityConsultantView::pages.clientsManagement.index')
+			->with('companies', \Company::all());
+	}
+
 	public function clientsManagementClientRegistration() {
 		return \View::make('TrinityConsultantView::pages.clientsManagement.clientRegistration');
 	}

@@ -85,6 +85,77 @@ class PostController extends \BaseController {
 		return 'TODO';
 	}
 
+	public function clientsManagementSignUpClient() {
+		$rules_logo_image = array('logo_image' => 'image|image_size:500,500');
+		$logo_image = array('logo_image' => \Input::file('logo_image'));
+		$validator = \Validator::make($logo_image, $rules_logo_image);
+
+		if($validator->fails()) {
+			\Flash::error('로고 이미지를 확인해 주세요');
+			return \Redirect::back()->withInput();
+		}
+
+		$rules = array('name' => 'required',
+						'postcode_1' => 'required',
+						'postcode_2' => 'required',
+						'address_1' => 'required',
+						'address_2' => 'required',
+						'email' => 'required|email',
+						'contact_1'  => 'required');
+
+		$validator = \Validator::make(\Input::all(), $rules);
+
+		if($validator->fails()) {
+			\Flash::error('필수 항목을 확인해 주세요');
+			return \Redirect::back()->withInput();
+		}
+
+		$company_name = \Input::get('name');
+		$company = \Company::where('name', $company_name)->get();
+		if($company->count() != null) {
+			\Flash::error('이미 등록된 고객사입니다.');
+			return \Redirect::back();
+		}
+
+		$new_company = \Company::create([
+			'name' => $company_name,
+			'postcode_1' => \Input::get('postcode_1'),
+			'postcode_2' => \Input::get('postcode_2'),
+			'address_1' => \Input::get('address_1'),
+			'address_2' => \Input::get('address_2'),
+			'contact_email' => \Input::get('email'),
+			'contact_number_1' => preg_replace('/(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/',
+												'$1-$2-$3',
+												str_replace('_', '', \Input::get('contact_1'))),
+
+		]);
+
+		if (\Input::get('contact_2') != null) {
+			$new_company->contact_number_2 = preg_replace('/(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/',
+														'$1-$2-$3',
+														str_replace('_', '', \Input::get('contact_2')));
+			$new_company->save();
+		}
+
+		$logo_image_path = app_path().'/Projects/TMIP/Trinity/Common/resources/images/clients/logo/'.$new_company->id;
+
+		if(!\File::exists($logo_image_path)) {
+			\File::makeDirectory($logo_image_path, 0775, true);
+		}
+
+		$file = \Input::file('logo_image');
+
+		$fileName = $new_company->name.'_logo_'.time().'.'.$file->getClientOriginalExtension();
+
+		$file->move($logo_image_path, $fileName);
+
+		$new_company->logo_image = $fileName;
+		$new_company->save();
+
+		\Flash::success('성공적으로 고객사를 추가하였습니다.');
+		return \Redirect::back();
+	}
+
 	function GenerateString($length)
 	{
 		$characters  = "0123456789";
