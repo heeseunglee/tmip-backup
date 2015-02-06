@@ -1,3 +1,6 @@
+/**
+ * Created by finallee on 15. 2. 6..
+ */
 (function(namespace, $) {
     "use strict";
 

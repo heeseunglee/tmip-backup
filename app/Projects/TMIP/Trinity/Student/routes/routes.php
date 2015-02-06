@@ -12,6 +12,9 @@ namespace Trinity\Student\routes;
     return \View::make('TrinityStudentView::pages.firstLogin.firstLogin');
 }));
 
+\Route::post('Student/firstLogin/signUp', array('as' => 'Trinity.Student.firstLogin.signUp',
+    'uses' => '\Trinity\Student\controllers\PostController@firstLoginSignUp'));
+
 \Route::group(array('prefix' => 'Student', 'before' => array('auth', 'is_first_login')), function() {
 
     \Route::get('/', array('as' => 'Trinity.Student.index', function() {

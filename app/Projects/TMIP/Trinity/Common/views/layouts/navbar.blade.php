@@ -1,7 +1,22 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Heeseung
- * Date: 2015-01-12
- * Time: 오후 12:59
- */
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        {{-- Mobile navigation items --}}
+    </div>
+    <div class="collapse navbar-collapse" id="header-navbar-collapse">
+        <ul class="nav navbar-nav">
+            {{-- Left aligned navigation items --}}
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="javascript:void(0);" class="navbar-profile dropdown-toggle text-bold" data-toggle="dropdown">
+                    {{ \Auth::user()->name_kor }}
+                    <i class="fa fa-fw fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu animation-slide">
+                    <li class="dropdown-header">프로필 영역</li>
+                    <li>{{ HTML::linkRoute('Trinity.logout', '로그아웃') }}</li>
+                </ul><!--end .dropdown-menu -->
+            </li>
+        </ul>
+    </div>
+</nav>

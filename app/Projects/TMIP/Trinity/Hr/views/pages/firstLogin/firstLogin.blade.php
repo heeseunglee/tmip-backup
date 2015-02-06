@@ -9,7 +9,7 @@
     {{ HTML::script('TMIP/Trinity/js/libs/jquery-validation/dist/additional-methods.min.js') }}
     {{ HTML::script('TMIP/Trinity/js/libs/wizard/jquery.bootstrap.wizard.min.js') }}
     {{ HTML::script('TMIP/Trinity/js/libs/inputmask/jquery.inputmask.bundle.min.js') }}
-    {{ HTML::script('TMIP/Trinity/js/core/Student/firstLogin/firstLogin.js') }}
+    {{ HTML::script('TMIP/Trinity/js/core/Hr/firstLogin/firstLogin.js') }}
 @stop
 
 @section('main_content')
@@ -30,10 +30,10 @@
                             <header><h4 class="text-light">추가 정보 입력</h4></header>
                         </div>
                         <div class="box-body">
-                        {{ Form::open(array('action' => 'Trinity.Student.firstLogin.signUp',
-                                            'class' => 'form-horizontal form-bordered form-validate',
-                                            'role' => 'form',
-                                            'files' => true)) }}
+                            {{ Form::open(array('action' => 'Trinity.Hr.firstLogin.signUp',
+                                                'class' => 'form-horizontal form-bordered form-validate',
+                                                'role' => 'form',
+                                                'files' => true)) }}
                             <div class="form-group">
                                 <div class="col-sm-3">
                                     {{ Form::label('password', '새로운 비밀번호', array('class' => 'control-label')) }}
@@ -74,22 +74,6 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-3">
-                                    {{ Form::label('position', '직책', array('class' => 'control-label')) }}
-                                </div>
-                                <div class="col-sm-9">
-                                    {{ Form::text('position', '', array('class' => 'form-control', 'required' => '')) }}
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-3">
-                                    {{ Form::label('deputy', '부서', array('class' => 'control-label')) }}
-                                </div>
-                                <div class="col-sm-9">
-                                    {{ Form::text('deputy', '', array('class' => 'form-control', 'required' => '')) }}
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-3">
                                     {{ Form::label('profile_image', '프로필 이미지', array('class' => 'control-label')) }}
                                 </div>
                                 <div class="col-sm-9">
@@ -99,7 +83,7 @@
                             <div class="form-footer text-right">
                                 {{ Form::submit('양식 전송하기', array('class' => 'btn btn-primary')) }}
                             </div>
-                        {{ Form::close() }}
+                            {{ Form::close() }}
                         </div><!--end .box-body -->
                     </div><!--end .box -->
                 </div><!--end .col-lg-12 -->
