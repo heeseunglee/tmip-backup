@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreatePreCoursesTable extends Migration {
+class CreateCourseMainTypesTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,14 +12,13 @@ class CreatePreCoursesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('pre_courses', function(Blueprint $table)
+		Schema::create('course_main_types', function(Blueprint $table)
 		{
 			$table->increments('id');
 
-			$table->unsignedInteger('requested_course_id');
-			$table->foreign('requested_course_id')->references('id')->on('requested_courses');
+			$table->string('name');
 
-			$table->string('status');
+			$table->boolean('can_select_multiple')->default(false);
 		});
 	}
 
@@ -31,7 +30,7 @@ class CreatePreCoursesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('pre_courses');
+		Schema::drop('course_main_types');
 	}
 
 }

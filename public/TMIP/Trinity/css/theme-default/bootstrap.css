@@ -103,6 +103,9 @@ span[for=postcode_2] {
   text-align: left;
   vertical-align: middle;
 }
+.table-dataTable tr td {
+  vertical-align: middle !important;
+}
 @-webkit-keyframes lock-collapse {
   from {
     height: 1200px;

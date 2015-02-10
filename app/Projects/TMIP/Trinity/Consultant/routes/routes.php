@@ -29,12 +29,34 @@ namespace Trinity\Consultant\routes;
      */
     \Route::group(array('prefix' => 'coursesManagement'), function() {
 
-        \Route::get('/', array('as' => 'Trinity.Consultant.coursesManagement', function() {
+        \Route::get('/',
+            array('as' => 'Trinity.Consultant.coursesManagement', function() {
             return \Redirect::route('Trinity.Consultant.coursesManagement.index');
         }));
 
-        \Route::get('/index', array('as' => 'Trinity.Consultant.coursesManagement.index',
-            'uses' => '\Trinity\Consultant\controllers\PagesController@coursesManagementIndex'));
+        \Route::get('/index',
+            array('as' => 'Trinity.Consultant.coursesManagement.index',
+                'uses' => '\Trinity\Consultant\controllers\PagesController@coursesManagementIndex'));
+
+        \Route::group(array('prefix' => 'requestedCourses'), function() {
+
+            \Route::get('/',
+                array('as' => 'Trinity.Consultant.coursesManagement.requestedCourses',
+                    function() {
+                        return \Redirect::route('Trinity.Consultant.coursesManagement.requestedCourses.index');
+                    }));
+
+            \Route::get('/index',
+                array('as' => 'Trinity.Consultant.coursesManagement.requestedCourses.index',
+                    'uses' => '\Trinity\Consultant\controllers\PagesController@coursesManagementRequestedCoursesIndex'));
+
+            \Route::get('/confirm/{requested_course_id}',
+                array('as' => 'Trinity.Consultant.coursesManagement.requestedCourses.confirm',
+                    'uses' => '\Trinity\Consultant\controllers\PagesController@coursesManagementRequestedCoursesConfirm'));
+
+        });
+
+
 
     });
 
@@ -110,10 +132,10 @@ namespace Trinity\Consultant\routes;
         \Route::get('/index', array('as' => 'Trinity.Consultant.clientsManagement.index',
             'uses' => '\Trinity\Consultant\controllers\PagesController@clientsManagementIndex'));
 
-        \Route::get('/clientRegistration', array('as' => 'Trinity.Consultant.clientsManagement.clientRegistration',
-            'uses' => '\Trinity\Consultant\controllers\PagesController@clientsManagementClientRegistration'));
+        \Route::get('/registration', array('as' => 'Trinity.Consultant.clientsManagement.registration',
+            'uses' => '\Trinity\Consultant\controllers\PagesController@clientsManagementRegistration'));
 
-        \Route::post('/clientRegistration', array('as' => 'Trinity.Consultant.clientsManagement.signUpClient',
-            'uses' => '\Trinity\Consultant\controllers\PostController@clientsManagementSignUpClient'));
+        \Route::post('/registration',
+            array('uses' => '\Trinity\Consultant\controllers\PostController@clientsManagementRegistration'));
     });
 });

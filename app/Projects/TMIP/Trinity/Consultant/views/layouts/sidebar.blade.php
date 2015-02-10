@@ -7,7 +7,10 @@
             <i class="fa fa-file fa-fw"></i><span class="title">클래스 관리</span> <span class="expand-sign">+</span>
         </a>
         <ul>
-            <li><a href="{{ URL::route('Trinity.Consultant.coursesManagement.index') }}" @if(strpos($current_url, 'coursesManagement/index')) class = "active" @endif>전체 보기</a></li>
+            <li><a href="{{ URL::route('Trinity.Consultant.coursesManagement.index') }}"
+                    @if(strpos($current_url, 'coursesManagement/index')) class = "active" @endif>전체 보기</a></li>
+            <li><a href="{{ URL::route('Trinity.Consultant.coursesManagement.requestedCourses.index') }}"
+                @if(strpos($current_url, 'coursesManagement/requestedCourses')) class = "active" @endif>클래스 개설 요청 관리</a></li>
         </ul>
     </li>
     <li @if(strpos($current_url, 'usersManagement')) class = "active expanded" @endif>
@@ -40,8 +43,8 @@
         <ul>
             <li><a href="{{ URL::route('Trinity.Consultant.clientsManagement.index') }}"
                     @if(strpos($current_url, 'clientsManagement/index')) class = "active" @endif>전체 보기</a></li>
-            <li><a href="{{ URL::route('Trinity.Consultant.clientsManagement.clientRegistration') }}"
-                @if(strpos($current_url, 'clientsManagement/clientRegistration')) class = "active" @endif>고객사 추가</a></li>
+            <li><a href="{{ URL::route('Trinity.Consultant.clientsManagement.registration') }}"
+                @if(strpos($current_url, 'clientsManagement/registration')) class = "active" @endif>고객사 추가</a></li>
         </ul>
     </li>
     <li>

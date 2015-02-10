@@ -39,8 +39,9 @@ namespace Trinity\Common\routes;
 
 \Route::get('company/logoImages/{company_id}', function($company_id) {
     $company = \Company::find($company_id);
-    $file_path = app_path().'/Projects/TMIP/Trinity/Common/resources/images/clients/logo/'.$company->id
-        .'/'.$company->logo_image;
+    $file_path = app_path()
+                .'/Projects/TMIP/Trinity/Common/resources/images/clients/logos/'
+                .$company->logo_image;
     return \Response::download($file_path);
 });
 

@@ -630,7 +630,7 @@ Version: 3.4.3 Timestamp: Tue Sep 17 06:47:14 PDT 2013
   vertical-align: middle;
 }
 .select2-container.form-control {
-  padding: 0;
+  padding: 0 !important;
 }
 .select2-container,
 .select2-drop,

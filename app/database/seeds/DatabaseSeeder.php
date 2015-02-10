@@ -19,6 +19,8 @@ class DatabaseSeeder extends Seeder {
 		//$this->call('HrsTableSeeder');
 		$this->call('PreferAreaGroupsTableSeeder');
 		$this->call('PreferAreaListsTableSeeder');
+		$this->call('CourseMainTypesTableSeeder');
+		$this->call('CourseSubTypesTableSeeder');
 	}
 
 }

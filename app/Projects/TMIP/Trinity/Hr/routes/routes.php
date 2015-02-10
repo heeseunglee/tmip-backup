@@ -40,11 +40,31 @@ namespace Trinity\Hr\routes;
         \Route::get('attendance', array('as' => 'Trinity.Hr.coursesManagement.attendance',
             'uses' => '\Trinity\Hr\controllers\PagesController@coursesManagementAttendance'));
 
-        \Route::get('newCourseRequest', array('as' => 'Trinity.Hr.coursesManagement.newCourseRequest',
-            'uses' => '\Trinity\Hr\controllers\PagesController@coursesManagementNewCourseRequest'));
+        \Route::group(array('prefix' => 'newCourseRequest'), function() {
 
-        \Route::post('newCourseRequest',
-            array('uses' => '\Trinity\Hr\controllers\PostController@newCourseRequest'));
+            \Route::get('/', array('as' => 'Trinity.Hr.coursesManagement.newCourseRequest',
+                'uses' => '\Trinity\Hr\controllers\PagesController@coursesManagementNewCourseRequest'));
+
+            \Route::post('/',
+                array('uses' => '\Trinity\Hr\controllers\PostController@newCourseRequest'));
+
+            \Route::get('curriculumPopUp', function() {
+                return \View::make('TrinityHrView::pages.coursesManagement.popups.curriculum')
+                    ->with('course_main_types', \CourseMainType::all());
+            });
+
+            /**
+             * ajax 루틴 처리
+             */
+            \Route::group(array('prefix' => 'ajax'), function() {
+
+                \Route::get('getCourseSubTypes/{course_main_type_id}',
+                    array('uses' => '\Trinity\Hr\controllers\AjaxController@courseManagementPopUpGetCourseSubTypes'));
+
+            });
+
+        });
+
     });
        
 });

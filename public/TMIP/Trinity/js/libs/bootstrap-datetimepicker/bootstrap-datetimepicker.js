@@ -36,7 +36,7 @@
             startDate: moment({ y: 1970 }),
             endDate: moment().add(50, "y"),
             collapse: true,
-            language: "en",
+            language: "ko",
             defaultDate: "",
             disabledDates: []
         },
@@ -396,8 +396,7 @@
                                     y: picker.viewDate.year(),
                                     M: picker.viewDate.month(),
                                     d: picker.viewDate.date(),
-                                    h: picker.date.hours(),
-                                    m: picker.date.minutes()
+                                    h: picker.date.hours()
                                 });
                                 notifyChange();
                             }
@@ -428,8 +427,7 @@
                                     y: year,
                                     M: month,
                                     d: day,
-                                    h: picker.date.hours(),
-                                    m: picker.date.minutes()
+                                    h: picker.date.hours()
                                 }
                                 );
                                 picker.viewDate = moment({

@@ -119,7 +119,7 @@ class PostController extends \BaseController {
 		return \Redirect::back();
 	}
 
-	public function clientsManagementSignUpClient() {
+	public function clientsManagementRegistration() {
 		$rules_logo_image = array('logo_image' => 'required|image|image_size:500,500');
 		$logo_image = array('logo_image' => \Input::file('logo_image'));
 		$validator = \Validator::make($logo_image, $rules_logo_image);
@@ -171,7 +171,7 @@ class PostController extends \BaseController {
 			$new_company->save();
 		}
 
-		$logo_image_path = app_path().'/Projects/TMIP/Trinity/Common/resources/images/clients/logo/'.$new_company->id;
+		$logo_image_path = app_path().'/Projects/TMIP/Trinity/Common/resources/images/clients/logos';
 
 		if(!\File::exists($logo_image_path)) {
 			\File::makeDirectory($logo_image_path, 0775, true);
@@ -179,7 +179,7 @@ class PostController extends \BaseController {
 
 		$file = \Input::file('logo_image');
 
-		$fileName = $new_company->name.'_logo_'.time().'.'.$file->getClientOriginalExtension();
+		$fileName = $new_company->id.'_logo_'.time().'.'.$file->getClientOriginalExtension();
 
 		$file->move($logo_image_path, $fileName);
 

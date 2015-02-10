@@ -1,6 +1,3 @@
-/**
- * Created by finallee on 15. 2. 6..
- */
 (function(namespace, $) {
     "use strict";
 
@@ -9,7 +6,6 @@
         var o = this;
         // Initialize app when document is ready
         $(document).ready(function() {
-            $(":input").inputmask();
             o.initialize();
         });
 
@@ -21,7 +17,27 @@
     // =========================================================================
 
     p.initialize = function() {
-        ;
+        this._initDataTables();
+    };
+
+    // =========================================================================
+    // DATATABLES
+    // =========================================================================
+
+    p._initDataTables = function() {
+        if (!$.isFunction($.fn.dataTable)) {
+            return;
+        }
+
+        var o = this;
+
+        this._createDataTable1();
+    }
+
+    p._createDataTable1 = function() {
+        $('.table-dataTable').dataTable({
+            "sPaginationType": "full_numbers"
+        });
     };
 
     // =========================================================================

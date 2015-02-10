@@ -26,6 +26,15 @@ class PagesController extends \BaseController {
 		return \View::make('TrinityConsultantView::pages.coursesManagement.index');
 	}
 
+	public function coursesManagementRequestedCoursesIndex() {
+		return \View::make('TrinityConsultantView::pages.coursesManagement.requestedCourses.index');
+	}
+
+	public function coursesManagementRequestedCoursesConfirm($requested_course_id) {
+		return \View::make('TrinityConsultantView::pages.coursesManagement.requestedCourses.confirm')
+			->with('requested_course', \RequestedCourse::find($requested_course_id));
+	}
+
 	public function usersManagementIndex() {
 		$consultants = \Consultant::all();
 		$hrs = \Hr::all();
@@ -85,8 +94,8 @@ class PagesController extends \BaseController {
 			->with('companies', \Company::all());
 	}
 
-	public function clientsManagementClientRegistration() {
-		return \View::make('TrinityConsultantView::pages.clientsManagement.clientRegistration');
+	public function clientsManagementRegistration() {
+		return \View::make('TrinityConsultantView::pages.clientsManagement.Registration');
 	}
 
 }

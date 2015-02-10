@@ -11,7 +11,8 @@
     {{ HTML::script('TMIP/Trinity/js/libs/wizard/jquery.bootstrap.wizard.min.js') }}
     <script src="//cdn.poesis.kr/post/search.min.js"></script>
     <script src="//cdn.poesis.kr/post/popup.min.js"></script>
-    {{ HTML::script('TMIP/Trinity/js/core/Consultant/clientsManagement/clientRegistration.js') }}
+    {{ HTML::script('TMIP/Trinity/js/libs/inputmask/jquery.inputmask.bundle.min.js') }}
+    {{ HTML::script('TMIP/Trinity/js/core/Consultant/clientsManagement/registration.js') }}
 @stop
 
 @section('main_content')
@@ -34,8 +35,7 @@
                             <header><h4 class="text-light"><i class="fa fa-check fa-fw"></i> 고객사 정보 입력</h4></header>
                         </div>
                         <div class="box-body no-padding1">
-                            {{ Form::open(array('action' => 'Trinity.Consultant.clientsManagement.signUpClient',
-                                                'class' => 'form-horizontal form-bordered form-validate',
+                            {{ Form::open(array('class' => 'form-horizontal form-bordered form-validate',
                                                 'role' => 'form',
                                                 'files' => true)) }}
                             <div class="form-group">
@@ -90,7 +90,7 @@
                                     <label for="contact_1" class="control-label">고객사 연락처 #1(필수)</label>
                                 </div>
                                 <div class="col-sm-9">
-                                    <input type="text" name="contact_1" id="contact_1" class="form-control" value="" placeholder="고객사 연락처 #1" required=""/>
+                                    <input type="text" name="contact_1" id="contact_1" class="form-control" value="" placeholder="고객사 연락처 #1" data-inputmask="'mask': '99999999999'" required=""/>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -98,7 +98,7 @@
                                     <label for="contact_2" class="control-label">고객사 연락처 #2(선택)</label>
                                 </div>
                                 <div class="col-sm-9">
-                                    <input type="text" name="contact_2" id="contact_2" class="form-control" value="" placeholder="고객사 연락처 #2"/>
+                                    <input type="text" name="contact_2" id="contact_2" class="form-control" value="" placeholder="고객사 연락처 #2" data-inputmask="'mask': '99999999999'"/>
                                 </div>
                             </div>
                             <div class="form-footer text-right">

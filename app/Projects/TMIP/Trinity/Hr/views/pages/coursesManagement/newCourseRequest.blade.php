@@ -2,6 +2,8 @@
 
 @section('additional_css_includes')
     {{ HTML::style('TMIP/Trinity/css/theme-default/libs/wizard/wizard.css') }}
+    {{ HTML::style('TMIP/Trinity/css/theme-default/libs/bootstrap-datetimepicker/bootstrap-datetimepicker.css') }}
+    {{ HTML::style('TMIP/Trinity/css/theme-default/libs/select2/select2.css') }}
 @stop
 
 @section('additional_js_includes')
@@ -9,7 +11,11 @@
     {{ HTML::script('TMIP/Trinity/js/libs/jquery-validation/dist/additional-methods.min.js') }}
     {{ HTML::script('TMIP/Trinity/js/libs/wizard/jquery.bootstrap.wizard.min.js') }}
     {{ HTML::script('TMIP/Trinity/js/libs/inputmask/jquery.inputmask.bundle.min.js') }}
-    {{ HTML::script('TMIP/Trinity/js/core/Hr/firstLogin/firstLogin.js') }}
+    {{ HTML::script('TMIP/Trinity/js/core/Hr/coursesManagement/newCourseRequest.js') }}
+    {{ HTML::script('TMIP/Trinity/js/libs/moment/moment.min.js') }}
+    {{ HTML::script('TMIP/Trinity/js/libs/bootstrap-datetimepicker/bootstrap-datetimepicker.js') }}
+    {{ HTML::script('TMIP/Trinity/js/libs/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.ko.js') }}
+    {{ HTML::script('TMIP/Trinity/js/libs/select2/select2.min.js') }}
 @stop
 
 @section('main_content')
@@ -19,11 +25,11 @@
             <li>{{ HTML::linkRoute('Trinity.Hr.coursesManagement', '클래스 관리') }}</li>
             <li class="active">신규 클래스 개설요청</li>
         </ol>
-        @include('flash::message')
         <div class="section-header">
             <h3 class="text-standard"><i class="fa fa-fw fa-arrow-circle-right text-gray-light"></i> 클래스 관리 <small>신규 클래스 개설요청</small></h3>
         </div>
         <div class="section-body">
+            @include('flash::message')
             <!-- START BASIC TABLE -->
             <div class="row">
                 <div class="col-lg-12">
@@ -77,7 +83,8 @@
                                                                                 'required' => '')) }}
                                         </div>
                                         <div class="col-sm-1">
-                                            {{ Form::button('검색', array('class' => 'btn btn-primary')) }}
+                                            {{ Form::button('검색', array('class' => 'btn btn-primary',
+                                                                        'id' => 'curriculum_popup_open')) }}
                                         </div>
                                     </div>
                                 </div>
@@ -179,7 +186,9 @@
                                             {{ Form::label('start_datetime', '희망 시작일', array('class' => 'control-label')) }}
                                         </div>
                                         <div class="col-sm-9">
-                                            {{ Form::text('start_datetime', '', array('required' => '', 'class' => 'form-control')) }}
+                                            {{ Form::text('start_datetime', '', array('required' => '',
+                                                                                    'class' => 'form-control',
+                                                                                    'data-time-component' => 30)) }}
                                         </div>
                                     </div>
                                 </div>
@@ -189,7 +198,9 @@
                                             {{ Form::label('end_datetime', '희망 종료일', array('class' => 'control-label')) }}
                                         </div>
                                         <div class="col-sm-9">
-                                            {{ Form::text('end_datetime', '', array('required' => '', 'class' => 'form-control')) }}
+                                            {{ Form::text('end_datetime', '', array('required' => '',
+                                                                                    'class' => 'form-control',
+                                                                                    'data-time-component' => 30)) }}
                                         </div>
                                     </div>
                                 </div>
@@ -201,7 +212,18 @@
                                             {{ Form::label('running_days', '희망 요일', array('class' => 'control-label')) }}
                                         </div>
                                         <div class="col-sm-9">
-                                            {{ Form::text('running_days', '', array('required' => '', 'class' => 'form-control')) }}
+                                            {{ Form::select('running_days',
+                                                array('1' => '월',
+                                                    '2' => '화',
+                                                    '3' => '수',
+                                                    '4' => '목',
+                                                    '5' => '금',
+                                                    '6' => '토',
+                                                    '7' => '일'), null,
+                                                    array('required' => '',
+                                                        'multiple' => 'multiple',
+                                                        'class' => 'form-control',
+                                                        'name' => 'running_days[]')) }}
                                         </div>
                                     </div>
                                 </div>
@@ -238,7 +260,8 @@
                                             {{ Form::label('meeting_datetime', '희망 미팅 날짜', array('class' => 'control-label')) }}
                                         </div>
                                         <div class="col-sm-9">
-                                            {{ Form::text('meeting_datetime', '', array('required' => '', 'class' => 'form-control')) }}
+                                            {{ Form::text('meeting_datetime', '', array('required' => '', 'class' => 'form-control',
+                                                                                            'data-time-component' => 30)) }}
                                         </div>
                                     </div>
                                 </div>
@@ -246,10 +269,10 @@
                             <br/>
                             <div class="form-group">
                                 <div class="col-sm-3">
-                                    {{ Form::label('other_request', '기타 요청사항', array('class' => 'control-label')) }}
+                                    {{ Form::label('other_requests', '기타 요청사항', array('class' => 'control-label')) }}
                                 </div>
                                 <div class="col-sm-9">
-                                    {{ Form::textarea('other_request', '',
+                                    {{ Form::textarea('other_requests', '',
                                         array('class' => 'form-control',
                                                 'rows' => '5',
                                                 'placeholder' => '기타 요청사항을 적어주세요')) }}
