@@ -29,7 +29,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 							'name_eng',
 							'private_email',
 							'phone_number',
-							'file_location_of_profile_img', ];
+							'profile_image', ];
 
 	public function userable() {
 		return $this->morphTo();

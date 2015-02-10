@@ -20,11 +20,11 @@ class AjaxController extends \BaseController {
 	public function companyCourseDetail($consultant_id, $company_id = null) {
 		if(\Request::ajax()) {
 			if($company_id != null) {
-				return \View::make('TrinityConsultantView::pages.usersManagement.ajax.companyCourseDetail')
+				return \View::make('TrinityConsultantView::ajax.usersManagement.companyCourseDetail')
 					->with('consultant', \Consultant::find($consultant_id))
 					->with('company', \Company::find($company_id));
 			}
-			return \View::make('TrinityConsultantView::pages.usersManagement.ajax.companyCourseDetail')
+			return \View::make('TrinityConsultantView::ajax.usersManagement.companyCourseDetail')
 				->with('consultant', \Consultant::find($consultant_id))
 				->with('company', null);
 		}
@@ -33,8 +33,15 @@ class AjaxController extends \BaseController {
 
 	public function companyList($consultant_id) {
 		if(\Request::ajax()) {
-			return \View::make('TrinityConsultantView::pages.usersManagement.ajax.companyList')
+			return \View::make('TrinityConsultantView::ajax.usersManagement.companyList')
 				->with('consultant', \Consultant::find($consultant_id));
+		}
+		return \Response::error('404');
+	}
+
+	public function coursesManagementRequestedCoursesModifyInputs() {
+		if(\Request::ajax()) {
+			return \View::make('TrinityConsultantView::ajax.coursesManagement.requestedCourses.modifyInputs');
 		}
 		return \Response::error('404');
 	}

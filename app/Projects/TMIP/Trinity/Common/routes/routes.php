@@ -45,6 +45,22 @@ namespace Trinity\Common\routes;
     return \Response::download($file_path);
 });
 
+\Route::get('user/profileImage/big/{user_id}', function($user_id) {
+    $user = \User::find($user_id);
+    $file_path = app_path()
+        .'/Projects/TMIP/Trinity/Common/resources/images/users/big_profiles/'
+        .$user->profile_image;
+    return \Response::download($file_path);
+});
+
+\Route::get('user/profileImage/small/{user_id}', function($user_id) {
+    $user = \User::find($user_id);
+    $file_path = app_path()
+        .'/Projects/TMIP/Trinity/Common/resources/images/users/small_profiles/'
+        .$user->profile_image;
+    return \Response::download($file_path);
+});
+
 \Route::get('msFirm/signUp', array('as' => 'Trinity.msFirm.signUp',
     'uses' => '\Trinity\Common\controllers\PagesController@msFirmSignUp'));
 

@@ -5,7 +5,7 @@
 @endsection
 
 @section('additional_js_includes')
-
+    {{ HTML::script('TMIP/Trinity/js/core/Consultant/coursesManagement/requestedCourses/confirm.js') }}
 @endsection
 
 @section('main_content')
@@ -27,46 +27,150 @@
                             <header><h4 class="text-light">클래스 개설 요청 승인</h4></header>
                         </div>
                         <div class="box-body">
-                            <table class="table table-hover table-dataTable">
-                                <thead>
-                                <tr>
-                                    <th>고객사</th>
-                                    <th>교육 과정</th>
-                                    <th>교육 형태</th>
-                                    <th>교육 기간</th>
-                                    <th>미팅 희망일</th>
-                                    <th>승인 담당자</th>
-                                    <th>작업</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <?php
-                                $not_confirmed_requested_courses = \RequestedCourse::where('is_confirmed', false)->get();
-                                ?>
-                                @foreach($not_confirmed_requested_courses as $course)
-                                    <tr>
-                                        <td>{{ $course->company->name }}</td>
-                                        <td>
-                                            <?php
-                                            $curriculum_id_array = explode(',', $course->curriculum);
-                                            ?>
-                                            @foreach($curriculum_id_array as $curriculum_id)
-                                                {{ \CourseSubType::find($curriculum_id)->name }}<br/>
-                                            @endforeach
-                                        </td>
-                                        <td>{{ $course->course_type }}</td>
-                                        <td>{{ explode(' ', $course->start_datetime)[0] }}
-                                            ~
-                                            {{ explode(' ', $course->end_datetime)[0] }}
-                                        </td>
-                                        <td>{{ $course->meeting_datetime }}</td>
-                                        <td>{{ $course->hr->consultant->user->name_kor }}</td>
-                                        <td class="text-center">
-                                        </td>
-                                    </tr>
-                                @endforeach
-                                </tbody>
-                            </table>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <?php
+                                    $hr_user = $requested_course->hr->user;
+                                    ?>
+                                    <div class="col-sm-3 style-inverse no-padding">
+                                        <div class="holder">
+                                            {{ HTML::image('user/profileImage/big/'.$hr_user->id,
+                                                            '',
+                                                            array('class' => 'img-rounded img-responsive')) }}
+                                        </div>
+                                        <div class="box-body style-inverse">
+                                            <p class="text-support5-alt">
+                                                <span class="text-xl text-light">{{ $hr_user->name_kor }}</span><br>
+                                                <span class="text-sm">{{ $hr_user->userable->company->name }} 인사 담당자</span>
+                                            </p>
+                                        </div>
+                                        <div class="box-body style-inverse">
+                                            <address class="text-support5-alt">
+                                                <abbr title="개인 연락처"><i class="fa fa-phone fa-fw"></i></abbr> {{ $hr_user->phone_number }}<br>
+                                                <abbr title="회사 연락처"><i class="fa fa-building-o fa-fw"></i></abbr> {{ $hr_user->userable->company->contact_number_1 }}<br>
+                                                @if ($hr_user->userable->company->contact_number_2 != null)
+                                                    <abbr title="회사 연락처2"><i class="fa fa-building-o fa-fw"></i></abbr> {{ $hr_user->userable->company->contact_number_2 }}<br>
+                                                @endif
+                                                <abbr title="이메일"><i class="fa fa-at fa-fw"></i></abbr> {{ $hr_user->account_email }}
+                                            </address>
+                                        </div>
+                                    </div><!--end .col-sm-3 -->
+                                    <!-- END PROFILE SIDEBAR -->
+
+                                    <!-- START PROFILE CONTENT -->
+                                    <div class="col-sm-9">
+                                        <div class="alert alert-warning">
+                                            <i class="fa fa-check-square-o"></i> 해당 인삼담당자와 유선 통화후 승인을 진행해 주시기 바랍니다.
+                                        </div>
+                                        <div class="box-body">
+                                            <div class="row">
+                                                <div id="modify_input_insert" class="col-sm-12">
+                                                    <table class="table">
+                                                        <thead>
+                                                        <tr>
+                                                            <th width="20%;">분류</th>
+                                                            <th width="80%;">입력값</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>교육 과정</td>
+                                                            <td>
+                                                                <?php
+                                                                $curriculum_id_array = explode(',', $requested_course->curriculum);
+                                                                ?>
+                                                                @foreach($curriculum_id_array as $id)
+                                                                    {{ \CourseSubType::find($id)->name }} /
+                                                                @endforeach
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>학생 수</td>
+                                                            <td>
+                                                                {{ $requested_course->number_of_students - 10}}
+                                                                 -
+                                                                {{ $requested_course->number_of_students }} 명
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>교육 형태</td>
+                                                            <td>{{ $requested_course->course_type }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>강사 비자 종류</td>
+                                                            <td>{{ $requested_course->instructor_type }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>강사 성별</td>
+                                                            <td>@if($requested_course->instructor_gender == 'M') 남성 @else 여성 @endif</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>강사 경력</td>
+                                                            <td>{{ $requested_course->instructor_career }}년 이상</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>시작일</td>
+                                                            <td>{{ $requested_course->start_datetime }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>종료일</td>
+                                                            <td>{{ $requested_course->end_datetime }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <?php
+                                                                $days_array = array(
+                                                                    '1' => '월',
+                                                                    '2' => '화',
+                                                                    '3' => '수',
+                                                                    '4' => '목',
+                                                                    '5' => '금',
+                                                                    '6' => '토',
+                                                                    '7' => '일',
+                                                                );
+                                                                $course_days_array = explode(',', $requested_course->running_days);
+                                                            ?>
+                                                            <td>수강 요일</td>
+                                                            <td>
+                                                            @foreach($course_days_array as $day)
+                                                                {{ $days_array[$day] }},
+                                                            @endforeach
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>장소</td>
+                                                            <td>{{ $requested_course->location }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>미팅 희망일</td>
+                                                            <td>{{ $requested_course->meeting_datetime }}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2" class="text-center">
+                                                                추가 요청사항
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                {{ $requested_course->other_requests }}
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--end .col-sm-12 -->
+                                    <!-- END PROFILE CONTENT -->
+                                </div>
+                            </div>
+
+                            <div class="row">&nbsp;</div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button id="hr_confirmed" class="btn btn-primary">인사 담당자 확인</button>
+                                    <button id="modify_inputs" class="btn btn-primary" disabled="disabled">수정하기</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

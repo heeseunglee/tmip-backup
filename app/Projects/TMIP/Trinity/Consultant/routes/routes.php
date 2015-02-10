@@ -54,6 +54,9 @@ namespace Trinity\Consultant\routes;
                 array('as' => 'Trinity.Consultant.coursesManagement.requestedCourses.confirm',
                     'uses' => '\Trinity\Consultant\controllers\PagesController@coursesManagementRequestedCoursesConfirm'));
 
+            \Route::get('/confirm/ajax/modifyInputs',
+                array('uses' => '\Trinity\Consultant\controllers\AjaxController@coursesManagementRequestedCoursesModifyInputs'));
+
         });
 
 

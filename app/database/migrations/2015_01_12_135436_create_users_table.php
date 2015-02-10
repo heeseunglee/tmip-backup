@@ -63,7 +63,7 @@ class CreateUsersTable extends Migration {
 			 */
 			$table->string('phone_number')->nullable();
 
-			$table->string('file_location_of_profile_img')->default('no_image');
+			$table->string('profile_image')->default('no_image.png');
 
 			/**
 			 * 사용자가 처음으로 로그인을 진행한다면 이름 / 이메일 이외의 추가 정보를 입력하게 redirect
