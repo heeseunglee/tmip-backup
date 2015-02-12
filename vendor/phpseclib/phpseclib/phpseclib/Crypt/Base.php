@@ -47,7 +47,7 @@
  * @package   Crypt_Base
  * @author    Jim Wigginton <terrafrost@php.net>
  * @author    Hans-Juergen Petrich <petrich@tronic-media.com>
- * @copyright MMVII Jim Wigginton
+ * @copyright 2007 Jim Wigginton
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  * @link      http://phpseclib.sourceforge.net
  */
@@ -635,7 +635,7 @@ class Crypt_Base
      * Encrypts a message.
      *
      * $plaintext will be padded with additional bytes such that it's length is a multiple of the block size. Other cipher
-     * implementations may or may not pad in the same manner.  Other Common approaches to padding and the reasons why it's
+     * implementations may or may not pad in the same manner.  Other common approaches to padding and the reasons why it's
      * necessary are discussed in the following
      * URL:
      *

@@ -9,7 +9,7 @@
  *
  * Useful resources are as follows:
  *
- *  - {@link http://www.mozilla.org/Projects/security/pki/nss/draft-kaukonen-cipher-arcfour-03.txt ARCFOUR Algorithm}
+ *  - {@link http://www.mozilla.org/projects/security/pki/nss/draft-kaukonen-cipher-arcfour-03.txt ARCFOUR Algorithm}
  *  - {@link http://en.wikipedia.org/wiki/RC4 - Wikipedia: RC4}
  *
  * RC4 is also known as ARCFOUR or ARC4.  The reason is elaborated upon at Wikipedia.  This class is named RC4 and not
@@ -55,7 +55,7 @@
  * @category  Crypt
  * @package   Crypt_RC4
  * @author    Jim Wigginton <terrafrost@php.net>
- * @copyright MMVII Jim Wigginton
+ * @copyright 2007 Jim Wigginton
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  * @link      http://phpseclib.sourceforge.net
  */

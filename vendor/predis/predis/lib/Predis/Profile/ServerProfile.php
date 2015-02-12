@@ -16,7 +16,7 @@ use Predis\Command\Processor\CommandProcessingInterface;
 use Predis\Command\Processor\CommandProcessorInterface;
 
 /**
- * Base class that implements Common functionalities of server profiles.
+ * Base class that implements common functionalities of server profiles.
  *
  * @author Daniele Alessandri <suppakilla@gmail.com>
  */
