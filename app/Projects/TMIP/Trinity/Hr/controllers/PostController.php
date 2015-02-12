@@ -65,6 +65,7 @@ class PostController extends \BaseController {
             'end_datetime' => 'required',
             'running_days' => 'required|array',
             'location' => 'required',
+            'level_test' => 'required',
             'meeting_datetime' => 'required',
         );
 
@@ -111,6 +112,7 @@ class PostController extends \BaseController {
                 'end_datetime' => $end_datetime,
                 'running_days' => implode(',', \Input::get('running_days')),
                 'location' => \Input::get('location'),
+                'level_test' => \Input::get('level_test'),
                 'meeting_datetime' => $meeting_datetime,
                 'other_requests' => \Input::get('other_requests')
             ]);

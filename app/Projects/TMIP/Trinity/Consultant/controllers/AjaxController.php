@@ -39,9 +39,26 @@ class AjaxController extends \BaseController {
 		return \Response::error('404');
 	}
 
-	public function coursesManagementRequestedCoursesModifyInputs() {
+	public function coursesManagementRequestedCoursesModifyInputs($requested_course_id) {
 		if(\Request::ajax()) {
-			return \View::make('TrinityConsultantView::ajax.coursesManagement.requestedCourses.modifyInputs');
+			return \View::make('TrinityConsultantView::ajax.coursesManagement.requestedCourses.modifyInputs')
+				->with('requested_course', \RequestedCourse::find($requested_course_id));
+		}
+		return \Response::error('404');
+	}
+
+	public function coursesManagementGetHrDropDownList($company_id) {
+		if(\Request::ajax()) {
+			return \View::make('TrinityConsultantView::ajax.coursesManagement.getHrDropDownList')
+				->with('company', \Company::find($company_id));
+		}
+		return \Response::error('404');
+	}
+
+	public function courseManagementPopUpGetCourseSubTypes($course_main_type_id) {
+		if(\Request::ajax()) {
+			return \View::make('TrinityConsultantView::ajax.coursesManagement.getCourseSubTypes')
+				->with('course_main_type', \CourseMainType::find($course_main_type_id));
 		}
 		return \Response::error('404');
 	}

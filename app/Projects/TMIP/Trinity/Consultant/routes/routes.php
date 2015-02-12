@@ -38,6 +38,9 @@ namespace Trinity\Consultant\routes;
             array('as' => 'Trinity.Consultant.coursesManagement.index',
                 'uses' => '\Trinity\Consultant\controllers\PagesController@coursesManagementIndex'));
 
+        /**
+         * 클래스 개설 요청
+         */
         \Route::group(array('prefix' => 'requestedCourses'), function() {
 
             \Route::get('/',
@@ -46,20 +49,75 @@ namespace Trinity\Consultant\routes;
                         return \Redirect::route('Trinity.Consultant.coursesManagement.requestedCourses.index');
                     }));
 
-            \Route::get('/index',
+            \Route::get('index',
                 array('as' => 'Trinity.Consultant.coursesManagement.requestedCourses.index',
                     'uses' => '\Trinity\Consultant\controllers\PagesController@coursesManagementRequestedCoursesIndex'));
 
-            \Route::get('/confirm/{requested_course_id}',
+            \Route::get('confirm/{requested_course_id}',
                 array('as' => 'Trinity.Consultant.coursesManagement.requestedCourses.confirm',
                     'uses' => '\Trinity\Consultant\controllers\PagesController@coursesManagementRequestedCoursesConfirm'));
 
-            \Route::get('/confirm/ajax/modifyInputs',
+            \Route::post('confirm',
+                array('uses' => '\Trinity\Consultant\controllers\PostController@coursesManagementRequestedCoursesConfirm'));
+
+            /*
+             * 클래스 개설 요청 Ajax
+             */
+            \Route::get('/confirm/ajax/modifyInputs/{requested_course_id}',
                 array('uses' => '\Trinity\Consultant\controllers\AjaxController@coursesManagementRequestedCoursesModifyInputs'));
 
         });
 
+        /**
+         * Pre 클래스
+         */
+        \Route::group(array('prefix' => 'preCourses'), function() {
 
+            \Route::get('/',
+                array('as' => 'Trinity.Consultant.coursesManagement.preCourses', function() {
+                    return \Redirect::route('Trinity.Consultant.coursesManagement.preCourses.index');
+                }));
+
+            \Route::get('index',
+                array('as' => 'Trinity.Consultant.coursesManagement.preCourses.index',
+                    'uses' => '\Trinity\Consultant\controllers\PagesController@coursesManagementPreCoursesIndex'));
+
+            \Route::get('create',
+                array('as' => 'Trinity.Consultant.coursesManagement.preCourses.create',
+                    'uses' => '\Trinity\Consultant\controllers\PagesController@coursesManagementPreCoursesCreate'));
+
+            \Route::post('create',
+                array('uses' => '\Trinity\Consultant\controllers\PostController@coursesManagementPreCoursesCreate'));
+
+            \Route::get('curriculumPopUp', function() {
+                return \View::make('TrinityConsultantView::pages.coursesManagement.popups.curriculum')
+                    ->with('course_main_types', \CourseMainType::all());
+            });
+
+            \Route::get('show/{pre_course_id}',
+                array('as' => 'Trinity.Consultant.coursesManagement.preCourses.show',
+                    'uses' => '\Trinity\Consultant\controllers\PagesController@coursesManagementPreCoursesShow'));
+
+            \Route::get('registerStudents/{pre_course_id?}',
+                array('as' => 'Trinity.Consultant.coursesManagement.preCourses.registerStudents',
+                    'uses' => '\Trinity\Consultant\controllers\PagesController@coursesManagementPreCoursesRegisterStudents'));
+
+            \Route::post('registerStudents/{pre_course_id}',
+                array('uses' => '\Trinity\Consultant\controllers\PostController@coursesManagementPreCoursesRegisterStudents'));
+        });
+
+        /**
+         * 클래스 개설 Ajax
+         */
+        \Route::group(array('prefix' => 'ajax'), function() {
+
+            \Route::get('getHrDropDownList/{company_id}',
+                array('uses' => '\Trinity\Consultant\controllers\AjaxController@coursesManagementGetHrDropDownList'));
+
+            \Route::get('getCourseSubTypes/{course_main_type_id}',
+                array('uses' => '\Trinity\Consultant\controllers\AjaxController@courseManagementPopUpGetCourseSubTypes'));
+
+        });
 
     });
 

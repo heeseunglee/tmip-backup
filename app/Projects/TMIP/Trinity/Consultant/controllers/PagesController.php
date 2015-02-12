@@ -22,12 +22,19 @@ class PagesController extends \BaseController {
 		\View::share('current_user', $current_user);
 	}
 
+	/**
+	 * @return mixed
+	 *
+	 * 클래스 관리
+	 */
 	public function coursesManagementIndex() {
+		//dd(\Session::all());
 		return \View::make('TrinityConsultantView::pages.coursesManagement.index');
 	}
 
 	public function coursesManagementRequestedCoursesIndex() {
-		return \View::make('TrinityConsultantView::pages.coursesManagement.requestedCourses.index');
+		return \View::make('TrinityConsultantView::pages.coursesManagement.requestedCourses.index')
+			->with('requested_courses', \RequestedCourse::all());
 	}
 
 	public function coursesManagementRequestedCoursesConfirm($requested_course_id) {
@@ -35,16 +42,39 @@ class PagesController extends \BaseController {
 			->with('requested_course', \RequestedCourse::find($requested_course_id));
 	}
 
+	public function coursesManagementPreCoursesIndex() {
+		return \View::make('TrinityConsultantView::pages.coursesManagement.preCourses.index');
+	}
+
+	public function coursesManagementPreCoursesCreate() {
+		return \View::make('TrinityConsultantView::pages.coursesManagement.preCourses.create');
+	}
+
+	public function coursesManagementPreCoursesShow($pre_course_id) {
+		return \View::make('TrinityConsultantView::pages.coursesManagement.preCourses.show')
+			->with('pre_course', \PreCourse::find($pre_course_id));
+	}
+
+	public function coursesManagementPreCoursesRegisterStudents($pre_course_id = null) {
+		if(is_null($pre_course_id))
+			return \View::make('TrinityConsultantView::pages.coursesManagement.preCourses.registerStudents')
+				->with('pre_courses', \PreCourse::where('status', '학생 등록')->get());
+
+		return \View::make('TrinityConsultantView::pages.coursesManagement.preCourses.registerStudentsDirectly')
+			->with('pre_course', \PreCourse::find($pre_course_id));
+	}
+
+	/**
+	 * @return mixed
+	 *
+	 * 사용자 관리
+	 */
 	public function usersManagementIndex() {
-		$consultants = \Consultant::all();
-		$hrs = \Hr::all();
-		$instructors = \Instructor::all();
-		$students = \Student::all();
 		return \View::make('TrinityConsultantView::pages.usersManagement.index')
-			->with('consultants', $consultants)
-			->with('hrs', $hrs)
-			->with('instructors', $instructors)
-			->with('students', $students);
+			->with('consultants', \Consultant::all())
+			->with('hrs', \Hr::all())
+			->with('instructors', \Instructor::all())
+			->with('students', \Student::all());
 	}
 
 	public function usersManagementHrs() {
@@ -89,6 +119,11 @@ class PagesController extends \BaseController {
 				->with('companies', $companies);
 	}
 
+	/**
+	 * @return mixed
+	 *
+	 * 고객사 관리
+	 */
 	public function clientsManagementIndex() {
 		return \View::make('TrinityConsultantView::pages.clientsManagement.index')
 			->with('companies', \Company::all());

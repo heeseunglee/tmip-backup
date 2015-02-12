@@ -11,7 +11,7 @@
     {{ HTML::script('TMIP/Trinity/js/libs/jquery-validation/dist/additional-methods.min.js') }}
     {{ HTML::script('TMIP/Trinity/js/libs/wizard/jquery.bootstrap.wizard.min.js') }}
     {{ HTML::script('TMIP/Trinity/js/libs/inputmask/jquery.inputmask.bundle.min.js') }}
-    {{ HTML::script('TMIP/Trinity/js/core/Hr/coursesManagement/newCourseRequest.js') }}
+    {{ HTML::script('TMIP/Trinity/js/core/Consultant/coursesManagement/preCourses/create.js') }}
     {{ HTML::script('TMIP/Trinity/js/libs/moment/moment.min.js') }}
     {{ HTML::script('TMIP/Trinity/js/libs/bootstrap-datetimepicker/bootstrap-datetimepicker.js') }}
     {{ HTML::script('TMIP/Trinity/js/libs/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.ko.js') }}
@@ -22,11 +22,11 @@
     <section>
         <ol class="breadcrumb">
             <li>{{ HTML::linkRoute('Trinity.index', '홈') }}</li>
-            <li>{{ HTML::linkRoute('Trinity.Hr.coursesManagement', '클래스 관리') }}</li>
-            <li class="active">신규 클래스 개설요청</li>
+            <li>{{ HTML::linkRoute('Trinity.Consultant.coursesManagement', '클래스 관리') }}</li>
+            <li class="active">Pre 클래스 개설</li>
         </ol>
         <div class="section-header">
-            <h3 class="text-standard"><i class="fa fa-fw fa-arrow-circle-right text-gray-light"></i> 클래스 관리 <small>신규 클래스 개설요청</small></h3>
+            <h3 class="text-standard"><i class="fa fa-fw fa-arrow-circle-right text-gray-light"></i> 클래스 관리 <small>Pre 클래스 개설</small></h3>
         </div>
         <div class="section-body">
             @include('flash::message')
@@ -35,43 +35,37 @@
                 <div class="col-lg-12">
                     <div class="box">
                         <div class="box-head style-primary">
-                            <header><h4 class="text-light">기본 정보</h4></header>
+                            <header><h4 class="text-light">Pre 클래스 개설</h4></header>
                         </div>
                         <div class="box-body">
-                            <table class="table table-hover table-banded no-margin">
-                                <tbody>
-                                <tr>
-                                    <td><strong>회사명</strong></td>
-                                    <td class="text-center">{{ $current_user->userable->company->name }}</td>
-                                    <td><strong>HR 담당자</strong></td>
-                                    <td class="text-center">{{ $current_user->name_kor }}</td>
-                                    <td><strong>담당 컨설턴트</strong></td>
-                                    <td class="text-center">{{ $current_user->userable->consultant->user->name_kor }}</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>총 클래스 수</strong></td>
-                                    <td class="text-center">{{ $current_user->userable->company->courses->count() }}</td>
-                                    <td><strong>총 학생 수</strong></td>
-                                    <td class="text-center">{{ $current_user->userable->company->students->count() }}</td>
-                                    <td colspan="2" class="text-center">{{ date("Y-m-d H:i:s") }} 기준</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div><!--end .box-body -->
-                    </div><!--end .box -->
-                </div><!--end .col-lg-12 -->
-            </div>
-            <!-- END BASIC TABLE -->
-            <!-- START BASIC TABLE -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="box">
-                        <div class="box-head style-primary">
-                            <header><h4 class="text-light">신규 클래스 개설요청</h4></header>
-                        </div>
-                        <div class="box-body">
-                        {{ Form::open(array('class' => 'form-horizontal form-banded form-validate',
-                                            'role' => 'form')) }}
+                            {{ Form::open(array('class' => 'form-horizontal form-banded form-validate',
+                                                'role' => 'form')) }}
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="col-sm-3">
+                                            {{ Form::label('company', '고객사', array('class' => 'control-label')) }}
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <?php
+                                            $companies = \Company::all();
+                                            $companies_id_array = array('' => '선택하세요');
+                                            foreach($companies as $company) {
+                                                $companies_id_array[$company->id] = $company->name;
+                                            }
+                                            ?>
+                                            {{ Form::select('company',
+                                                            $companies_id_array,
+                                                            '',
+                                                            array('required' => '',
+                                                                'class' => 'form-control')) }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6" id="hr_list">
+
+                                </div>
+                            </div>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
@@ -103,8 +97,10 @@
                                                     '50' => '40 - 50명',
                                                     '60' => '50 - 60명',
                                                     '70' => '60 - 70명',
-                                                    '80' => '70 - 80명'), '',
-                                                    array('required' => '', 'class' => 'form-control')) }}
+                                                    '80' => '70 - 80명'),
+                                                    '',
+                                                    array('required' => '',
+                                                        'class' => 'form-control')) }}
                                         </div>
                                     </div>
                                 </div>
@@ -267,6 +263,11 @@
                                 </div>
                             </div>
                             <br/>
+                            <div class="row">
+                                <div class="col-sm-12">
+
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <div class="col-sm-3">
                                     {{ Form::label('other_requests', '기타 요청사항', array('class' => 'control-label')) }}
@@ -281,7 +282,7 @@
                             <div class="form-footer text-right">
                                 {{ Form::submit('양식 전송하기', array('class' => 'btn btn-primary')) }}
                             </div>
-                        {{ Form::close() }}
+                            {{ Form::close() }}
                         </div><!--end .box-body -->
                     </div><!--end .box -->
                 </div><!--end .col-lg-12 -->

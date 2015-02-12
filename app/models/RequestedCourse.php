@@ -13,6 +13,7 @@ class RequestedCourse extends \Eloquent {
 							'end_datetime',
 							'running_days',
 							'location',
+							'level_test',
 							'meeting_datetime',
 							'other_requests',
 							'is_confirmed',
@@ -26,5 +27,13 @@ class RequestedCourse extends \Eloquent {
 
 	public function hr() {
 		return $this->belongsTo('Hr', 'hr_id');
+	}
+
+	public function consultant() {
+		return $this->belongsTo('Consultant', 'confirmed_by');
+	}
+
+	public function preCourse() {
+		return $this->hasOne('PreCourse', 'requested_course_id');
 	}
 }

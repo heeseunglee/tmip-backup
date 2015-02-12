@@ -14,4 +14,11 @@ class Student extends \Eloquent {
 	public function company() {
 		return $this->belongsTo('Company', 'company_id');
 	}
+
+	public function preCourses() {
+		return $this->belongsToMany('PreCourse',
+									'students_attend_pre_courses',
+									'student_id',
+									'pre_course_id');
+	}
 }

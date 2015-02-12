@@ -9,8 +9,14 @@
         <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
                 <a href="javascript:void(0);" class="navbar-profile dropdown-toggle text-bold" data-toggle="dropdown">
-                    {{ \Auth::user()->name_kor }}
+                    <?php
+                        $current_user = \Auth::user();
+                    ?>
+                    {{ $current_user->name_kor }}
                     <i class="fa fa-fw fa-angle-down"></i>
+                    {{ HTML::image('user/profileImage/small/'.$current_user->id,
+                                    '',
+                                    array('class' => 'img-circle')) }}
                 </a>
                 <ul class="dropdown-menu animation-slide">
                     <li class="dropdown-header">프로필 영역</li>
