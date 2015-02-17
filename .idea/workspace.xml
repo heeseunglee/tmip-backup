@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b318110-6c57-4448-a8cf-d1d831291544" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.eot" afterPath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.ttf" afterPath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.woff" afterPath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.css" afterPath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.html" afterPath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.svg" afterPath="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/coursesManagement/preCourses/registerStudentsDirectly.blade.php" afterPath="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/coursesManagement/preCourses/registerStudentsDirectly.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/coursesManagement/preCourses/registerStudentsDirectly.js" afterPath="$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/coursesManagement/preCourses/registerStudentsDirectly.js" />
     </list>
     <ignored path="tmip-dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="registerStudentsDirectly.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/coursesManagement/preCourses/registerStudentsDirectly.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="938">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.8880597" vertical-offset="0" max-vertical-offset="1037">
+              <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -48,6 +54,9 @@
         <option value="$PROJECT_DIR$/vendor/autoload.php" />
         <option value="$PROJECT_DIR$/app/storage/logs/laravel.log" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.css" />
+        <option value="$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/coursesManagement/preCourses/registerStudentsDirectly.blade.php" />
+        <option value="$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/coursesManagement/preCourses/registerStudentsDirectly.js" />
       </list>
     </option>
   </component>
@@ -112,6 +121,212 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmip-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmip-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TMIP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trinity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmip-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmip-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TMIP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trinity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmip-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmip-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TMIP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trinity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Consultant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmip-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmip-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TMIP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trinity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Consultant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coursesManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmip-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmip-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TMIP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trinity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Consultant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="coursesManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="preCourses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmip-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmip-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TMIP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Trinity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmip-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmip-dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -156,108 +371,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Consultant" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Consultant" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmip-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TMIP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Trinity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Consultant" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -265,6 +378,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -400,6 +518,108 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="938">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/TMIP/Trinity/css/theme-default/flaticons/flaticon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.271855" vertical-offset="0" max-vertical-offset="1037">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <marker date="1424144410000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424144410000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424144410000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424144410000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424144410000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424144410000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424144410000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424144410000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424144410000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424144410000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424144410000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424144410000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424144410000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424144410000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1424144410000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/coursesManagement/preCourses/registerStudents.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1598">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1423759319000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Projects/TMIP/Trinity/Consultant/views/pages/coursesManagement/preCourses/registerStudentsDirectly.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57127196" vertical-offset="873" max-vertical-offset="1853">
+          <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
+          <folding>
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424144556000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/TMIP/Trinity/js/core/Consultant/coursesManagement/preCourses/registerStudentsDirectly.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8880597" vertical-offset="0" max-vertical-offset="1037">
+          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
           <folding />
         </state>
       </provider>

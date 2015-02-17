@@ -18,6 +18,7 @@
 
     p.initialize = function() {
         this._initMultiSelect();
+        this._initEventForAddStudentRow();
     };
 
     // =========================================================================
@@ -40,6 +41,15 @@
         });
     };
 
+    // =========================================================================
+    // STUDENT ADD ROW
+    // =========================================================================
+
+    p._initEventForAddStudentRow = function() {
+        $("#add_student_row").click(function() {
+            alert("hi 이정은~");
+        });
+    };
     // =========================================================================
     namespace.RegisterStudentsDirectly = new RegisterStudentsDirectly;
 }(this.boostbox, jQuery)); // pass in (namespace, jQuery):

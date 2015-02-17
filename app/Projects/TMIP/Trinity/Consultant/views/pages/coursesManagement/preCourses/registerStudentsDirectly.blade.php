@@ -2,6 +2,7 @@
 
 @section('additional_css_includes')
     {{ HTML::style('TMIP/Trinity/css/theme-default/libs/multi-select/multi-select.css') }}
+    {{ HTML::style('TMIP/Trinity/css/theme-default/flaticons/flaticon.css') }}
 @endsection
 
 @section('additional_js_includes')
@@ -65,31 +66,31 @@
                                 <div class="row">&nbsp;</div>
                                 {{ Form::hidden('number_of_students', $pre_course->students->count()) }}
                                 {{ Form::hidden('max_number_of_students', $pre_course->number_of_students) }}
-                                {{--<div id="student_row_1" class="row">--}}
-                                    {{--<div class="box">--}}
-                                        {{--<div class="box-head box-head-xs style-support3">--}}
-                                            {{--<header><h5 class="text-light">학생 <strong>#1</strong></h5></header>--}}
-                                        {{--</div>--}}
-                                        {{--<div class="box-body">--}}
-                                            {{--<div class="form-group">--}}
-                                                {{--<div class="col-sm-2">--}}
-                                                    {{--<label for="student_name_1" class="control-label">이름</label>--}}
-                                                {{--</div>--}}
-                                                {{--<div class="col-sm-10">--}}
-                                                    {{--<input type="text" name="student_name_1" id="student_name_1" class="form-control" placeholder="이름" required="" data-rule-minlength="2">--}}
-                                                {{--</div>--}}
-                                            {{--</div>--}}
-                                            {{--<div class="form-group">--}}
-                                                {{--<div class="col-sm-2">--}}
-                                                    {{--<label for="student_email_1" class="control-label">이메일</label>--}}
-                                                {{--</div>--}}
-                                                {{--<div class="col-sm-10">--}}
-                                                    {{--<input type="email" name="student_email_1" id="student_email_1" class="form-control" placeholder="이메일" required="">--}}
-                                                {{--</div>--}}
-                                            {{--</div>--}}
-                                        {{--</div>--}}
-                                    {{--</div>--}}
-                                {{--</div>--}}
+                                <div id="student_row_1" class="row">
+                                    <div class="box">
+                                        <div class="box-head box-head-xs style-support3">
+                                            <header><h5 class="text-light">학생 <strong>#1</strong></h5></header>
+                                        </div>
+                                        <div class="box-body">
+                                            <div class="form-group">
+                                                <div class="col-sm-2">
+                                                    <label for="student_name_1" class="control-label">이름</label>
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <input type="text" name="student_name_1" id="student_name_1" class="form-control" placeholder="이름" required="" data-rule-minlength="2">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-2">
+                                                    <label for="student_email_1" class="control-label">이메일</label>
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <input type="email" name="student_email_1" id="student_email_1" class="form-control" placeholder="이메일" required="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="form-footer text-right">
                                     <button type="submit" class="btn btn-primary">양식 전송하기</button>
                                 </div>
