@@ -126,6 +126,7 @@ return array(
 		'Laracasts\Flash\FlashServiceProvider',
 		'Intervention\Image\ImageServiceProvider',
 		'Cviebrock\ImageValidator\ImageValidatorServiceProvider',
+        'Indatus\Dispatcher\ServiceProvider',
 
 	),
 

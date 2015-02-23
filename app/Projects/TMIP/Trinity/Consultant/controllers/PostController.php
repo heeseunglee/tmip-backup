@@ -254,7 +254,7 @@ class PostController extends \BaseController {
 		$new_pre_course->level_test = \Input::get('level_test');
 		$new_pre_course->meeting_datetime = \Input::get('meeting_datetime');
 		$new_pre_course->other_requests = \Input::get('other_requests');
-		$new_pre_course->status = '학생 등록';
+		$new_pre_course->status = '진행 중';
 
 		\DB::beginTransaction();
 		try {
@@ -331,7 +331,7 @@ class PostController extends \BaseController {
 				'level_test' => \Input::get('level_test'),
 				'meeting_datetime' => $meeting_datetime,
 				'other_requests' => \Input::get('other_requests'),
-				'status' => '학생 등록'
+				'status' => '진행 중'
 			]);
 
 			\DB::commit();
@@ -340,7 +340,7 @@ class PostController extends \BaseController {
 
 			\DB::rollback();
 
-			return \Flash::error('죄송합니다 오류가 발생했습니다. 다시 시도해 주세요');
+			\Flash::error('죄송합니다 오류가 발생했습니다. 다시 시도해 주세요');
 			return \Redirect::back()->withInput();
 		}
 
@@ -349,12 +349,95 @@ class PostController extends \BaseController {
 	}
 
 	public function coursesManagementPreCoursesRegisterStudents($pre_course_id) {
-		//dd(\Input::all());
+
+        \DB::beginTransaction();
+
+        $pre_course = \PreCourse::find($pre_course_id);
+
 		if(count(\Input::get('existing_students')) > 0) {
-			$pre_course = \PreCourse::find($pre_course_id);
-			$pre_course->students()->sync(\Input::get('existing_students'));
+            try{
+                $pre_course->students()->attach(\Input::get('existing_students'));
+                \DB::commit();
+            }
+			catch(\Exception $e) {
+                \DB::rollback();
+
+                \Flash::error('죄송합니다 오류가 발생했습니다. 다시 시도해 주세요');
+                return \Redirect::back()->withInput();
+            }
 		}
+
+        $number_of_student_name = count(\Input::get('student_name'));
+        $number_of_student_email = count(\Input::get('student_email'));
+
+        if($number_of_student_name != $number_of_student_email) {
+            \Flash::error('죄송합니다 오류가 발생했습니다. 다시 시도해 주세요');
+            return \Redirect::back()->withInput();
+        }
+
+        if($number_of_student_name > 0) {
+            $company_id = $pre_course->id;
+            for($i = 0; $i < $number_of_student_name; $i++) {
+                $user = \User::where('account_email', \Input::get('student_email')[$i])->first();
+                $random_password = $this->GenerateString(10);
+                if(is_null($user)) {
+                    try {
+                        $new_student = \Student::create([
+                            'company_id' => $company_id
+                        ]);
+                        $new_student->user()->create([
+                            'name_kor' => \Input::get('student_name')[$i],
+                            'account_email' => \Input::get('student_email')[$i],
+                            'password' => \Hash::make($random_password)
+                        ]);
+                        $pre_course->students()->attach($new_student->id);
+
+                        \Mail::queue('TrinityConsultantView::mails.usersManagement.successfullyRegistered',
+                            array('user' => $new_student->user,
+                                'random_password' => $random_password),
+                            function($message) use ($new_student) {
+                                $message->to($new_student->user->account_email,
+                                    $new_student->user->name_kor);
+                            });
+                        \DB::commit();
+                    }
+                    catch(\Exception $e) {
+                        \DB::rollback();
+
+                        \Flash::error('죄송합니다 오류가 발생했습니다. 다시 시도해 주세요');
+                        return \Redirect::back()->withInput();
+                    }
+                }
+                else {
+                    $pre_course->students()->attach($user->userable_id);
+                    \DB::commit();
+                }
+            }
+        }
+
+        \Flash::success('성공적으로 학생을 등록하였습니다.');
+        return \Redirect::route('Trinity.Consultant.coursesManagement.preCourses.registerStudents');
 	}
+
+    public function coursesManagementPreCoursesModify($pre_course_id) {
+        if(count(\Input::get('cancel_registration_ids')) > 0) {
+            $pre_course = \PreCourse::find($pre_course_id);
+            \DB::beginTransaction();
+            try {
+                $pre_course->students()->detach(\Input::get('cancel_registration_ids'));
+                \DB::commit();
+            }
+            catch(\Exception $e) {
+                \DB::rollback();
+                \Flash::error('죄송합니다 오류가 발생했습니다. 다시 시도해 주세요');
+                return \Redirect::back()->withInput();
+            }
+
+            \Flash::success('Pre 클래스 수정이 완료되었습니다.');
+            return \Redirect::route('Trinity.Consultant.coursesManagement.preCourses.registerStudents');
+        }
+        return \Redirect::route('Trinity.Consultant.coursesManagement.preCourses.registerStudents');
+    }
 
 	function GenerateString($length)
 	{

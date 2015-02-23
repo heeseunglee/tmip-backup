@@ -65,13 +65,28 @@
                                    <li>{{ $pre_course->course_type }}</li>
                                 </ul>
                             </div>
-                            <div class="box-body style-white">
-                                <a class="btn btn-inverse"
-                                   href="{{ URL::route('Trinity.Consultant.coursesManagement.preCourses.registerStudents',
+                            @if($pre_course->students->count() < $pre_course->number_of_students)
+                                <div class="box-body style-white text-left">
+                                    <a class="btn btn-inverse"
+                                       href="{{ URL::route('Trinity.Consultant.coursesManagement.preCourses.registerStudents',
                                                         array('pre_course_id' => $pre_course->id)) }}">
-                                    학생 등록
-                                </a>
-                            </div>
+                                        학생 등록
+                                    </a>
+                                </div>
+                            @else
+                                <div class="box-body style-white text-right">
+                                    <a class="btn btn-warning"
+                                       href="{{ URL::route('Trinity.Consultant.coursesManagement.preCourses.modify',
+                                                        array('pre_course_id' => $pre_course->id)) }}">
+                                        클래스 수정
+                                    </a>
+                                    <a class="btn btn-success"
+                                       href="{{ URL::route('Trinity.Consultant.coursesManagement.preCourses.launch',
+                                                        array('pre_course_id' => $pre_course->id)) }}">
+                                        클래스 진행
+                                    </a>
+                                </div>
+                            @endif
                         </div><!--end .box -->
                     </div><!--end .col-md-3 -->
                     <?php

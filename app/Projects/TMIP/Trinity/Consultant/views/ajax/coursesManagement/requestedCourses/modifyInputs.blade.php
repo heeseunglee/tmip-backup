@@ -17,11 +17,13 @@
                 $curriculum = implode(',', $curriculum_array);
             ?>
             {{ Form::text('curriculum', $curriculum, array('class' => 'form-control',
-                                                        'required' => '')) }}
+                                                        'required' => '',
+                                                        'onclick' => 'openPopUp()')) }}
         </div>
         <div class="col-sm-1">
             {{ Form::button('검색', array('class' => 'btn btn-primary',
-                                        'id' => 'curriculum_popup_open')) }}
+                                        'id' => 'curriculum_popup_open',
+                                        'onclick' => 'openPopUp()')) }}
         </div>
     </div>
     <div class="form-group">
@@ -29,7 +31,19 @@
             {{ Form::label('number_of_students', '수강생 수', array('class' => 'control-label')) }}
         </div>
         <div class="col-sm-9">
-            {{ Form::text('number_of_students', '', array('required' => '', 'class' => 'form-control')) }}
+            {{ Form::select('number_of_students',
+                            array('' => '선택하세요',
+                                '10' => '0 - 10명',
+                                '20' => '10 - 20명',
+                                '30' => '20 - 30명',
+                                '40' => '30 - 40명',
+                                '50' => '40 - 50명',
+                                '60' => '50 - 60명',
+                                '70' => '60 - 70명',
+                                '80' => '70 - 80명'),
+                                $requested_course->number_of_students,
+                                array('required' => '',
+                                    'class' => 'form-control')) }}
         </div>
     </div>
     <div class="form-group">
@@ -192,3 +206,11 @@
     </div>
 
 {{ Form::close() }}
+
+<script>
+    function openPopUp() {
+        window.open('../curriculumPopUp',
+                'popup',
+                'width=800px, height=600px, left=0, top=0, resizeable=false');
+    }
+</script>

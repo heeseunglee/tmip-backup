@@ -60,6 +60,11 @@ namespace Trinity\Consultant\routes;
             \Route::post('confirm',
                 array('uses' => '\Trinity\Consultant\controllers\PostController@coursesManagementRequestedCoursesConfirm'));
 
+            \Route::get('curriculumPopUp', function() {
+                return \View::make('TrinityConsultantView::pages.coursesManagement.popups.curriculum')
+                    ->with('course_main_types', \CourseMainType::all());
+            });
+
             /*
              * 클래스 개설 요청 Ajax
              */
@@ -104,6 +109,17 @@ namespace Trinity\Consultant\routes;
 
             \Route::post('registerStudents/{pre_course_id}',
                 array('uses' => '\Trinity\Consultant\controllers\PostController@coursesManagementPreCoursesRegisterStudents'));
+
+            \Route::get('modify/{pre_course_id}',
+                array('as' => 'Trinity.Consultant.coursesManagement.preCourses.modify',
+                    'uses' => '\Trinity\Consultant\controllers\PagesController@coursesManagementPreCoursesModify'));
+
+            \Route::post('modify/{pre_course_id}',
+                array('uses' => '\Trinity\Consultant\controllers\PostController@coursesManagementPreCoursesModify'));
+
+            \Route::get('launch/{pre_course_id}',
+                array('as' => 'Trinity.Consultant.coursesManagement.preCourses.launch',
+                    'uses' => '\Trinity\Consultant\controllers\PagesController@coursesManagementPreCoursesLaunch'));
         });
 
         /**

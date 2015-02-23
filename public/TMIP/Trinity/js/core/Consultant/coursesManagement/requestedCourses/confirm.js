@@ -42,6 +42,12 @@
                 $("#hr_confirmed, #modify_inputs").prop("disabled", true);
             });
         });
+
+        $('#curriculum_popup_open, #curriculum').click(function(e) {
+            window.open('curriculumPopUp',
+                'popup',
+                'width=800px, height=600px, left=0, top=0, resizeable=false');
+        });
     };
 
     // =========================================================================

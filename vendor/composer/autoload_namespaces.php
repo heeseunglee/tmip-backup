@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'cli' => array($vendorDir . '/wp-cli/php-cli-tools/lib'),
     'Whoops' => array($vendorDir . '/filp/whoops/src'),
     'Way\\Generators' => array($vendorDir . '/way/generators/src'),
     'System' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
@@ -33,10 +34,12 @@ return array(
     'Math' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
     'Laracasts\\Flash' => array($vendorDir . '/laracasts/flash/src'),
     'Jeremeamia\\SuperClosure' => array($vendorDir . '/jeremeamia/SuperClosure/src'),
+    'Indatus\\Dispatcher\\' => array($vendorDir . '/indatus/dispatcher/src'),
     'Illuminate' => array($vendorDir . '/laravel/framework/src'),
     'File' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
     'Cviebrock\\ImageValidator' => array($vendorDir . '/cviebrock/image-validator/src'),
     'Crypt' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
+    'Cron' => array($vendorDir . '/mtdowling/cron-expression/src'),
     'ClassPreloader' => array($vendorDir . '/classpreloader/classpreloader/src'),
     'Carbon' => array($vendorDir . '/nesbot/carbon/src'),
     'Boris' => array($vendorDir . '/d11wtq/boris/lib'),

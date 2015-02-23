@@ -13,7 +13,7 @@
 		{{ HTML::style('TMIP/Trinity/css/theme-default/bootstrap.css') }}
 		{{ HTML::style('TMIP/Trinity/css/theme-default/boostbox.css') }}
 		{{ HTML::style('TMIP/Trinity/css/theme-default/boostbox_responsive.css') }}
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<!-- Additional CSS includes -->
 		@yield('additional_css_includes')
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
