@@ -53,6 +53,8 @@ class CreatePreCoursesTable extends Migration {
 
 			$table->string('status');
 
+            $table->date('close_date');
+
 			$table->timestamps();
 		});
 	}

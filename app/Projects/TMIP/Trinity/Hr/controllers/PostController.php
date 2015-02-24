@@ -53,7 +53,7 @@ class PostController extends \BaseController {
         return \Redirect::route('Trinity.index');
     }
 
-    public function newCourseRequest() {
+    public function coursesManagementNewCoursesRequest() {
         $rules = array(
             'curriculum' => 'required',
             'number_of_students' => 'required',
@@ -61,18 +61,37 @@ class PostController extends \BaseController {
             'instructor_type' => 'required',
             'instructor_gender' => 'required',
             'instructor_career' => 'required',
-            'start_datetime' => 'required',
-            'end_datetime' => 'required',
             'running_days' => 'required|array',
             'location' => 'required',
             'level_test' => 'required',
-            'meeting_datetime' => 'required',
         );
 
         $validator = \Validator::make(\Input::all(), $rules);
 
         if ($validator->fails()) {
             \Flash::error('필수 항목을 확인해 주세요!');
+            return \Redirect::back()->withInput();
+        }
+
+        $datetime_rules = array(
+            'start_date' => array('required',
+                'regex:/20\d{2}(-|\/)((0[1-9])|(1[0-2]))(-|\/)((0[1-9])|([1-2][0-9])|(3[0-1]))/'),
+            'start_time' => array('required',
+                'regex:/(([0-1][0-9])|(2[0-3])):([0-5][0-9])/'),
+            'end_date' => array('required',
+                'regex:/20\d{2}(-|\/)((0[1-9])|(1[0-2]))(-|\/)((0[1-9])|([1-2][0-9])|(3[0-1]))/'),
+            'end_time' => array('required',
+                'regex:/(([0-1][0-9])|(2[0-3])):([0-5][0-9])/'),
+            'meeting_date' => array('required',
+                'regex:/20\d{2}(-|\/)((0[1-9])|(1[0-2]))(-|\/)((0[1-9])|([1-2][0-9])|(3[0-1]))/'),
+            'meeting_time' => array('required',
+                'regex:/(([0-1][0-9])|(2[0-3])):([0-5][0-9])/'),
+        );
+
+        $validator = \Validator::make(\Input::all(), $datetime_rules);
+
+        if ($validator->fails()) {
+            \Flash::error('시간 / 날짜 형식을 확인해 주세요!');
             return \Redirect::back()->withInput();
         }
 
@@ -87,13 +106,9 @@ class PostController extends \BaseController {
             $curriculum_id_array[] = $find_curriculum->id;
         }
 
-        $start_datetime = $this->dateTimeParser(\Input::get('start_datetime'));
-        $end_datetime = $this->dateTimeParser(\Input::get('end_datetime'));
-        $meeting_datetime = $this->dateTimeParser(\Input::get('meeting_datetime'));
-
-//        var_dump($start_datetime);
-//        var_dump($end_datetime);
-//        dd($meeting_datetime);
+        $start_datetime = \Input::get('start_date')." ".\Input::get('start_time');
+        $end_datetime = \Input::get('end_date')." ".\Input::get('end_time');
+        $meeting_datetime = \Input::get('meeting_date')." ".\Input::get('meeting_time');
 
         \DB::beginTransaction();
 
@@ -129,14 +144,5 @@ class PostController extends \BaseController {
 
         \Flash::success('요청하신 클래스가 성공적으로 요청되었습니다');
         return \Redirect::back();
-    }
-
-    public function dateTimeParser($datetime_string) {
-        $first_step = explode(' / ', $datetime_string);
-        $date_part = explode(' : ', $first_step[0])[1];
-        $time_part = explode(' : ', $first_step[1])[1];
-        $time_part = str_replace('시 ', ':', $time_part);
-        $time_part = str_replace('분', '', $time_part);
-        return "".$date_part." ".$time_part;
     }
 }

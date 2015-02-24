@@ -30,11 +30,25 @@ namespace Trinity\Student\routes;
             return \Redirect::route('Trinity.Student.coursesManagement.index');
         }));
 
-        \Route::get('/index', array('as' => 'Trinity.Student.coursesManagement.index',
+        \Route::get('index', array('as' => 'Trinity.Student.coursesManagement.index',
             'uses' => '\Trinity\Student\controllers\PagesController@coursesManagementIndex'));
 
-        \Route::get('/showIndividual', array('as' => 'Trinity.Student.coursesManagement.showIndividual',
+        \Route::get('showIndividual', array('as' => 'Trinity.Student.coursesManagement.showIndividual',
             'uses' => '\Trinity\Student\controllers\PagesController@coursesManagementShowIndividual'));
+
+    });
+
+    \Route::group(array('prefix' => 'testsManagement'), function() {
+
+        \Route::get('/', array('as' => 'Trinity.Student.testsManagement', function() {
+            return \Redirect::route('Trinity.Student.testsManagement.takeTests');
+        }));
+
+        \Route::get('takeTests', array('as' => 'Trinity.Student.testsManagement.takeTests',
+            'uses' => '\Trinity\Student\controllers\PagesController@testsManagementTakeTests'));
+
+        \Route::get('showResults', array('as' => 'Trinity.Student.testsManagement.showResults',
+            'uses' => '\Trinity\Student\controllers\PagesController@testsManagementShowResults'));
 
     });
 });

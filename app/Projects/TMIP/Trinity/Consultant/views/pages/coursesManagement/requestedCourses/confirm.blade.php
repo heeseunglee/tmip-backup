@@ -2,10 +2,13 @@
 
 @section('additional_css_includes')
     {{ HTML::style('TMIP/Trinity/css/theme-default/libs/select2/select2.css') }}
+    {{ HTML::style('TMIP/Trinity/css/theme-default/libs/datetimepicker/DateTimePicker.min.css') }}
 @endsection
 
 @section('additional_js_includes')
     {{ HTML::script('TMIP/Trinity/js/libs/select2/select2.min.js') }}
+    {{ HTML::script('TMIP/Trinity/js/libs/moment/moment.min.js') }}
+    {{ HTML::script('TMIP/Trinity/js/libs/datetimepicker/DateTimePicker.min.js') }}
     {{ HTML::script('TMIP/Trinity/js/core/Consultant/coursesManagement/requestedCourses/confirm.js') }}
 @endsection
 
@@ -182,4 +185,5 @@
             </div>
         </div>
     </section>
+    <div id="dtBox"></div>
 @endsection

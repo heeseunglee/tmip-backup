@@ -21,6 +21,8 @@ class CreateStudentsAttendPreCoursesTable extends Migration {
 
 			$table->unsignedInteger('student_id');
 			$table->foreign('student_id')->references('id')->on('students');
+
+            $table->boolean('is_level_test_taken')->nullable()->default(false);
 		});
 	}
 

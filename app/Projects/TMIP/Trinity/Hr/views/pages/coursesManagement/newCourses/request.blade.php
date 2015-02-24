@@ -2,7 +2,7 @@
 
 @section('additional_css_includes')
     {{ HTML::style('TMIP/Trinity/css/theme-default/libs/wizard/wizard.css') }}
-    {{ HTML::style('TMIP/Trinity/css/theme-default/libs/bootstrap-datetimepicker/bootstrap-datetimepicker.css') }}
+    {{ HTML::style('TMIP/Trinity/css/theme-default/libs/datetimepicker/DateTimePicker.min.css') }}
     {{ HTML::style('TMIP/Trinity/css/theme-default/libs/select2/select2.css') }}
 @stop
 
@@ -11,10 +11,9 @@
     {{ HTML::script('TMIP/Trinity/js/libs/jquery-validation/dist/additional-methods.min.js') }}
     {{ HTML::script('TMIP/Trinity/js/libs/wizard/jquery.bootstrap.wizard.min.js') }}
     {{ HTML::script('TMIP/Trinity/js/libs/inputmask/jquery.inputmask.bundle.min.js') }}
-    {{ HTML::script('TMIP/Trinity/js/core/Hr/coursesManagement/newCourseRequest.js') }}
+    {{ HTML::script('TMIP/Trinity/js/core/Hr/coursesManagement/newCourses/request.js') }}
     {{ HTML::script('TMIP/Trinity/js/libs/moment/moment.min.js') }}
-    {{ HTML::script('TMIP/Trinity/js/libs/bootstrap-datetimepicker/bootstrap-datetimepicker.js') }}
-    {{ HTML::script('TMIP/Trinity/js/libs/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.ko.js') }}
+    {{ HTML::script('TMIP/Trinity/js/libs/datetimepicker/DateTimePicker.min.js') }}
     {{ HTML::script('TMIP/Trinity/js/libs/select2/select2.min.js') }}
 @stop
 
@@ -70,8 +69,8 @@
                             <header><h4 class="text-light">신규 클래스 개설요청</h4></header>
                         </div>
                         <div class="box-body">
-                        {{ Form::open(array('class' => 'form-horizontal form-banded form-validate',
-                                            'role' => 'form')) }}
+                            {{ Form::open(array('class' => 'form-horizontal form-banded form-validate',
+                                                'role' => 'form')) }}
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
@@ -183,24 +182,47 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <div class="col-sm-3">
-                                            {{ Form::label('start_datetime', '희망 시작일', array('class' => 'control-label')) }}
+                                            {{ Form::label('start_date', '희망 시작일', array('class' => 'control-label')) }}
                                         </div>
-                                        <div class="col-sm-9">
-                                            {{ Form::text('start_datetime', '', array('required' => '',
+                                        <div class="col-sm-5">
+                                            <?php
+                                            $now = new DateTime("now");
+                                            $min_date = $now->modify('+14 day');
+                                            ?>
+                                            {{ Form::text('start_date', '', array('required' => '',
                                                                                     'class' => 'form-control',
-                                                                                    'data-time-component' => 30)) }}
+                                                                                    'data-field' => 'date',
+                                                                                    'data-format' => 'yyyy-MM-dd',
+                                                                                    'readonly' => '',
+                                                                                    'data-min' => $min_date->format('Y-m-d'))) }}
+                                        </div>
+                                        <div class="col-sm-4">
+                                            {{ Form::text('start_time', '', array('required' => '',
+                                                                                    'class' => 'form-control',
+                                                                                    'data-field' => 'time',
+                                                                                    'data-format' => 'HH:mm',
+                                                                                    'readonly' => '')) }}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <div class="col-sm-3">
-                                            {{ Form::label('end_datetime', '희망 종료일', array('class' => 'control-label')) }}
+                                            {{ Form::label('end_date', '희망 종료일', array('class' => 'control-label')) }}
                                         </div>
-                                        <div class="col-sm-9">
-                                            {{ Form::text('end_datetime', '', array('required' => '',
+                                        <div class="col-sm-5">
+                                            {{ Form::text('end_date', '', array('required' => '',
                                                                                     'class' => 'form-control',
-                                                                                    'data-time-component' => 30)) }}
+                                                                                    'data-field' => 'date',
+                                                                                    'data-format' => 'yyyy-MM-dd',
+                                                                                    'readonly' => '')) }}
+                                        </div>
+                                        <div class="col-sm-4">
+                                            {{ Form::text('end_time', '', array('required' => '',
+                                                                                    'class' => 'form-control',
+                                                                                    'data-field' => 'time',
+                                                                                    'data-format' => 'HH:mm',
+                                                                                    'readonly' => '')) }}
                                         </div>
                                     </div>
                                 </div>
@@ -257,11 +279,21 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <div class="col-sm-3">
-                                            {{ Form::label('meeting_datetime', '희망 미팅 날짜', array('class' => 'control-label')) }}
+                                            {{ Form::label('meeting_date', '희망 미팅 날짜', array('class' => 'control-label')) }}
                                         </div>
-                                        <div class="col-sm-9">
-                                            {{ Form::text('meeting_datetime', '', array('required' => '', 'class' => 'form-control',
-                                                                                            'data-time-component' => 30)) }}
+                                        <div class="col-sm-5">
+                                            {{ Form::text('meeting_date', '', array('required' => '',
+                                                                                    'class' => 'form-control',
+                                                                                    'data-field' => 'date',
+                                                                                    'data-format' => 'yyyy-MM-dd',
+                                                                                    'readonly' => '')) }}
+                                        </div>
+                                        <div class="col-sm-4">
+                                            {{ Form::text('meeting_time', '', array('required' => '',
+                                                                                    'class' => 'form-control',
+                                                                                    'data-field' => 'time',
+                                                                                    'data-format' => 'HH:mm',
+                                                                                    'readonly' => '')) }}
                                         </div>
                                     </div>
                                 </div>
@@ -281,7 +313,7 @@
                             <div class="form-footer text-right">
                                 {{ Form::submit('양식 전송하기', array('class' => 'btn btn-primary')) }}
                             </div>
-                        {{ Form::close() }}
+                            {{ Form::close() }}
                         </div><!--end .box-body -->
                     </div><!--end .box -->
                 </div><!--end .col-lg-12 -->
@@ -289,4 +321,5 @@
             <!-- END BASIC TABLE -->
         </div>
     </section>
+    <div id="dtBox"></div>
 @stop

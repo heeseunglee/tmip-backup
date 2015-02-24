@@ -40,17 +40,26 @@ namespace Trinity\Hr\routes;
         \Route::get('attendance', array('as' => 'Trinity.Hr.coursesManagement.attendance',
             'uses' => '\Trinity\Hr\controllers\PagesController@coursesManagementAttendance'));
 
-        \Route::group(array('prefix' => 'newCourseRequest'), function() {
+        \Route::group(array('prefix' => 'newCourses'), function() {
 
-            \Route::get('/', array('as' => 'Trinity.Hr.coursesManagement.newCourseRequest',
-                'uses' => '\Trinity\Hr\controllers\PagesController@coursesManagementNewCourseRequest'));
+            \Route::get('/', array('as' => 'Trinity.Hr.coursesManagement.newCourses',
+                function() {
+                    return \Route::route('Trinity.Hr.coursesManagement.newCourses.request');
+                }));
 
-            \Route::post('/',
-                array('uses' => '\Trinity\Hr\controllers\PostController@newCourseRequest'));
+            \Route::get('request', array('as' => 'Trinity.Hr.coursesManagement.newCourses.request',
+                'uses' => '\Trinity\Hr\controllers\PagesController@coursesManagementNewCoursesRequest'));
 
-            \Route::get('curriculumPopUp', function() {
-                return \View::make('TrinityHrView::pages.coursesManagement.popups.curriculum')
-                    ->with('course_main_types', \CourseMainType::all());
+            \Route::post('request',
+                array('uses' => '\Trinity\Hr\controllers\PostController@coursesManagementNewCoursesRequest'));
+
+            \Route::group(array('prefix' => 'popups'), function() {
+
+                \Route::get('curriculum', function() {
+                    return \View::make('TrinityHrView::pages.coursesManagement.popups.curriculum')
+                        ->with('course_main_types', \CourseMainType::all());
+                });
+
             });
 
             /**

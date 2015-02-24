@@ -22,7 +22,25 @@ class PagesController extends \BaseController {
 		\View::share('current_user', $current_user);
 	}
 
+    /**
+     * --------------------------------------------------------------------------
+     * 클래스 관리
+     * --------------------------------------------------------------------------
+     * @return mixed
+     */
 	public function coursesManagementIndex() {
 		return \View::make('TrinityStudentView::pages.coursesManagement.index');
 	}
+
+    /**
+     * --------------------------------------------------------------------------
+     * 테스트 관리
+     * --------------------------------------------------------------------------
+     * @return mixed
+     */
+    public function testsManagementTakeTests() {
+        $current_user = \Auth::user();
+        return \View::make('TrinityStudentView::pages.testsManagement.takeTests')
+            ->with('pre_courses', $current_user->userable->preCourses);
+    }
 }

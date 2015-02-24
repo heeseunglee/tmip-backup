@@ -28,7 +28,7 @@
 
     p._initPopUp = function() {
         $('#curriculum_popup_open, #curriculum').click(function(e) {
-            window.open('newCourseRequest/curriculumPopUp',
+            window.open('popups/curriculum',
                         'popup',
                         'width=800px, height=600px, left=0, top=0, resizeable=false');
         });
@@ -39,17 +39,20 @@
     // =========================================================================
 
     p._initDateTime = function() {
-        if (!$.isFunction($.fn.datetimepicker)) {
+        if (!$.isFunction($.fn.DateTimePicker)) {
             return;
         }
-        $('#start_datetime').datetimepicker({
-            'format': '시작일 : YYYY-MM-DD / 시작시간 : H시 mm분'
-        });
-        $('#end_datetime').datetimepicker({
-            'format': '종료일 : YYYY-MM-DD / 종료시간 : H시 mm분'
-        });
-        $('#meeting_datetime').datetimepicker({
-            'format': '미팅일 : YYYY-MM-DD / 미팅시간 : H시 mm분'
+        $('#dtBox').DateTimePicker({
+            addEventHandlers: function() {
+                var dtPickerObj = this;
+                $("#start_date").change(function(e) {
+                    var selected_date = $(this).val();
+                    var selected_date_tokens = selected_date.split("-");
+                    selected_date_tokens[2]++;
+                    var selected_date = selected_date_tokens.join("-");
+                    $("#end_date").attr('data-min', selected_date);
+                });
+            }
         });
     };
 

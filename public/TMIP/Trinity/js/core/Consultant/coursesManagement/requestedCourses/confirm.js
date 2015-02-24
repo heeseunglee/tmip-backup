@@ -40,6 +40,10 @@
                     $("#modify_input_insert").html(data);
                 });
                 $("#hr_confirmed, #modify_inputs").prop("disabled", true);
+                if (!$.isFunction($.fn.DateTimePicker)) {
+                    return;
+                }
+                $('#dtBox').DateTimePicker();
             });
         });
 

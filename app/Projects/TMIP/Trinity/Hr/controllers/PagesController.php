@@ -24,7 +24,7 @@ class PagesController extends \BaseController {
     public function coursesManagementAttendance() {
         return \View::make('TrinityHrView::pages.coursesManagement.attendance');
     }
-    public function coursesManagementNewCourseRequest() {
-        return \View::make('TrinityHrView::pages.coursesManagement.newCourseRequest');
+    public function coursesManagementNewCoursesRequest() {
+        return \View::make('TrinityHrView::pages.coursesManagement.newCourses.request');
     }
 }

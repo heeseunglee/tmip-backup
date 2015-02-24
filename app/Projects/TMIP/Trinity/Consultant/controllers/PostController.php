@@ -193,18 +193,24 @@ class PostController extends \BaseController {
 	public function coursesManagementRequestedCoursesConfirm() {
 		//dd(\Input::all());
 		$datetime_rules = array(
-			'start_datetime' => array('required',
-									'regex:/20\d{2}(-|\/)((0[1-9])|(1[0-2]))(-|\/)((0[1-9])|([1-2][0-9])|(3[0-1]))(T|\s)(([0-1][0-9])|(2[0-3])):([0-5][0-9]):([0-5][0-9])/'),
-			'end_datetime' => array('required',
-									'regex:/20\d{2}(-|\/)((0[1-9])|(1[0-2]))(-|\/)((0[1-9])|([1-2][0-9])|(3[0-1]))(T|\s)(([0-1][0-9])|(2[0-3])):([0-5][0-9]):([0-5][0-9])/'),
-			'meeting_datetime' => array('required',
-									'regex:/20\d{2}(-|\/)((0[1-9])|(1[0-2]))(-|\/)((0[1-9])|([1-2][0-9])|(3[0-1]))(T|\s)(([0-1][0-9])|(2[0-3])):([0-5][0-9]):([0-5][0-9])/'),
+            'start_date' => array('required',
+                'regex:/20\d{2}(-|\/)((0[1-9])|(1[0-2]))(-|\/)((0[1-9])|([1-2][0-9])|(3[0-1]))/'),
+            'start_time' => array('required',
+                'regex:/(([0-1][0-9])|(2[0-3])):([0-5][0-9])/'),
+            'end_date' => array('required',
+                'regex:/20\d{2}(-|\/)((0[1-9])|(1[0-2]))(-|\/)((0[1-9])|([1-2][0-9])|(3[0-1]))/'),
+            'end_time' => array('required',
+                'regex:/(([0-1][0-9])|(2[0-3])):([0-5][0-9])/'),
+            'meeting_date' => array('required',
+                'regex:/20\d{2}(-|\/)((0[1-9])|(1[0-2]))(-|\/)((0[1-9])|([1-2][0-9])|(3[0-1]))/'),
+            'meeting_time' => array('required',
+                'regex:/(([0-1][0-9])|(2[0-3])):([0-5][0-9])/'),
 		);
 
 		$validator = \Validator::make(\Input::all(), $datetime_rules);
 
 		if($validator->fails()) {
-			\Flash::error('날짜 형식을 확인하세요 YYYY-MM-DD hh:mm:ss');
+			\Flash::error('시간 / 날짜 형식을 확인하세요.');
 			return \Redirect::back()->withInput();
 		}
 
@@ -227,12 +233,12 @@ class PostController extends \BaseController {
 		$requested_course->instructor_type = \Input::get('instructor_type');
 		$requested_course->instructor_gender = \Input::get('instructor_gender');
 		$requested_course->instructor_career = \Input::get('instructor_career');
-		$requested_course->start_datetime = \Input::get('start_datetime');
-		$requested_course->end_datetime = \Input::get('end_datetime');
+		$requested_course->start_datetime = \Input::get('start_date')." ".\Input::get('start_time');
+		$requested_course->end_datetime = \Input::get('end_date')." ".\Input::get('end_time');
 		$requested_course->running_days = implode(',', \Input::get('running_days'));
 		$requested_course->location = \Input::get('location');
 		$requested_course->level_test = \Input::get('level_test');
-		$requested_course->meeting_datetime = \Input::get('meeting_datetime');
+		$requested_course->meeting_datetime = \Input::get('meeting_date')." ".\Input::get('meeting_time');
 		$requested_course->other_requests = \Input::get('other_requests');
 		$requested_course->is_confirmed = true;
 		$requested_course->confirmed_by = \Auth::user()->userable_id;
@@ -247,14 +253,19 @@ class PostController extends \BaseController {
 		$new_pre_course->instructor_type = \Input::get('instructor_type');
 		$new_pre_course->instructor_gender = \Input::get('instructor_gender');
 		$new_pre_course->instructor_career = \Input::get('instructor_career');
-		$new_pre_course->start_datetime = \Input::get('start_datetime');
-		$new_pre_course->end_datetime = \Input::get('end_datetime');
+		$new_pre_course->start_datetime = \Input::get('start_date')." ".\Input::get('start_time');
+		$new_pre_course->end_datetime = \Input::get('end_date')." ".\Input::get('end_time');
 		$new_pre_course->running_days = implode(',', \Input::get('running_days'));
 		$new_pre_course->location = \Input::get('location');
 		$new_pre_course->level_test = \Input::get('level_test');
-		$new_pre_course->meeting_datetime = \Input::get('meeting_datetime');
+		$new_pre_course->meeting_datetime = \Input::get('meeting_date')." ".\Input::get('meeting_time');
 		$new_pre_course->other_requests = \Input::get('other_requests');
 		$new_pre_course->status = '진행 중';
+
+        $close_date = new \DateTime(\Input::get('start_date'));
+        $close_date = $close_date->modify('-7 day');
+
+        $new_pre_course->close_date = $close_date->format('Y-m-d');
 
 		\DB::beginTransaction();
 		try {
@@ -376,7 +387,7 @@ class PostController extends \BaseController {
         }
 
         if($number_of_student_name > 0) {
-            $company_id = $pre_course->id;
+            $company_id = $pre_course->company->id;
             for($i = 0; $i < $number_of_student_name; $i++) {
                 $user = \User::where('account_email', \Input::get('student_email')[$i])->first();
                 $random_password = $this->GenerateString(10);

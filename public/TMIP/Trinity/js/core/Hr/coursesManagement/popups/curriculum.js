@@ -11,7 +11,7 @@
 
             $(".radio-inline").click(function(e) {
                 var course_main_type_id = $(this).find(">:first-child").val();
-                $.get("ajax/getCourseSubTypes/" + course_main_type_id, function(data) {
+                $.get("../ajax/getCourseSubTypes/" + course_main_type_id, function(data) {
                     $("#course_sub_types_row").html(data);
                 });
                 $("input[name=course_main_type]").change(function() {

@@ -106,24 +106,48 @@
     </div>
     <div class="form-group">
         <div class="col-sm-3">
-            {{ Form::label('start_datetime', '희망 시작일', array('class' => 'control-label')) }}
+            {{ Form::label('start_date', '희망 시작일', array('class' => 'control-label')) }}
         </div>
-        <div class="col-sm-9">
-            {{ Form::text('start_datetime',
-                        $requested_course->start_datetime,
+        <div class="col-sm-5">
+            {{ Form::text('start_date',
+                        explode(" ", $requested_course->start_datetime)[0],
                         array('required' => '',
-                            'class' => 'form-control')) }}
+                                'class' => 'form-control',
+                                'data-field' => 'date',
+                                'data-format' => 'yyyy-MM-dd',
+                                'readonly' => '')) }}
+        </div>
+        <div class="col-sm-4">
+            {{ Form::text('start_time',
+                        substr(explode(" ", $requested_course->start_datetime)[1], 0, -3),
+                        array('required' => '',
+                                'class' => 'form-control',
+                                'data-field' => 'time',
+                                'data-format' => 'HH:mm',
+                                'readonly' => '')) }}
         </div>
     </div>
     <div class="form-group">
         <div class="col-sm-3">
-            {{ Form::label('end_datetime', '희망 종료일', array('class' => 'control-label')) }}
+            {{ Form::label('end_date', '희망 종료일', array('class' => 'control-label')) }}
         </div>
-        <div class="col-sm-9">
-            {{ Form::text('end_datetime',
-                        $requested_course->end_datetime,
+        <div class="col-sm-5">
+            {{ Form::text('end_date',
+                        explode(" ", $requested_course->end_datetime)[0],
                         array('required' => '',
-                            'class' => 'form-control')) }}
+                                'class' => 'form-control',
+                                'data-field' => 'date',
+                                'data-format' => 'yyyy-MM-dd',
+                                'readonly' => '')) }}
+        </div>
+        <div class="col-sm-4">
+            {{ Form::text('end_time',
+                        substr(explode(" ", $requested_course->end_datetime)[1], 0, -3),
+                        array('required' => '',
+                                'class' => 'form-control',
+                                'data-field' => 'time',
+                                'data-format' => 'HH:mm',
+                                'readonly' => '')) }}
         </div>
     </div>
     <div class="form-group">
@@ -180,13 +204,25 @@
     </div>
     <div class="form-group">
         <div class="col-sm-3">
-            {{ Form::label('meeting_datetime', '희망 미팅 날짜', array('class' => 'control-label')) }}
+            {{ Form::label('meeting_date', '희망 미팅 날짜', array('class' => 'control-label')) }}
         </div>
-        <div class="col-sm-9">
-            {{ Form::text('meeting_datetime',
-                        $requested_course->meeting_datetime,
-                        array('required' => '',
-                            'class' => 'form-control')) }}
+        <div class="col-sm-5">
+            {{ Form::text('meeting_date',
+                            explode(" ", $requested_course->meeting_datetime)[0],
+                            array('required' => '',
+                                    'class' => 'form-control',
+                                    'data-field' => 'date',
+                                    'data-format' => 'yyyy-MM-dd',
+                                    'readonly' => '')) }}
+        </div>
+        <div class="col-sm-4">
+            {{ Form::text('meeting_time',
+                            substr(explode(" ", $requested_course->meeting_datetime)[1], 0, -3),
+                            array('required' => '',
+                                    'class' => 'form-control',
+                                    'data-field' => 'time',
+                                    'data-format' => 'HH:mm',
+                                    'readonly' => '')) }}
         </div>
     </div>
     <div class="form-group">

@@ -17,7 +17,8 @@ class PreCourse extends \Eloquent {
 							'level_test',
 							'meeting_datetime',
 							'other_requests',
-							'status' ];
+							'status',
+                            'close_date' ];
 
 	protected $table = 'pre_courses';
 
