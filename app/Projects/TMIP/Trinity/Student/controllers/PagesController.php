@@ -43,4 +43,9 @@ class PagesController extends \BaseController {
         return \View::make('TrinityStudentView::pages.testsManagement.takeTests')
             ->with('pre_courses', $current_user->userable->preCourses);
     }
+
+    public function testsManagementPopupsTakeTest($lvl_test_id) {
+        return \View::make('TrinityStudentView::pages.testsManagement.popups.takeTest')
+            ->with('lvl_test', \LvlTest::find($lvl_test_id));
+    }
 }

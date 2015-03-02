@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder {
 		$this->call('PreferAreaListsTableSeeder');
 		$this->call('CourseMainTypesTableSeeder');
 		$this->call('CourseSubTypesTableSeeder');
+        $this->call('LvlTestMcPoolSeeder');
 	}
 
 }

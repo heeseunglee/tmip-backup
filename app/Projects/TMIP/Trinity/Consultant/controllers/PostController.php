@@ -367,7 +367,8 @@ class PostController extends \BaseController {
 
 		if(count(\Input::get('existing_students')) > 0) {
             try{
-                $pre_course->students()->attach(\Input::get('existing_students'));
+                $pre_course->students()->attach(\Input::get('existing_students'),
+                                                array('lvl_test_id' => $this->generateLevelTest()));
                 \DB::commit();
             }
 			catch(\Exception $e) {
@@ -401,7 +402,8 @@ class PostController extends \BaseController {
                             'account_email' => \Input::get('student_email')[$i],
                             'password' => \Hash::make($random_password)
                         ]);
-                        $pre_course->students()->attach($new_student->id);
+                        $pre_course->students()->attach($new_student->id,
+                                                        array('lvl_test_id' => $this->generateLevelTest()));
 
                         \Mail::queue('TrinityConsultantView::mails.usersManagement.successfullyRegistered',
                             array('user' => $new_student->user,
@@ -414,13 +416,14 @@ class PostController extends \BaseController {
                     }
                     catch(\Exception $e) {
                         \DB::rollback();
-
+                        dd($e);
                         \Flash::error('죄송합니다 오류가 발생했습니다. 다시 시도해 주세요');
                         return \Redirect::back()->withInput();
                     }
                 }
                 else {
-                    $pre_course->students()->attach($user->userable_id);
+                    $pre_course->students()->attach($user->userable_id,
+                                                    array('lvl_test_id' => $this->generateLevelTest()));
                     \DB::commit();
                 }
             }
@@ -475,4 +478,86 @@ class PostController extends \BaseController {
 		$time_part = str_replace('분', '', $time_part);
 		return "".$date_part." ".$time_part;
 	}
+
+    /**
+     * 레벨 테스트 동적 생성
+     * @return mixed
+     */
+    public function generateLevelTest() {
+        /**
+         * --------------------------------------------------------------------------
+         * 객관식 생성
+         * --------------------------------------------------------------------------
+         */
+        $lvl_test_mc = new \LvlTestMc();
+
+        $lvl_test_mc_pool_beginner_session_1 = \LvlTestMcPoolBeginner::where('session', 1)
+            ->orderByRaw("RAND()")->get();
+        $lvl_test_mc_pool_beginner_session_2 = \LvlTestMcPoolBeginner::where('session', 2)
+            ->orderByRaw("RAND()")->get();
+        $lvl_test_mc_pool_beginner_session_3 = \LvlTestMcPoolBeginner::where('session', 3)
+            ->orderByRaw("RAND()")->get();
+        $lvl_test_mc_pool_beginner_session_4 = \LvlTestMcPoolBeginner::where('session', 4)
+            ->orderByRaw("RAND()")->get();
+
+        $lvl_test_mc->question_1 = $lvl_test_mc_pool_beginner_session_1[0]->id;
+        $lvl_test_mc->question_2 = $lvl_test_mc_pool_beginner_session_1[1]->id;
+        $lvl_test_mc->question_3 = $lvl_test_mc_pool_beginner_session_2[0]->id;
+        $lvl_test_mc->question_4 = $lvl_test_mc_pool_beginner_session_3[0]->id;
+        $lvl_test_mc->question_5 = $lvl_test_mc_pool_beginner_session_4[0]->id;
+
+        $lvl_test_mc_pool_elementary_session_1 = \LvlTestMcPoolElementary::where('session', 1)
+            ->orderByRaw("RAND()")->get();
+        $lvl_test_mc_pool_elementary_session_2 = \LvlTestMcPoolElementary::where('session', 2)
+            ->orderByRaw("RAND()")->get();
+        $lvl_test_mc_pool_elementary_session_3 = \LvlTestMcPoolElementary::where('session', 3)
+            ->orderByRaw("RAND()")->get();
+        $lvl_test_mc_pool_elementary_session_4 = \LvlTestMcPoolElementary::where('session', 4)
+            ->orderByRaw("RAND()")->get();
+        $lvl_test_mc_pool_elementary_session_5 = \LvlTestMcPoolElementary::where('session', 5)
+            ->orderByRaw("RAND()")->get();
+
+        $lvl_test_mc->question_6 = $lvl_test_mc_pool_elementary_session_1[0]->id;
+        $lvl_test_mc->question_7 = $lvl_test_mc_pool_elementary_session_2[0]->id;
+        $lvl_test_mc->question_8 = $lvl_test_mc_pool_elementary_session_3[0]->id;
+        $lvl_test_mc->question_9 = $lvl_test_mc_pool_elementary_session_4[0]->id;
+        $lvl_test_mc->question_10 = $lvl_test_mc_pool_elementary_session_5[0]->id;
+
+        $lvl_test_mc_pool_intermediate_session_1 = \LvlTestMcPoolIntermediate::where('session', 1)
+            ->orderByRaw("RAND()")->get();
+        $lvl_test_mc_pool_intermediate_session_2 = \LvlTestMcPoolIntermediate::where('session', 2)
+            ->orderByRaw("RAND()")->get();
+        $lvl_test_mc_pool_intermediate_session_3 = \LvlTestMcPoolIntermediate::where('session', 3)
+            ->orderByRaw("RAND()")->get();
+        $lvl_test_mc_pool_intermediate_session_4 = \LvlTestMcPoolIntermediate::where('session', 4)
+            ->orderByRaw("RAND()")->get();
+
+        $lvl_test_mc->question_11 = $lvl_test_mc_pool_intermediate_session_1[0]->id;
+        $lvl_test_mc->question_12 = $lvl_test_mc_pool_intermediate_session_2[0]->id;
+        $lvl_test_mc->question_13 = $lvl_test_mc_pool_intermediate_session_3[0]->id;
+        $lvl_test_mc->question_14 = $lvl_test_mc_pool_intermediate_session_3[1]->id;
+        $lvl_test_mc->question_15 = $lvl_test_mc_pool_intermediate_session_4[0]->id;
+
+        $lvl_test_mc_pool_expert_session_1 = \LvlTestMcPoolExpert::where('session', 1)
+            ->orderByRaw("RAND()")->get();
+        $lvl_test_mc_pool_expert_session_2 = \LvlTestMcPoolExpert::where('session', 2)
+            ->orderByRaw("RAND()")->get();
+        $lvl_test_mc_pool_expert_session_3 = \LvlTestMcPoolExpert::where('session', 3)
+            ->orderByRaw("RAND()")->get();
+        $lvl_test_mc_pool_expert_session_4 = \LvlTestMcPoolExpert::where('session', 4)
+            ->orderByRaw("RAND()")->get();
+
+        $lvl_test_mc->question_16 = $lvl_test_mc_pool_expert_session_1[0]->id;
+        $lvl_test_mc->question_17 = $lvl_test_mc_pool_expert_session_2[0]->id;
+        $lvl_test_mc->question_18 = $lvl_test_mc_pool_expert_session_3[0]->id;
+        $lvl_test_mc->question_19 = $lvl_test_mc_pool_expert_session_4[0]->id;
+        $lvl_test_mc->question_20 = $lvl_test_mc_pool_expert_session_4[1]->id;
+
+        $lvl_test = new \LvlTest();
+        $lvl_test_mc->save();
+        $lvl_test->lvl_test_mc_id = $lvl_test_mc->id;
+        $lvl_test->save();
+
+        return $lvl_test->id;
+    }
 }

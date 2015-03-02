@@ -50,5 +50,12 @@ namespace Trinity\Student\routes;
         \Route::get('showResults', array('as' => 'Trinity.Student.testsManagement.showResults',
             'uses' => '\Trinity\Student\controllers\PagesController@testsManagementShowResults'));
 
+        \Route::group(array('prefix' => 'popups'), function() {
+
+            \Route::get('takeTest/{lvl_test_id}', array('as' => 'Trinity.Student.testsManagement.popups.takeTest',
+                'uses' => '\Trinity\Student\controllers\PagesController@testsManagementPopupsTakeTest'));
+
+        });
+
     });
 });

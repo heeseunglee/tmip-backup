@@ -17,9 +17,9 @@ class CreateLvlTestBeginnerTable extends Migration {
 			$table->increments('id');
 			$table->integer('session')->nullable();
 			$table->string('question')->nullable();
-			$table->string('example1')->nullable();
-			$table->string('example2')->nullable();
-			$table->string('example3')->nullable();
+			$table->string('example_1')->nullable();
+			$table->string('example_2')->nullable();
+			$table->string('example_3')->nullable();
 			$table->integer('answer')->nullable();
 		});
 	}

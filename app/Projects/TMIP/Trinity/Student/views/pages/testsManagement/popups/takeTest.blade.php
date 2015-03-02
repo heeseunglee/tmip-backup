@@ -1,91 +1,166 @@
-@extends('TrinityCommonView::layouts.master')
+<html lang="en">
+<head>
+    <title>The Mandarin::TMIP</title>
 
-@section('additional_css_includes')
-@stop
+    <!-- BEGIN META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="your,keywords">
+    <meta name="description" content="The Mandarin Integration Platform">
 
-@section('additional_js_includes')
-@stop
-
-@section('main_content')
-    <section>
-        <ol class="breadcrumb">
-            <li>{{ HTML::linkRoute('Trinity.index', '홈') }}</li>
-            <li>{{ HTML::linkRoute('Trinity.Student.testsManagement', '테스트 관리') }}</li>
-            <li class="active">테스트 진행</li>
-        </ol>
-        <div class="section-header">
-            <h3 class="text-standard"><i class="fa fa-fw fa-arrow-circle-right text-gray-light"></i> 테스트 관리 <small>테스트 진행</small></h3>
-        </div>
-        <div class="section-body">
-            @include('flash::message')
-            <!-- START BASIC TABLE -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="box">
-                        <div class="box-head style-primary">
-                            <header><h4 class="text-light">테스트 현황</h4></header>
-                        </div>
-                        <div class="box-body">
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>상태</th>
-                                        <th>테스트 명</th>
-                                        <th>테스트 유형</th>
-                                        <th>테스트 가능시간</th>
-                                        <th>테스트 진행시간</th>
-                                        <th>문항수</th>
-                                        <th>진행도</th>
-                                        <th class="text-right" style="width:90px"></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach($pre_courses as $pre_course)
-                                        @if($pre_course->level_test)
-                                            <tr>
-                                                <td>
-                                                    @if($pre_course->status == "진행 중")
-                                                        <span class="label label-success">진행 중</span>
-                                                    @else
-                                                        <span class="label label-danger">완료</span>
-                                                    @endif
-                                                </td>
-                                                <td>
-                                                    {{ $pre_course->company->name }} : {{ $pre_course->course_type }}
-                                                </td>
-                                                <td>
-                                                    입과 테스트
-                                                </td>
-                                                <td>
-                                                    30분
-                                                </td>
-                                                <td>
-                                                    TODO
-                                                </td>
-                                                <td>
-                                                    20문항
-                                                </td>
-                                                <td>
-                                                    <div class="progress no-margin">
-                                                        <div class="progress-bar progress-bar-success" style="width: 80%">
-                                                            80%
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-right">
-                                                    <button type="button" class="btn btn-xs btn-default btn-equal" data-toggle="tooltip" data-placement="top" data-original-title="Edit row"><i class="fa fa-pencil"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default btn-equal" data-toggle="tooltip" data-placement="top" data-original-title="Copy row"><i class="fa fa-copy"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default btn-equal" data-toggle="tooltip" data-placement="top" data-original-title="Delete row"><i class="fa fa-trash-o"></i></button>
-                                                </td>
-                                            </tr>
-                                        @endif
-                                    @endforeach
-                                </tbody>
-                            </table>
-                        </div><!--end .box-body -->
-                    </div><!--end .box -->
-                </div><!--end .col-lg-12 -->
+    <!-- BEGIN STYLESHEETS -->
+    {{ HTML::style('TMIP/Trinity/css/theme-default/bootstrap.css') }}
+    {{ HTML::style('TMIP/Trinity/css/theme-default/boostbox.css') }}
+    {{ HTML::style('TMIP/Trinity/css/theme-default/boostbox_responsive.css') }}
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/assets/js/libs/utils/html5shiv.js"></script>
+    <script type="text/javascript" src="/assets/js/libs/utils/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="base">
+    <div id="content">
+        <section>
+            <div class="section-header">
+                <h3 class="text-standard"><i class="fa fa-fw fa-arrow-circle-right text-gray-light"></i> 입과테스트</h3>
             </div>
-        </div>
-    </section>
-@stop
+            <div class="section-body">
+                <?php
+                    $question_pool = \LvlTestMc::find($lvl_test->lvl_test_mc_id);
+                    $student = \Auth::user()->userable;
+                    $lvl_test_proceed_step = $student->preCourses()->wherePivot('lvl_test_id', 1)->first()->pivot->lvl_test_proceed_step;
+                ?>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="box">
+                            <div class="box-body">
+                                <dl class="dl-horizontal">
+                                    <dt class="lvl_test">입문 1.</dt>
+                                    <dd class="lvl_test">{{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->question }}</dd>
+                                    <dt class="lvl_test">&nbsp;</dt>
+                                    <dd class="lvl_test">&nbsp;</dd>
+                                    <dt class="lvl_test"></dt>
+                                    <dd class="lvl_test">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsunstyled" value="1" checked="">
+                                            {{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->example_1 }}
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsunstyled" value="1">
+                                            {{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->example_2 }}
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsunstyled" value="1">
+                                            {{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->example_3 }}
+                                        </label>
+                                    </dd>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <dt class="lvl_test">입문 1.</dt>
+                                    <dd class="lvl_test">{{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->question }}</dd>
+                                    <dt class="lvl_test">&nbsp;</dt>
+                                    <dd class="lvl_test">&nbsp;</dd>
+                                    <dt class="lvl_test"></dt>
+                                    <dd class="lvl_test">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsunstyled" value="1" checked="">
+                                            {{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->example_1 }}
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsunstyled" value="1">
+                                            {{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->example_2 }}
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsunstyled" value="1">
+                                            {{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->example_3 }}
+                                        </label>
+                                    </dd>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <dt class="lvl_test">입문 1.</dt>
+                                    <dd class="lvl_test">{{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->question }}</dd>
+                                    <dt class="lvl_test">&nbsp;</dt>
+                                    <dd class="lvl_test">&nbsp;</dd>
+                                    <dt class="lvl_test"></dt>
+                                    <dd class="lvl_test">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsunstyled" value="1" checked="">
+                                            {{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->example_1 }}
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsunstyled" value="1">
+                                            {{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->example_2 }}
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsunstyled" value="1">
+                                            {{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->example_3 }}
+                                        </label>
+                                    </dd>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <dt class="lvl_test">입문 1.</dt>
+                                    <dd class="lvl_test">{{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->question }}</dd>
+                                    <dt class="lvl_test">&nbsp;</dt>
+                                    <dd class="lvl_test">&nbsp;</dd>
+                                    <dt class="lvl_test"></dt>
+                                    <dd class="lvl_test">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsunstyled" value="1" checked="">
+                                            {{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->example_1 }}
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsunstyled" value="1">
+                                            {{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->example_2 }}
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsunstyled" value="1">
+                                            {{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->example_3 }}
+                                        </label>
+                                    </dd>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <dt class="lvl_test">입문 1.</dt>
+                                    <dd class="lvl_test">{{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->question }}</dd>
+                                    <dt class="lvl_test">&nbsp;</dt>
+                                    <dd class="lvl_test">&nbsp;</dd>
+                                    <dt class="lvl_test"></dt>
+                                    <dd class="lvl_test">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsunstyled" value="1" checked="">
+                                            {{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->example_1 }}
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsunstyled" value="1">
+                                            {{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->example_2 }}
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsunstyled" value="1">
+                                            {{ \LvlTestMcPoolBeginner::find($question_pool->question_1)->example_3 }}
+                                        </label>
+                                    </dd>
+                                </dl>
+
+                            </div><!--end .box-body -->
+                        </div><!--end .box -->
+                    </div><!--end .col-lg-12 -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+    </script>
+</div>
+
+<!-- BEGIN JAVASCRIPT -->
+{{ HTML::script('TMIP/Trinity/js/libs/jquery/jquery-1.11.0.min.js') }}
+{{ HTML::script('TMIP/Trinity/js/libs/jquery/jquery-migrate-1.2.1.min.js') }}
+{{ HTML::script('TMIP/Trinity/js/core/BootstrapFixed.js') }}
+{{ HTML::script('TMIP/Trinity/js/libs/bootstrap/bootstrap.min.js') }}
+{{ HTML::script('TMIP/Trinity/js/core/Hr/coursesManagement/popups/curriculum.js') }}
+{{ HTML::script('TMIP/Trinity/js/core/App.js') }}
+</body>
+</html>

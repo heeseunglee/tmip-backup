@@ -4,6 +4,7 @@
 @stop
 
 @section('additional_js_includes')
+    {{ HTML::script('TMIP/Trinity/js/core/Student/testsManagement/takeTests.js') }}
 @stop
 
 @section('main_content')
@@ -44,10 +45,12 @@
                                         @if($pre_course->level_test)
                                             <tr>
                                                 <td>
-                                                    @if($pre_course->status == "진행 중")
-                                                        <span class="label label-success">진행 중</span>
+                                                    @if($pre_course->pivot->lvl_test_status == "대기")
+                                                        <span class="label style-gray">{{ $pre_course->pivot->lvl_test_status }}</span>
+                                                    @elseif($pre_course->pivot->lvl_test_status == "진행 중")
+                                                        <span class="label label-success">{{ $pre_course->pivot->lvl_test_status }}</span>
                                                     @else
-                                                        <span class="label label-danger">완료</span>
+                                                        <span class="label label-danger">{{ $pre_course->pivot->lvl_test_status }}</span>
                                                     @endif
                                                 </td>
                                                 <td>
@@ -73,9 +76,23 @@
                                                     </div>
                                                 </td>
                                                 <td class="text-right">
-                                                    <button type="button" class="btn btn-xs btn-default btn-equal" data-toggle="tooltip" data-placement="top" data-original-title="Edit row"><i class="fa fa-pencil"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default btn-equal" data-toggle="tooltip" data-placement="top" data-original-title="Copy row"><i class="fa fa-copy"></i></button>
-                                                    <button type="button" class="btn btn-xs btn-default btn-equal" data-toggle="tooltip" data-placement="top" data-original-title="Delete row"><i class="fa fa-trash-o"></i></button>
+                                                    @if($pre_course->pivot->lvl_test_status == "대기")
+                                                        <button id="take_test" type="button" onclick="takeTest({{ $pre_course->pivot->lvl_test_id }})"
+                                                                class="btn btn-xs btn-default btn-equal" data-toggle="tooltip"
+                                                                data-placement="top" data-original-title="테스트 진행">
+                                                            <i class="fa fa-pencil"></i>
+                                                        </button>
+                                                    @elseif($pre_course->pivot->lvl_test_status == "진행 중")
+                                                        <button type="button" onclick="takeTest({{ $pre_course->pivot->lvl_test_id }})"
+                                                                class="btn btn-xs btn-default btn-equal" data-toggle="tooltip"
+                                                                data-placement="top" data-original-title="테스트 진행">
+                                                            <i class="fa fa-pencil"></i>
+                                                        </button>
+                                                    @else
+                                                        <a class="btn btn-xs btn-default btn-equal" data-toggle="tooltip" data-placement="top" data-original-title="결과 보기">
+                                                            <i class="fa fa-copy"></i>
+                                                        </a>
+                                                    @endif
                                                 </td>
                                             </tr>
                                         @endif
@@ -88,4 +105,11 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function takeTest(lvl_test_id) {
+            window.open('popups/takeTest/' + lvl_test_id, 'popup', 'width=800px, height=600px, left=300px, top=200px, resizeable=false');
+            $("#take_test").remove();
+        }
+    </script>
 @stop
