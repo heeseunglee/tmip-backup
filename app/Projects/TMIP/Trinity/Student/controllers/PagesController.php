@@ -38,14 +38,27 @@ class PagesController extends \BaseController {
      * --------------------------------------------------------------------------
      * @return mixed
      */
-    public function testsManagementTakeTests() {
+    public function testsManagementTakeTestsIndex() {
         $current_user = \Auth::user();
-        return \View::make('TrinityStudentView::pages.testsManagement.takeTests')
+        return \View::make('TrinityStudentView::pages.testsManagement.takeTests.index')
             ->with('pre_courses', $current_user->userable->preCourses);
     }
 
-    public function testsManagementPopupsTakeTest($lvl_test_id) {
-        return \View::make('TrinityStudentView::pages.testsManagement.popups.takeTest')
-            ->with('lvl_test', \LvlTest::find($lvl_test_id));
+    public function testsManagementTakeTestsTake($lvl_test_id) {
+        $lvl_test_pivot = \DB::table('students_attend_pre_courses')
+                                ->where('lvl_test_id', $lvl_test_id)
+                                ->first();
+        if($lvl_test_pivot->lvl_test_proceed_step == 0) {
+            return \View::make('TrinityStudentView::pages.testsManagement.takeTests.takeBeginnerTest');
+        }
+        if($lvl_test_pivot->lvl_test_proceed_step == 1) {
+
+        }
+        if($lvl_test_pivot->lvl_test_proceed_step == 2) {
+
+        }
+        if($lvl_test_pivot->lvl_test_proceed_step == 3) {
+
+        }
     }
 }

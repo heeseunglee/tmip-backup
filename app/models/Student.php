@@ -22,10 +22,7 @@ class Student extends \Eloquent {
 									'pre_course_id')
             ->withPivot('lvl_test_id',
                 'lvl_test_status',
-                'is_lvl_test_paused',
-                'lvl_test_started_at',
-                'lvl_test_paused_at',
-                'lvl_test_finished_at',
-                'lvl_test_proceed_step');
+                'lvl_test_proceed_step',
+                'lvl_test_started_at');
 	}
 }

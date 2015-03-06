@@ -50,4 +50,18 @@ class PostController extends \BaseController{
         \Flash::success('개인정보를 성공적으로 업데이트했습니다. 환영합니다!');
         return \Redirect::route('Trinity.index');
     }
+
+    public function testsManagementTakeTestsStartTest($lvl_test_id) {
+        if(\Input::get('take_test')) {
+            \DB::transaction(function() use ($lvl_test_id)
+            {
+                \DB::table('students_attend_pre_courses')
+                    ->where('lvl_test_id', $lvl_test_id)
+                    ->update(array('lvl_test_status' => '진행중',
+                                    'lvl_test_started_at' => date("Y-m-d H:i:s")));
+            });
+
+            return \Redirect::route('Trinity.Student.testsManagement.takeTests.take', [$lvl_test_id]);
+        }
+    }
 }

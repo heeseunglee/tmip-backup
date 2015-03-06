@@ -4,7 +4,6 @@
 @stop
 
 @section('additional_js_includes')
-    {{ HTML::script('TMIP/Trinity/js/core/Student/testsManagement/takeTests.js') }}
 @stop
 
 @section('main_content')
@@ -47,9 +46,11 @@
                                                 <td>
                                                     @if($pre_course->pivot->lvl_test_status == "대기")
                                                         <span class="label style-gray">{{ $pre_course->pivot->lvl_test_status }}</span>
-                                                    @elseif($pre_course->pivot->lvl_test_status == "진행 중")
+                                                    @elseif($pre_course->pivot->lvl_test_status == "진행중")
                                                         <span class="label label-success">{{ $pre_course->pivot->lvl_test_status }}</span>
-                                                    @else
+                                                    @elseif($pre_course->pivot->lvl_test_status == "일시정지")
+                                                        <span class="label label-warning">{{ $pre_course->pivot->lvl_test_status }}</span>
+                                                    @elseif($pre_course->pivot->lvl_test_status == "완료")
                                                         <span class="label label-danger">{{ $pre_course->pivot->lvl_test_status }}</span>
                                                     @endif
                                                 </td>
@@ -82,13 +83,19 @@
                                                                 data-placement="top" data-original-title="테스트 진행">
                                                             <i class="fa fa-pencil"></i>
                                                         </button>
-                                                    @elseif($pre_course->pivot->lvl_test_status == "진행 중")
+                                                    @elseif($pre_course->pivot->lvl_test_status == "진행중")
                                                         <button type="button" onclick="takeTest({{ $pre_course->pivot->lvl_test_id }})"
                                                                 class="btn btn-xs btn-default btn-equal" data-toggle="tooltip"
                                                                 data-placement="top" data-original-title="테스트 진행">
                                                             <i class="fa fa-pencil"></i>
                                                         </button>
-                                                    @else
+                                                    @elseif($pre_course->pivot->lvl_test_status == "일시정지")
+                                                        <button type="button" onclick="takeTest({{ $pre_course->pivot->lvl_test_id }})"
+                                                                class="btn btn-xs btn-default btn-equal" data-toggle="tooltip"
+                                                                data-placement="top" data-original-title="테스트 진행">
+                                                            <i class="fa fa-pencil"></i>
+                                                        </button>
+                                                    @elseif($pre_course->pivot->lvl_test_status == "완료")
                                                         <a class="btn btn-xs btn-default btn-equal" data-toggle="tooltip" data-placement="top" data-original-title="결과 보기">
                                                             <i class="fa fa-copy"></i>
                                                         </a>
@@ -108,8 +115,9 @@
 
     <script>
         function takeTest(lvl_test_id) {
-            window.open('popups/takeTest/' + lvl_test_id, 'popup', 'width=800px, height=600px, left=300px, top=200px, resizeable=false');
-            $("#take_test").remove();
+            $.get("ajax/startTest/" + lvl_test_id, function(data) {
+                $(".section-body").append(data);
+            })
         }
     </script>
 @stop

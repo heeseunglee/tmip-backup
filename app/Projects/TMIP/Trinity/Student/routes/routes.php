@@ -8,14 +8,17 @@
 
 namespace Trinity\Student\routes;
 
-\Route::get('Student/firstLogin', array('as' => 'Trinity.Student.firstLogin', function() {
+\Route::get('Student/firstLogin',
+    array('as' => 'Trinity.Student.firstLogin', function() {
     return \View::make('TrinityStudentView::pages.firstLogin.firstLogin');
 }));
 
-\Route::post('Student/firstLogin/signUp', array('as' => 'Trinity.Student.firstLogin.signUp',
+\Route::post('Student/firstLogin/signUp',
+    array('as' => 'Trinity.Student.firstLogin.signUp',
     'uses' => '\Trinity\Student\controllers\PostController@firstLoginSignUp'));
 
-\Route::group(array('prefix' => 'Student', 'before' => array('auth', 'is_first_login')), function() {
+\Route::group(array('prefix' => 'Student',
+    'before' => array('auth', 'is_first_login')), function() {
 
     \Route::get('/', array('as' => 'Trinity.Student.index', function() {
         return \Redirect::route('Trinity.Student.coursesManagement');
@@ -26,14 +29,17 @@ namespace Trinity\Student\routes;
      */
     \Route::group(array('prefix' => 'coursesManagement'), function() {
 
-        \Route::get('/', array('as' => 'Trinity.Student.coursesManagement', function() {
+        \Route::get('/',
+            array('as' => 'Trinity.Student.coursesManagement', function() {
             return \Redirect::route('Trinity.Student.coursesManagement.index');
         }));
 
-        \Route::get('index', array('as' => 'Trinity.Student.coursesManagement.index',
+        \Route::get('index',
+            array('as' => 'Trinity.Student.coursesManagement.index',
             'uses' => '\Trinity\Student\controllers\PagesController@coursesManagementIndex'));
 
-        \Route::get('showIndividual', array('as' => 'Trinity.Student.coursesManagement.showIndividual',
+        \Route::get('showIndividual',
+            array('as' => 'Trinity.Student.coursesManagement.showIndividual',
             'uses' => '\Trinity\Student\controllers\PagesController@coursesManagementShowIndividual'));
 
     });
@@ -44,17 +50,28 @@ namespace Trinity\Student\routes;
             return \Redirect::route('Trinity.Student.testsManagement.takeTests');
         }));
 
-        \Route::get('takeTests', array('as' => 'Trinity.Student.testsManagement.takeTests',
-            'uses' => '\Trinity\Student\controllers\PagesController@testsManagementTakeTests'));
+        \Route::group(array('prefix' => 'takeTests'), function() {
 
-        \Route::get('showResults', array('as' => 'Trinity.Student.testsManagement.showResults',
-            'uses' => '\Trinity\Student\controllers\PagesController@testsManagementShowResults'));
+            \Route::get('/', array('as' => 'Trinity.Student.testsManagement.takeTests', function() {
+                return \Redirect::route('Trinity.Student.testsManagement.takeTests.index');
+            }));
 
-        \Route::group(array('prefix' => 'popups'), function() {
+            \Route::get('index', array('as' => 'Trinity.Student.testsManagement.takeTests.index',
+                'uses' => '\Trinity\Student\controllers\PagesController@testsManagementTakeTestsIndex'));
 
-            \Route::get('takeTest/{lvl_test_id}', array('as' => 'Trinity.Student.testsManagement.popups.takeTest',
-                'uses' => '\Trinity\Student\controllers\PagesController@testsManagementPopupsTakeTest'));
+            \Route::get('take/{lvl_test_id}', array('as' => 'Trinity.Student.testsManagement.takeTests.take',
+                'uses' => '\Trinity\Student\controllers\PagesController@testsManagementTakeTestsTake'));
 
+
+            \Route::group(array('prefix' => 'ajax'), function() {
+
+                \Route::get('startTest/{lvl_test_id}',
+                    array('uses' => '\Trinity\Student\controllers\AjaxController@testsManagementTakeTestsStartTest'));
+
+                \Route::post('startTest/{lvl_test_id}',
+                    array('uses' => '\Trinity\Student\controllers\PostController@testsManagementTakeTestsStartTest'));
+
+            });
         });
 
     });

@@ -32,10 +32,16 @@
                     <div class="col-sm-12">
                         <div class="box">
                             <div class="box-head box-head-xs style-support3">
-                                <header><h4 class="text-light">더만다린 교육 프로그램</h4></header>
+                                <header><h4 class="text-light">입과테스트 진행 여부</h4></header>
                             </div>
-                            <div class="box-body">
-
+                            <div class="box-body no-padding">
+                                {{ Form::open(array('class' => 'form-vertical form-bordered')) }}
+                                    <div class="form-footer">
+                                        {{ Form::submit('계속 진행', array('class' => 'btn btn-primary',
+                                                                    'name' => 'resume_test',
+                                                                    'value' => '1')) }}
+                                    </div>
+                                {{ Form::close() }}
                             </div><!--end .box-body -->
                         </div><!--end .box -->
                     </div><!--end .col-lg-12 -->
@@ -43,6 +49,9 @@
             </div>
         </section>
     </div>
+
+    <script>
+    </script>
 </div>
 
 <!-- BEGIN JAVASCRIPT -->
