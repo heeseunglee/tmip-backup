@@ -46,21 +46,28 @@ namespace Trinity\Student\routes;
 
     \Route::group(array('prefix' => 'testsManagement'), function() {
 
-        \Route::get('/', array('as' => 'Trinity.Student.testsManagement', function() {
+        \Route::get('/',
+            array('as' => 'Trinity.Student.testsManagement', function() {
             return \Redirect::route('Trinity.Student.testsManagement.takeTests');
         }));
 
         \Route::group(array('prefix' => 'takeTests'), function() {
 
-            \Route::get('/', array('as' => 'Trinity.Student.testsManagement.takeTests', function() {
+            \Route::get('/',
+                array('as' => 'Trinity.Student.testsManagement.takeTests', function() {
                 return \Redirect::route('Trinity.Student.testsManagement.takeTests.index');
             }));
 
-            \Route::get('index', array('as' => 'Trinity.Student.testsManagement.takeTests.index',
-                'uses' => '\Trinity\Student\controllers\PagesController@testsManagementTakeTestsIndex'));
+            \Route::get('index',
+                array('as' => 'Trinity.Student.testsManagement.takeTests.index',
+                    'uses' => '\Trinity\Student\controllers\PagesController@testsManagementTakeTestsIndex'));
 
-            \Route::get('take/{lvl_test_id}', array('as' => 'Trinity.Student.testsManagement.takeTests.take',
-                'uses' => '\Trinity\Student\controllers\PagesController@testsManagementTakeTestsTake'));
+            \Route::get('take/{lvl_test_id}',
+                array('as' => 'Trinity.Student.testsManagement.takeTests.take',
+                    'uses' => '\Trinity\Student\controllers\PagesController@testsManagementTakeTestsTake'));
+
+            \Route::post('take/{lvl_test_id}',
+                array('uses' => '\Trinity\Student\controllers\PostController@testsManagementTakeTestsTake'));
 
 
             \Route::group(array('prefix' => 'ajax'), function() {
@@ -70,6 +77,20 @@ namespace Trinity\Student\routes;
 
                 \Route::post('startTest/{lvl_test_id}',
                     array('uses' => '\Trinity\Student\controllers\PostController@testsManagementTakeTestsStartTest'));
+
+                \Route::get('updateAnswer/{lvl_test_id}/{answer_number}/{answer}',
+                    function($lvl_test_id, $answer_number, $answer) {
+                    if(\Request::ajax()) {
+                        \DB::transaction(function() use ($lvl_test_id, $answer_number, $answer) {
+                            $lvl_test = \LvlTest::find($lvl_test_id);
+                            \DB::table('lvl_test_mcs')
+                                ->where('id', $lvl_test->lvl_test_mc_id)
+                                ->update(array('answer_'.$answer_number => $answer));
+                        });
+                        return "updated";
+                    }
+                    return \Response::error('404');
+                });
 
             });
         });

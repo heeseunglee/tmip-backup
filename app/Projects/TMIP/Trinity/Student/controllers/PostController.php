@@ -60,8 +60,63 @@ class PostController extends \BaseController{
                     ->update(array('lvl_test_status' => '진행중',
                                     'lvl_test_started_at' => date("Y-m-d H:i:s")));
             });
-
             return \Redirect::route('Trinity.Student.testsManagement.takeTests.take', [$lvl_test_id]);
+        }
+
+        if(\Input::get('resume_test')) {
+            \DB::transaction(function() use ($lvl_test_id) {
+                \DB::table('students_attend_pre_courses')
+                    ->where('lvl_test_id', $lvl_test_id)
+                    ->update(array('lvl_test_status' => '진행중'));
+            });
+            return \Redirect::route('Trinity.Student.testsManagement.takeTests.take', [$lvl_test_id]);
+        }
+
+        if(\Input::get('give_up_test')) {
+            \DB::transaction(function() use ($lvl_test_id) {
+                \DB::table('students_attend_pre_courses')
+                    ->where('lvl_test_id', $lvl_test_id)
+                    ->update(array('lvl_test_status' => '완료'));
+            });
+            return \Redirect::route('Trinity.Student.testsManagement.takeTests.index');
+        }
+    }
+
+    public function testsManagementTakeTestsTake($lvl_test_id) {
+        if(\Input::get('submit')) {
+            $lvl_test_time_left = \Input::get('lvl_test_time_left');
+            $lvl_test_proceed_step = \DB::table('students_attend_pre_courses')
+                                        ->where('lvl_test_id', $lvl_test_id)
+                                        ->first()
+                                        ->lvl_test_proceed_step;
+            \DB::transaction(function() use ($lvl_test_id, $lvl_test_time_left, $lvl_test_proceed_step) {
+                \DB::table('students_attend_pre_courses')
+                    ->where('lvl_test_id', $lvl_test_id)
+                    ->update(array('lvl_test_time_left' => $lvl_test_time_left,
+                                    'lvl_test_proceed_step' => $lvl_test_proceed_step + 1));
+            });
+
+            if($lvl_test_proceed_step == 0) {
+                $answer_1 = \Input::get('answer_1');
+                $answer_2 = \Input::get('answer_2');
+                $answer_3 = \Input::get('answer_3');
+                $answer_4 = \Input::get('answer_4');
+                $answer_5 = \Input::get('answer_5');
+
+                $lvl_test = \LvlTest::find($lvl_test_id);
+                $lvl_test_mc = \LvlTestMc::find($lvl_test->lvl_test_mc_id);
+
+            }
+        }
+        if(\Input::get('pause')) {
+            $lvl_test_time_left = \Input::get('lvl_test_time_left');
+            \DB::transaction(function() use ($lvl_test_id, $lvl_test_time_left) {
+                \DB::table('students_attend_pre_courses')
+                    ->where('lvl_test_id', $lvl_test_id)
+                    ->update(array('lvl_test_time_left' => $lvl_test_time_left,
+                                    'lvl_test_status' => '일시정지'));
+            });
+            return \Redirect::route('Trinity.Student.testsManagement.takeTests.index');
         }
     }
 }

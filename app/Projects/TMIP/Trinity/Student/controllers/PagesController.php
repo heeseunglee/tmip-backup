@@ -49,7 +49,9 @@ class PagesController extends \BaseController {
                                 ->where('lvl_test_id', $lvl_test_id)
                                 ->first();
         if($lvl_test_pivot->lvl_test_proceed_step == 0) {
-            return \View::make('TrinityStudentView::pages.testsManagement.takeTests.takeBeginnerTest');
+            return \View::make('TrinityStudentView::pages.testsManagement.takeTests.takeBeginnerTest')
+                ->with('lvl_test', \LvlTest::find($lvl_test_id))
+                ->with('lvl_test_id', $lvl_test_id);
         }
         if($lvl_test_pivot->lvl_test_proceed_step == 1) {
 

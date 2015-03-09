@@ -31,10 +31,3 @@
         </div><!--end .box -->
     </div><!--end .col-lg-12 -->
 </div>
-<script>
-    function startTest(lvl_test_id) {
-        $.get("ajax/takeTest/" + lvl_test_id, function(data) {
-            $(".section-body").html(data);
-        })
-    }
-</script>
