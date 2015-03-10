@@ -127,6 +127,7 @@ return array(
 		'Intervention\Image\ImageServiceProvider',
 		'Cviebrock\ImageValidator\ImageValidatorServiceProvider',
         'Indatus\Dispatcher\ServiceProvider',
+        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
 
 	),
 
