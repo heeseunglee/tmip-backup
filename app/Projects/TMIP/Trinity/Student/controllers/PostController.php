@@ -106,7 +106,130 @@ class PostController extends \BaseController{
                 $lvl_test = \LvlTest::find($lvl_test_id);
                 $lvl_test_mc = \LvlTestMc::find($lvl_test->lvl_test_mc_id);
 
+                \DB::transaction(function() use ($lvl_test_id,
+                                                $lvl_test_mc,
+                                                $answer_1,
+                                                $answer_2,
+                                                $answer_3,
+                                                $answer_4,
+                                                $answer_5) {
+                    $lvl_test_result = 0;
+                    if($answer_1 == \LvlTestMcPoolBeginner::find($lvl_test_mc->question_1)->answer) {
+                        $lvl_test_result += 1;
+                    }
+                    if($answer_1 == \LvlTestMcPoolBeginner::find($lvl_test_mc->question_2)->answer) {
+                        $lvl_test_result += 1;
+                    }
+                    if($answer_1 == \LvlTestMcPoolBeginner::find($lvl_test_mc->question_3)->answer) {
+                        $lvl_test_result += 1;
+                    }
+                    if($answer_1 == \LvlTestMcPoolBeginner::find($lvl_test_mc->question_4)->answer) {
+                        $lvl_test_result += 1;
+                    }
+                    if($answer_1 == \LvlTestMcPoolBeginner::find($lvl_test_mc->question_5)->answer) {
+                        $lvl_test_result += 1;
+                    }
+                    \DB::table('students_attend_pre_courses')
+                        ->where('lvl_test_id', $lvl_test_id)
+                        ->update(array('lvl_test_result' => $lvl_test_result));
+                });
             }
+
+            if($lvl_test_proceed_step == 1) {
+                $answer_6 = \Input::get('answer_6');
+                $answer_7 = \Input::get('answer_7');
+                $answer_8 = \Input::get('answer_8');
+                $answer_9 = \Input::get('answer_9');
+                $answer_10 = \Input::get('answer_10');
+
+                $lvl_test = \LvlTest::find($lvl_test_id);
+                $lvl_test_mc = \LvlTestMc::find($lvl_test->lvl_test_mc_id);
+
+                \DB::transaction(function() use ($lvl_test_id,
+                                                $lvl_test_mc,
+                                                $answer_6,
+                                                $answer_7,
+                                                $answer_8,
+                                                $answer_9,
+                                                $answer_10) {
+                    $lvl_test_result = \DB::table('students_attend_pre_courses')
+                        ->where('lvl_test_id', $lvl_test_id)
+                        ->first()
+                        ->lvl_test_result;
+                    if($answer_6 == \LvlTestMcPoolElementary::find($lvl_test_mc->question_6)->answer) {
+                        $lvl_test_result += 2;
+                    }
+                    if($answer_7 == \LvlTestMcPoolElementary::find($lvl_test_mc->question_7)->answer) {
+                        $lvl_test_result += 2;
+                    }
+                    if($answer_8 == \LvlTestMcPoolElementary::find($lvl_test_mc->question_8)->answer) {
+                        $lvl_test_result += 2;
+                    }
+                    if($answer_9 == \LvlTestMcPoolElementary::find($lvl_test_mc->question_9)->answer) {
+                        $lvl_test_result += 2;
+                    }
+                    if($answer_10 == \LvlTestMcPoolElementary::find($lvl_test_mc->question_10)->answer) {
+                        $lvl_test_result += 2;
+                    }
+                    \DB::table('students_attend_pre_courses')
+                        ->where('lvl_test_id', $lvl_test_id)
+                        ->update(array('lvl_test_result' => $lvl_test_result));
+                });
+            }
+
+            if($lvl_test_proceed_step == 2) {
+                $answer_11 = \Input::get('answer_11');
+                $answer_12 = \Input::get('answer_12');
+                $answer_131 = \Input::get('answer_131');
+                $answer_132 = \Input::get('answer_132');
+                $answer_141 = \Input::get('answer_141');
+                $answer_142 = \Input::get('answer_142');
+                $answer_15 = \Input::get('$answer_15');
+
+                $lvl_test = \LvlTest::find($lvl_test_id);
+                $lvl_test_mc = \LvlTestMc::find($lvl_test->lvl_test_mc_id);
+
+                \DB::transaction(function() use ($lvl_test_id,
+                                                $lvl_test_mc,
+                                                $answer_11,
+                                                $answer_12,
+                                                $answer_131,
+                                                $answer_132,
+                                                $answer_141,
+                                                $answer_142,
+                                                $answer_15) {
+                    $lvl_test_result = \DB::table('students_attend_pre_courses')
+                        ->where('lvl_test_id', $lvl_test_id)
+                        ->first()
+                        ->lvl_test_result;
+                    if($answer_11 == \LvlTestMcPoolIntermediate::find($lvl_test_mc->question_11)->answer) {
+                        $lvl_test_result += 3;
+                    }
+                    if($answer_12 == \LvlTestMcPoolIntermediate::find($lvl_test_mc->question_12)->answer) {
+                        $lvl_test_result += 3;
+                    }
+                    if($answer_131 == \LvlTestMcPoolIntermediate::find($lvl_test_mc->question_13)->answer) {
+                        $lvl_test_result += 1.5;
+                    }
+                    if($answer_132 == \LvlTestMcPoolIntermediate::find($lvl_test_mc->question_13)->answer_2) {
+                        $lvl_test_result += 1.5;
+                    }
+                    if($answer_141 == \LvlTestMcPoolIntermediate::find($lvl_test_mc->question_14)->answer) {
+                        $lvl_test_result += 1.5;
+                    }
+                    if($answer_142 == \LvlTestMcPoolIntermediate::find($lvl_test_mc->question_14)->answer_2) {
+                        $lvl_test_result += 1.5;
+                    }
+                    if($answer_15 == \LvlTestMcPoolIntermediate::find($lvl_test_mc->question_15)->answer) {
+                        $lvl_test_result += 3;
+                    }
+                    \DB::table('students_attend_pre_courses')
+                        ->where('lvl_test_id', $lvl_test_id)
+                        ->update(array('lvl_test_result' => $lvl_test_result));
+                });
+            }
+
+            return \Redirect::route('Trinity.Student.testsManagement.takeTests.take', [$lvl_test_id]);
         }
         if(\Input::get('pause')) {
             $lvl_test_time_left = \Input::get('lvl_test_time_left');

@@ -10,6 +10,7 @@
 		<meta name="description" content="The Mandarin Integration Platform">
 
 		<!-- BEGIN STYLESHEETS -->
+        {{ HTML::style('TMIP/Trinity/css/theme-default/reset.css') }}
 		{{ HTML::style('TMIP/Trinity/css/theme-default/bootstrap.css') }}
 		{{ HTML::style('TMIP/Trinity/css/theme-default/boostbox.css') }}
 		{{ HTML::style('TMIP/Trinity/css/theme-default/boostbox_responsive.css') }}

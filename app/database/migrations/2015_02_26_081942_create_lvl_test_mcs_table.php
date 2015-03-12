@@ -79,12 +79,16 @@ class CreateLvlTestMcsTable extends Migration {
             $table->unsignedInteger('question_13');
             $table->foreign('question_13')->references('id')->on('lvl_test_mc_pool_intermediate');
 
-            $table->tinyInteger('answer_13');
+            $table->tinyInteger('answer_131');
+
+            $table->tinyInteger('answer_132');
 
             $table->unsignedInteger('question_14');
             $table->foreign('question_14')->references('id')->on('lvl_test_mc_pool_intermediate');
 
-            $table->tinyInteger('answer_14');
+            $table->tinyInteger('answer_141');
+
+            $table->tinyInteger('answer_142');
 
             $table->unsignedInteger('question_15');
             $table->foreign('question_15')->references('id')->on('lvl_test_mc_pool_intermediate');

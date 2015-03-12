@@ -7,6 +7,7 @@
 // -------------------------
 
 #sidebar {
+    top: @headerbar-height;
 	position: relative;
 	display:table-cell;
 	vertical-align: top;
@@ -16,15 +17,9 @@
 	.transition(width @sidebar-collapse-speed @sidebar-collapse-ease);
 
 	.nav-brand {
-		height: 191px;
+		height: @headerbar-height + 65;
 		background-color: @sidebar-bg;
 		text-align: center;
-	  a {
-		margin: 71px 0px;
-		img {
-		  width: 100px;
-		}
-	  }
 	}
 }
 
@@ -44,7 +39,7 @@
 .sidebar-back {
 	position: fixed;
 	width: @sidebar-width;
-	top: 0;
+	top: @headerbar-height;//0;
 	bottom: 0;
 	left: 0;
 	background: @sidebar-bg;
@@ -101,7 +96,7 @@
 // -------------------------
 
 .main-menu { 
-	font-family: "HanaM";
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	padding: 0;
 

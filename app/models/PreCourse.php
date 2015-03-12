@@ -37,7 +37,9 @@ class PreCourse extends \Eloquent {
 									'student_id')
             ->withPivot('lvl_test_id',
                 'lvl_test_status',
+                'lvl_test_result',
                 'lvl_test_proceed_step',
+                'lvl_test_time_left',
                 'lvl_test_started_at');
 	}
 }

@@ -54,13 +54,19 @@ class PagesController extends \BaseController {
                 ->with('lvl_test_id', $lvl_test_id);
         }
         if($lvl_test_pivot->lvl_test_proceed_step == 1) {
-
+            return \View::make('TrinityStudentView::pages.testsManagement.takeTests.takeElementaryTest')
+                ->with('lvl_test', \LvlTest::find($lvl_test_id))
+                ->with('lvl_test_id', $lvl_test_id);
         }
         if($lvl_test_pivot->lvl_test_proceed_step == 2) {
-
+            return \View::make('TrinityStudentView::pages.testsManagement.takeTests.takeIntermediateTest')
+                ->with('lvl_test', \LvlTest::find($lvl_test_id))
+                ->with('lvl_test_id', $lvl_test_id);
         }
         if($lvl_test_pivot->lvl_test_proceed_step == 3) {
-
+            return \View::make('TrinityStudentView::pages.testsManagement.takeTests.takeExpertTest')
+                ->with('lvl_test', \LvlTest::find($lvl_test_id))
+                ->with('lvl_test_id', $lvl_test_id);
         }
     }
 }

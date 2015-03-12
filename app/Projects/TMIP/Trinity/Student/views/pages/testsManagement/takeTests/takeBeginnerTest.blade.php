@@ -22,10 +22,6 @@
             @include('flash::message')
             <?php
                 $lvl_test_mc = \LvlTestMc::find($lvl_test->lvl_test_mc_id);
-                $lvl_test_proceed_step = \DB::table('students_attend_pre_courses')
-                        ->where('lvl_test_id', $lvl_test->id)
-                        ->first()
-                        ->lvl_test_proceed_step;
             ?>
             <div class="row">
                 <div class="col-sm-12">
@@ -44,6 +40,10 @@
                                 <dl class="dl-horizontal">
                                     <?php
                                         $q1 = \LvlTestMcPoolBeginner::find($lvl_test_mc->question_1);
+                                        $q2 = \LvlTestMcPoolBeginner::find($lvl_test_mc->question_2);
+                                        $q3 = \LvlTestMcPoolBeginner::find($lvl_test_mc->question_3);
+                                        $q4 = \LvlTestMcPoolBeginner::find($lvl_test_mc->question_4);
+                                        $q5 = \LvlTestMcPoolBeginner::find($lvl_test_mc->question_5);
                                     ?>
                                     <dt class="lvl_test">입문 1.</dt>
                                     <dd class="lvl_test">{{ $q1->question }}</dd>
@@ -67,85 +67,85 @@
                                 </dl>
                                 <dl class="dl-horizontal">
                                     <dt class="lvl_test">입문 2.</dt>
-                                    <dd class="lvl_test">{{ \LvlTestMcPoolBeginner::find($lvl_test_mc->question_2)->question }}</dd>
+                                    <dd class="lvl_test">{{ $q2->question }}</dd>
                                     <dt class="lvl_test">&nbsp;</dt>
                                     <dd class="lvl_test">&nbsp;</dd>
                                     <dt class="lvl_test"></dt>
                                     <dd class="lvl_test">
                                         <label class="radio-inline">
                                             <input type="radio" name="answer_2" value="1" @if($lvl_test_mc->answer_2 == 1) checked="" @endif>
-                                            {{ \LvlTestMcPoolBeginner::find($lvl_test_mc->question_2)->example_1 }}
+                                            {{ $q2->example_1 }}
                                         </label>
                                         <label class="radio-inline">
                                             <input type="radio" name="answer_2" value="2" @if($lvl_test_mc->answer_2 == 2) checked="" @endif>
-                                            {{ \LvlTestMcPoolBeginner::find($lvl_test_mc->question_2)->example_2 }}
+                                            {{ $q2->example_2 }}
                                         </label>
                                         <label class="radio-inline">
                                             <input type="radio" name="answer_2" value="3" @if($lvl_test_mc->answer_2 == 3) checked="" @endif>
-                                            {{ \LvlTestMcPoolBeginner::find($lvl_test_mc->question_2)->example_3 }}
+                                            {{ $q2->example_3 }}
                                         </label>
                                     </dd>
                                 </dl>
                                 <dl class="dl-horizontal">
                                     <dt class="lvl_test">입문 3.</dt>
-                                    <dd class="lvl_test">{{ \LvlTestMcPoolBeginner::find($lvl_test_mc->question_3)->question }}</dd>
+                                    <dd class="lvl_test">{{ $q3->question }}</dd>
                                     <dt class="lvl_test">&nbsp;</dt>
                                     <dd class="lvl_test">&nbsp;</dd>
                                     <dt class="lvl_test"></dt>
                                     <dd class="lvl_test">
                                         <label class="radio-inline">
                                             <input type="radio" name="answer_3" value="1" @if($lvl_test_mc->answer_3 == 1) checked="" @endif>
-                                            {{ \LvlTestMcPoolBeginner::find($lvl_test_mc->question_3)->example_1 }}
+                                            {{ $q3->example_1 }}
                                         </label>
                                         <label class="radio-inline">
                                             <input type="radio" name="answer_3" value="2" @if($lvl_test_mc->answer_3 == 2) checked="" @endif>
-                                            {{ \LvlTestMcPoolBeginner::find($lvl_test_mc->question_3)->example_2 }}
+                                            {{ $q3->example_2 }}
                                         </label>
                                         <label class="radio-inline">
                                             <input type="radio" name="answer_3" value="3" @if($lvl_test_mc->answer_3 == 3) checked="" @endif>
-                                            {{ \LvlTestMcPoolBeginner::find($lvl_test_mc->question_3)->example_3 }}
+                                            {{ $q3->example_3 }}
                                         </label>
                                     </dd>
                                 </dl>
                                 <dl class="dl-horizontal">
                                     <dt class="lvl_test">입문 4.</dt>
-                                    <dd class="lvl_test">{{ \LvlTestMcPoolBeginner::find($lvl_test_mc->question_4)->question }}</dd>
+                                    <dd class="lvl_test">{{ $q4->question }}</dd>
                                     <dt class="lvl_test">&nbsp;</dt>
                                     <dd class="lvl_test">&nbsp;</dd>
                                     <dt class="lvl_test"></dt>
                                     <dd class="lvl_test">
                                         <label class="radio-inline">
                                             <input type="radio" name="answer_4" value="1" @if($lvl_test_mc->answer_4 == 1) checked="" @endif>
-                                            {{ \LvlTestMcPoolBeginner::find($lvl_test_mc->question_4)->example_1 }}
+                                            {{ $q4->example_1 }}
                                         </label>
                                         <label class="radio-inline">
                                             <input type="radio" name="answer_4" value="2" @if($lvl_test_mc->answer_4 == 2) checked="" @endif>
-                                            {{ \LvlTestMcPoolBeginner::find($lvl_test_mc->question_4)->example_2 }}
+                                            {{ $q4->example_2 }}
                                         </label>
                                         <label class="radio-inline">
                                             <input type="radio" name="answer_4" value="3" @if($lvl_test_mc->answer_4 == 3) checked="" @endif>
-                                            {{ \LvlTestMcPoolBeginner::find($lvl_test_mc->question_4)->example_3 }}
+                                            {{ $q4->example_3 }}
                                         </label>
                                     </dd>
                                 </dl>
                                 <dl class="dl-horizontal">
                                     <dt class="lvl_test">입문 5.</dt>
-                                    <dd class="lvl_test">{{ \LvlTestMcPoolBeginner::find($lvl_test_mc->question_5)->question }}</dd>
+                                    <dd class="lvl_test">{{ $q5->question }}</dd>
                                     <dt class="lvl_test">&nbsp;</dt>
                                     <dd class="lvl_test">&nbsp;</dd>
                                     <dt class="lvl_test"></dt>
                                     <dd class="lvl_test">
                                         <label class="radio-inline">
                                             <input type="radio" name="answer_5" value="1" @if($lvl_test_mc->answer_5 == 1) checked="" @endif>
-                                            {{ \LvlTestMcPoolBeginner::find($lvl_test_mc->question_5)->example_1 }}
+                                            {{ $q5->example_1 }}
                                         </label>
                                         <label class="radio-inline">
                                             <input type="radio" name="answer_5" value="2" @if($lvl_test_mc->answer_5 == 2) checked="" @endif>
-                                            {{ \LvlTestMcPoolBeginner::find($lvl_test_mc->question_5)->example_2 }}
+                                            {{ $q5->example_2 }}
                                         </label>
                                         <label class="radio-inline">
                                             <input type="radio" name="answer_5" value="3" @if($lvl_test_mc->answer_5 == 3) checked="" @endif>
-                                            {{ \LvlTestMcPoolBeginner::find($lvl_test_mc->question_5)->example_3 }}
+                                            {{ $q5->example_3 }}
                                         </label>
                                     </dd>
                                 </dl>
